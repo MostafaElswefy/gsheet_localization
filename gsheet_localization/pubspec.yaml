@@ -1,0 +1,31 @@
+name: gsheet_localization
+description: Generate Flutter localizations directly from Google Sheets.
+version: 7.0.0-dev.1
+
+homepage: https://github.com/MostafaElswefy/gsheet_localization
+repository: https://github.com/MostafaElswefy/gsheet_localization
+issue_tracker: https://github.com/MostafaElswefy/gsheet_localization/issues
+
+
+topics:
+  - flutter
+  - localization
+  - i18n
+  - internationalization
+  - google-sheets
+
+
+publish_to: none
+
+environment:
+  sdk: ">=3.7.0 <4.0.0"
+
+dependencies:
+  intl: ">=0.20.2 <0.21.0"                          # https://pub.dev/packages/intl/versions
+  meta: any                                # https://pub.dev/packages/meta/versions
+
+  template_string:
+    path: ../template_string
+#    git:
+#      url: https://github.com/MostafaElswefy/flutter_sheet_localization_plus.git
+#      path: template_string

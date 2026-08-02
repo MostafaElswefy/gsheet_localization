@@ -1,0 +1,17 @@
+targets:
+  $default:
+    builders:
+      gsheet_localization_generator|gsheet_localization_builder:
+        enabled: true
+
+builders:
+  gsheet_localization_builder:
+    target: ":gsheet_localization_generator"
+    import: "package:gsheet_localization_generator/builder.dart"
+    builder_factories: ["gsheetLocalization"]
+    build_extensions:
+      ".dart": [".gsheet_localization.g.part"]
+    auto_apply: dependents
+    build_to: cache
+    applies_builders:
+      - source_gen|combining_builder

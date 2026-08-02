@@ -1,8 +1,19 @@
 name: localization_builder
-description: A data class builder for localization.
-homepage: https://github.com/mboe/flutter_sheet_localization
-publish_to: none
+description: Localization model builder used by gsheet_localization_generator.
+
 version: 0.16.7
+
+homepage: https://github.com/MostafaElswefy/gsheet_localization
+repository: https://github.com/MostafaElswefy/gsheet_localization
+issue_tracker: https://github.com/MostafaElswefy/gsheet_localization/issues
+
+publish_to: none
+
+topics:
+  - flutter
+  - localization
+  - code-generation
+  - i18n
 
 environment:
   sdk: ">=3.7.0 <4.0.0"
@@ -10,19 +21,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  collection: ^1.19.1                     # https://pub.dev/packages/collection/versions
+  dart_style: ^3.1.9                      # https://pub.dev/packages/dart_style/versions
+  equatable: ^2.1.0                       # https://pub.dev/packages/equatable/versions
+  logging: ^1.3.0                         # https://pub.dev/packages/logging/versions
+  meta: any                               # https://pub.dev/packages/meta/versions
+  recase: ^4.1.0                          # https://pub.dev/packages/recase/versions
+  yaml: ^3.1.3                            # https://pub.dev/packages/yaml/versions
+
   template_string:
-    #path: ../template_string
-    git:
-      url: https://github.com/mboe/flutter_sheet_localization.git
-      path: template_string
-  recase: ^4.1.0
-  meta: any
-  yaml: ^3.1.3
-  equatable: ^2.1.0
-  collection: ^1.19.1
-  dart_style: ^3.1.9
-  logging: ^1.3.0
+    path: ../template_string
+#    git:
+#      url: https://github.com/MostafaElswefy/gsheet_localization.git
+#      path: template_string
 
 dev_dependencies:
-  lints: ^6.1.0
-  test: ^1.31.2
+  lints: ^6.1.0                           # https://pub.dev/packages/lints/versions
+  test: ^1.31.2                           # https://pub.dev/packages/test/versions

@@ -1,0 +1,59 @@
+name: gsheet_localization_generator
+description: Source generator for gsheet_localization powered by Google Sheets.
+
+version: 7.0.0-dev.1
+
+homepage: https://github.com/MostafaElswefy/gsheet_localization
+repository: https://github.com/MostafaElswefy/gsheet_localization
+issue_tracker: https://github.com/MostafaElswefy/gsheet_localization/issues
+
+publish_to: none
+
+topics:
+  - flutter
+  - localization
+  - code-generation
+  - build-runner
+  - google-sheets
+
+environment:
+  sdk: ">=3.7.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  analyzer: ^13.0.0                       # https://pub.dev/packages/analyzer/versions
+  build: ^4.0.7                           # https://pub.dev/packages/build/versions
+  code_builder: ^4.11.1                   # https://pub.dev/packages/code_builder/versions
+  collection: ^1.19.1                     # https://pub.dev/packages/collection/versions
+  csv: ^8.0.0                             # https://pub.dev/packages/csv/versions
+  dart_style: ^3.1.9                      # https://pub.dev/packages/dart_style/versions
+  http: ^1.6.0                            # https://pub.dev/packages/http/versions
+  intl: ">=0.20.2 <0.21.0"                         # https://pub.dev/packages/intl/versions
+  meta: any                               # https://pub.dev/packages/meta/versions
+  recase: ^4.1.0                          # https://pub.dev/packages/recase/versions
+  source_gen: ^4.2.3                      # https://pub.dev/packages/source_gen/versions
+
+  gsheet_localization:
+    path: ../gsheet_localization
+  #    git:
+  #      url: https://github.com/MostafaElswefy/gsheet_localization.git
+  #      path: gsheet_localization
+
+  localization_builder:
+    path: ../localization_builder
+  #    git:
+  #      url: https://github.com/MostafaElswefy/gsheet_localization.git
+  #      path: localization_builder
+
+  template_string:
+    path: ../template_string
+#    git:
+#      url: https://github.com/MostafaElswefy/gsheet_localization.git
+#      path: template_string
+
+dev_dependencies:
+  build_runner: ^2.15.0                   # https://pub.dev/packages/build_runner/versions
+  build_test: ^3.5.15                     # https://pub.dev/packages/build_test/versions
+  lints: ^6.1.0                           # https://pub.dev/packages/lints/versions

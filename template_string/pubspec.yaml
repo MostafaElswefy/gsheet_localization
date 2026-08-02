@@ -1,20 +1,27 @@
 name: template_string
-description: Template string utilities used by flutter_sheet_localization_plus.
+description: String template utilities used by gsheet_localization.
 
 version: 0.7.7
 
-homepage: https://github.com/MostafaElswefy/flutter_sheet_localization_plus
-repository: https://github.com/MostafaElswefy/flutter_sheet_localization_plus
-issue_tracker: https://github.com/MostafaElswefy/flutter_sheet_localization_plus/issues
+homepage: https://github.com/MostafaElswefy/gsheet_localization
+repository: https://github.com/MostafaElswefy/gsheet_localization
+issue_tracker: https://github.com/MostafaElswefy/gsheet_localization/issues
 
 publish_to: none
+
+topics:
+  - flutter
+  - localization
+  - templates
+  - string
+  - i18n
 
 environment:
   sdk: ">=3.7.0 <4.0.0"
 
 dependencies:
-  intl: any
-  meta: any
+  intl: ">=0.20.2 <0.21.0"                          # https://pub.dev/packages/intl/versions
+  meta: any                              # https://pub.dev/packages/meta/versions
 
 dev_dependencies:
-  lints: ^6.1.0
+  lints: ^6.1.0                          # https://pub.dev/packages/lints/versions
