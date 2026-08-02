@@ -1,7 +1,6 @@
-name: template_string
-description: Template string utilities used by flutter_sheet_localization_plus.
-
-version: 0.7.7
+name: flutter_sheet_localization_plus
+description: Flutter localization package powered by Google Sheets.
+version: 7.0.0-dev.1
 
 homepage: https://github.com/MostafaElswefy/flutter_sheet_localization_plus
 repository: https://github.com/MostafaElswefy/flutter_sheet_localization_plus
@@ -16,5 +15,7 @@ dependencies:
   intl: any
   meta: any
 
-dev_dependencies:
-  lints: ^6.1.0
+  template_string:
+    git:
+      url: https://github.com/MostafaElswefy/flutter_sheet_localization_plus.git
+      path: template_string
