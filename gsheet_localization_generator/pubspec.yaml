@@ -30,7 +30,7 @@ dependencies:
   code_builder: ^4.11.1                   # https://pub.dev/packages/code_builder/versions
   collection: ^1.19.1                     # https://pub.dev/packages/collection/versions
   csv: ^8.0.0                             # https://pub.dev/packages/csv/versions
-  dart_style: ^3.1.9                      # https://pub.dev/packages/dart_style/versions
+  dart_style: ">=3.1.6 <=3.1.12"          # https://pub.dev/packages/dart_style/versions
   http: ^1.6.0                            # https://pub.dev/packages/http/versions
   intl: ">=0.20.2 <0.21.0"                         # https://pub.dev/packages/intl/versions
   meta: any                               # https://pub.dev/packages/meta/versions
