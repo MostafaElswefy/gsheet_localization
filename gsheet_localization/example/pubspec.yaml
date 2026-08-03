@@ -12,7 +12,10 @@ dependencies:
     sdk: flutter
 
   gsheet_localization:
-    path: ../../gsheet_localization
+#    path: ../../gsheet_localization
+    git:
+      url: https://github.com/MostafaElswefy/gsheet_localization.git
+      path: gsheet_localization
 
 dev_dependencies:
   flutter_test:
@@ -23,7 +26,10 @@ dev_dependencies:
   lints: ^6.1.0
 
   gsheet_localization_generator:
-    path: ../../gsheet_localization_generator
+#    path: ../../gsheet_localization_generator
+    git:
+      url: https://github.com/MostafaElswefy/gsheet_localization.git
+      path: gsheet_localization_generator
 
 flutter:
   uses-material-design: true

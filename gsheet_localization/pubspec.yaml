@@ -27,7 +27,7 @@ dependencies:
   meta: any                                # https://pub.dev/packages/meta/versions
 
   template_string:
-    path: ../template_string
-#    git:
-#      url: https://github.com/MostafaElswefy/flutter_sheet_localization_plus.git
-#      path: template_string
+#    path: ../template_string
+    git:
+      url: https://github.com/MostafaElswefy/flutter_sheet_localization_plus.git
+      path: template_string
