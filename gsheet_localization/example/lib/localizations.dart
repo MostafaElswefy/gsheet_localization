@@ -4,11 +4,16 @@ import 'package:gsheet_localization/gsheet_localization.dart';
 
 part 'localizations.g.dart';
 
-@GSheetLocalization(
+// @GSheetLocalization.assets(
+//   "assets/localization/app.csv",
+// )
+
+@GSheetLocalization.googleSheet(
   "1hmC0Hm4QROPmy0uOAhSAPZNAam-SAiJm",
   "655639681",
-  1,
+  2,
 )
+
 class AppLocalizationsDelegate
     extends LocalizationsDelegate<AppLocalizationsData> {
   const AppLocalizationsDelegate();

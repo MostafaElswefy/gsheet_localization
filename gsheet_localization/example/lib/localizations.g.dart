@@ -1293,7 +1293,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       failedTo: 'Échec de',
       sending: 'Envoi',
       messagePointsConfirmation:
-          'Vous utiliserez () Points à envoyer.\n Voulez-vous envoyer ?',
+          'Vous utiliserez () Points à envoyer .\n Voulez-vous envoyer ?',
       noSavedMessages:
           'Aucun message enregistré ne correspond à la langue sélectionnée.',
       messageBody: 'Corps du message',
@@ -1341,7 +1341,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       ticketMisUseNotice:
           '* Remarque : L\'envoi de tickets pour utilisation abusive peut entraîner la suspension du compte.',
       updateMessage: 'Message de mise à jour',
-      updateTicket: 'Mise à jour du ticket',
+      updateTicket: 'Mettre à jour le ticket',
       closeTicket: 'Fermer le ticket',
       submitTicket: 'Soumettre un ticket',
       expectedResult: 'Résultat attendu',
@@ -1458,11 +1458,11 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       enterAddressNotWebsite:
           'Veuillez saisir l\'adresse correcte et non le site web.',
       enterAddressNotEmail:
-          'Veuillez saisir une adresse postale correcte, et non une adresse e-mail.',
+          'Veuillez saisir l\'adresse postale correcte et non l\'adresse électronique.',
       addressCannotBeEmpty: 'L\'adresse ne peut pas être vide.',
       enterCorrectCompany: 'Veuillez saisir la bonne entreprise',
       enterCompanyNotPhone:
-          'Veuillez saisir le nom de l\'entreprise, et non le numéro de téléphone.',
+          'Veuillez saisir le nom de l\'entreprise, pas le numéro de téléphone.',
       enterCompanyNotWebsite:
           'Veuillez saisir le nom de l\'entreprise, et non son site web.',
       enterCompanyNotEmail:
@@ -1538,7 +1538,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       skipInvitation: 'Je n\'ai pas de code d\'invitation, passez cette étape.',
       earnInvitationNotification:
           'Vous pouvez gagner plus de pièces en utilisant un code d\'invitation.',
-      balanceOnInvitation: 'Solde de vos pièces =',
+      balanceOnInvitation: 'Votre solde de pièces =',
       invitationLink: 'Lien d\'invitation',
       invitationCode: 'Code d\'invitation',
       title: 'Invitation',
@@ -1829,7 +1829,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       changes: 'Änderungen',
       cancel: 'Stornieren',
       cancelChanges: 'Änderungen stornieren',
-      updateChanges: 'Aktualisierungsänderungen',
+      updateChanges: 'Änderungen aktualisieren',
       generateCard: 'Karte generieren',
       both: 'Beide',
       back: 'Zurück',
@@ -2019,7 +2019,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       controlUserCash: 'Benutzergeld kontrollieren',
       lastTotalPoints: 'Gesamtpunktzahl',
       lastTotalCoins: 'Letzter Gesamtmünzenbetrag',
-      lastTotalCash: 'Letzter Bargeldbetrag',
+      lastTotalCash: 'Letzter Gesamtbetrag',
       allPointsTransactions: 'Alle Punktetransaktionen',
       allCoinsTransactions: 'Alle Münztransaktionen',
       allCashTransactions: 'Alle Bargeldtransaktionen',
@@ -2057,7 +2057,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       canotLinkAccount:
           'Dieses Konto kann nicht verknüpft werden, da es bereits zugeordnet ist.',
       continueUsingFacebookAccount:
-          'Sie können Ihr Facebook-Konto weiterhin nutzen.\nWeitere Informationen zur Kontoverknüpfung finden Sie in den FAQ.',
+          'Sie können Ihr Facebook-Konto weiterhin nutzen. Weitere Informationen zur Kontoverknüpfung finden Sie in den FAQ.',
       continueUsingGoogleAccount:
           'Sie können Ihr Google-Konto weiterhin nutzen.\nWeitere Informationen zur Kontoverknüpfung finden Sie in den FAQ.',
       continueUsingPhone:
@@ -2409,7 +2409,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       langJapanese: 'Japanisch\n\n',
       langRussian: 'Russisch\n\n',
       langPortuguese: 'Portugiesisch\n\n\nPortugiesisch',
-      langSpanish: 'Spanisch\n\n\n\nDie richtige Wahl für ...\n\n\n\n\n\n\n\n',
+      langSpanish: 'Spanisch\n\n\nSpanisch',
       langItalian: 'Italienisch\n\n',
       langGerman: 'Deutsch\n',
       langFrench: 'Französisch\n',
@@ -2681,7 +2681,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       continueUsingPhone:
           'Puoi continuare a usare il telefono. Puoi trovare maggiori informazioni sul collegamento degli account nelle FAQ.',
       continueUsingEmail:
-          'Puoi continuare a utilizzare l\'email\nPuoi trovare maggiori informazioni sul collegamento degli account nelle FAQ',
+          'Puoi continuare a utilizzare l\'email. Puoi trovare maggiori informazioni sul collegamento degli account nelle FAQ.',
       unKnownErrorTryAgain: 'Si è verificato un errore sconosciuto. Riprova.',
       acceptTermsFirst: 'Dovresti accettare i termini prima',
       enterOTPCorrectly: 'Inserisci correttamente il codice OTP ricevuto.',
@@ -2779,7 +2779,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
     ),
     auth: AppLocalizationsDataAuth(
       mustLoggedToEnableFeature:
-          'È necessario aver effettuato l\'accesso per abilitare questa funzione.',
+          'Per abilitare questa funzione è necessario aver effettuato l\'accesso.',
       useLinkToRegister: 'Utilizza questo link per registrarti',
       skipAuth: 'Saltare questo passaggio ora',
       signInFirst: 'Accedi prima',
@@ -2844,7 +2844,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       emailOrPhoneFormField: 'Email o telefono',
       phoneNumberFormField: 'Numero di telefono',
       emailFormField: 'E-mail',
-      resetPasswordButton: 'Invia reimpostazione password',
+      resetPasswordButton: 'Invia reimposta password',
       loginButton: 'Login',
       signInButton: 'Registrazione',
       signUpButton: 'Iscrizione',
@@ -3102,7 +3102,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       note: 'Nota',
       neighborhood: 'Vecindario',
       poBox: 'Apartado de correos',
-      subAdminArea: 'Área de administración secundaria',
+      subAdminArea: 'Área de subadministración',
       subLocality: 'Sublocalidad',
       postalCode: 'Código Postal',
       isoCountry: 'País ISO',
@@ -3125,7 +3125,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       lastPhoneticName: 'Apellido fonético',
       middlePhoneticName: 'Nombre fonético del segundo nombre',
       firstPhoneticName: 'Nombre fonético de pila',
-      nameSuffix: 'Sufijo de nombre',
+      nameSuffix: 'Sufijo del nombre',
       lastName: 'Apellido',
       middleName: 'Segundo nombre',
       firstName: 'Nombre de pila',
@@ -3165,7 +3165,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       campaignDate: 'Fecha de la campaña',
       campaignID: 'ID de campaña',
       undefined: 'Indefinido',
-      undefinedLang: 'Idioma indefinido',
+      undefinedLang: 'Idioma no definido',
       noDataToPreview: 'No hay datos para previsualizar',
       noCampaignWithID: 'No existe ninguna campaña con este ID.',
       showAll: 'Mostrar todo',
@@ -3320,7 +3320,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       enterJobNotWebsite:
           'Por favor, ingrese el puesto de trabajo correcto, no el sitio web.',
       enterJobNotEmail:
-          'Por favor, introduzca el puesto de trabajo correcto, no el correo electrónico.',
+          'Por favor, ingrese el puesto de trabajo correcto, no el correo electrónico.',
       enterJobNotPhone:
           'Por favor, ingrese el trabajo correcto, no el número de teléfono.',
       jobCannotBeEmpty: 'El trabajo no puede estar vacío.',
@@ -3329,7 +3329,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
           'Por favor, introduzca el número de teléfono correcto.',
       phoneCannotBeEmpty: 'El teléfono no puede estar vacío',
       enterWebsiteNotEmail:
-          'Por favor, ingrese Sitio web, no Correo electrónico',
+          'Por favor, ingrese la dirección web, no el correo electrónico.',
       enterWebsiteNotPhone: 'Por favor, ingrese Sitio web, no Teléfono',
       websiteCannotBeEmpty: 'El sitio web no puede estar vacío.',
       website: 'Por favor, ingrese al sitio web',
@@ -3525,7 +3525,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       disabled: 'Desactivado',
       userRole: 'Rol de usuario',
       role: 'Role',
-      googlePhotoURL: 'URL de Google Fotos',
+      googlePhotoURL: 'URL de Google Photo',
       googleID: 'ID de Google',
       facebookURL: 'URL de Facebook',
       facebookID: 'ID de Facebook',
@@ -3683,7 +3683,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       both: 'Ambos',
       back: 'Voltar',
       front: 'Frente',
-      placeQR: 'Insira o QR em',
+      placeQR: 'Insira o QR Code em',
       editWebsite: 'Editar site',
       website: 'Site',
       editEmail: 'Editar e-mail',
@@ -3837,8 +3837,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
     ),
     faq: AppLocalizationsDataFaq(
       deleteQuestionMessage: 'Tem certeza de que deseja excluir esta pergunta?',
-      signInFirst:
-          'Por favor, faça login primeiro para adicionar uma pergunta.',
+      signInFirst: 'Faça login primeiro para adicionar uma pergunta.',
       answer: 'Responder',
       question: 'Pergunta',
       answerTime: 'Tempo de resposta',
@@ -3860,7 +3859,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       processTransaction: 'Processar transação',
       controlUserWallet: 'Controle da carteira do usuário',
       controlUserPoints: 'Pontos de controle do usuário',
-      controlUserCoins: 'Controle de moedas do usuário',
+      controlUserCoins: 'Controle de Moedas do Usuário',
       controlUserCash: 'Controle de caixa do usuário',
       lastTotalPoints: 'Último total de pontos',
       lastTotalCoins: 'Último total de moedas',
@@ -4159,8 +4158,8 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       birthDate: 'Data de nascimento',
       religion: 'Religião',
       genderBoth: 'Ambos',
-      onlyFemale: 'Apenas mulheres',
-      onlyMale: 'Somente homens',
+      onlyFemale: 'Somente mulheres',
+      onlyMale: 'Apenas homens',
       gender: 'Gênero',
       displayName: 'Nome de exibição',
       primaryPhone: 'Telefone principal',
@@ -4324,7 +4323,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       confirmDeleteContact: 'Подтвердить удаление контакта',
       deleteFromBoth: 'Удалить из обоих',
       deleteOnlyFromCloud: 'Удалять только из облака.',
-      deleteOnlyFromDevice: 'Удалить только с устройства',
+      deleteOnlyFromDevice: 'Удалить только с устройства.',
       contactExistsOnCloud: 'Этот контакт существует в облаке.',
       contactExistsOnDevice: 'Этот контакт существует на устройстве.',
       note: 'Примечание',
@@ -4415,7 +4414,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       selectTicketStatus: 'Выберите статус заявки',
       ticketMisUseNotice:
           '* Примечание: Неправомерная отправка заявки может привести к блокировке учетной записи.',
-      updateMessage: 'Обновить сообщение',
+      updateMessage: 'Сообщение об обновлении',
       updateTicket: 'Обновить заявку',
       closeTicket: 'Закрыть билет',
       submitTicket: 'Отправить заявку',
@@ -4455,7 +4454,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       answeredBy: 'Ответил',
       questionBy: 'Вопрос от',
       addQuestionToLanguage: 'Добавить вопрос в раздел «Язык»',
-      noFAQLanguage: 'В разделе FAQ не найдено совпадений. Выбранный язык.',
+      noFAQLanguage: 'В разделе FAQ не найдено совпадений по выбранному языку.',
       answered: 'Ответ получен',
       waitingAnswer: 'Ожидание ответа',
       adminFAQForm: 'Часто задаваемые вопросы по форме администратора',
@@ -4515,7 +4514,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       continueUsingGoogleAccount:
           'Вы можете продолжить использовать учетную запись Google. Подробнее о связывании учетных записей можно прочитать в разделе часто задаваемых вопросов (FAQ).',
       continueUsingPhone:
-          'Вы можете продолжить пользоваться телефоном. Подробнее о связывании учетных записей можно прочитать в разделе часто задаваемых вопросов (FAQ).',
+          'Вы можете продолжать пользоваться телефоном. Подробнее о связывании учетных записей можно прочитать в разделе часто задаваемых вопросов (FAQ).',
       continueUsingEmail:
           'Вы можете продолжить использовать электронную почту. Подробнее о связывании учетных записей можно прочитать в разделе часто задаваемых вопросов (FAQ).',
       unKnownErrorTryAgain:
@@ -4564,7 +4563,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
           'Невозможно использовать этот почтовый провайдер.',
       email: 'Пожалуйста, введите действительный адрес электронной почты',
       amount:
-          'Пожалуйста, введите число, например, 250 — без символа доллара и без центов.',
+          'Пожалуйста, введите число, например, 250 — без знака доллара и без центов.',
       number: 'Пожалуйста, введите число',
       name: 'Пожалуйста, введите имя.',
       confirmPassword: 'Пароль нетипичный',
@@ -4670,7 +4669,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
           'Проверьте свою электронную почту и следуйте инструкциям, чтобы сбросить пароль.',
       resetPasswordNoticeTitle:
           'Электронное письмо для сброса пароля отправлено.',
-      signInLabelButton: 'У вас есть аккаунт? Войти.',
+      signInLabelButton: 'У вас есть аккаунт? Войдите.',
       signUpError:
           'Возникла проблема при регистрации. Пожалуйста, попробуйте позже.',
       signUpErrorTitle: 'Регистрация не удалась.',
@@ -4735,7 +4734,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       themeSelected: 'Выбранная тема',
       languageUsed: 'Используемый язык',
       languageSelected: 'Выбранный язык',
-      connected: 'Подключено',
+      connected: 'Подключен',
       offline: 'Офлайн',
       onLine: 'Онлайн',
       lastSeen: 'Последний раз видели',
@@ -4766,7 +4765,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       providerGoogle: 'Поставщик Google',
       providerFacebook: 'Поставщик Facebook',
       providerPhone: 'Телефон поставщика услуг',
-      providerEmail: 'Электронная почта поставщика услуг',
+      providerEmail: 'Электронная почта поставщика',
       phoneVerification: 'Подтверждение по телефону',
       emailVerification: 'Подтверждение электронной почты',
       senderID: 'Идентификатор отправителя',
@@ -4944,7 +4943,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       note: '注記',
       neighborhood: '近所',
       poBox: '私書箱',
-      subAdminArea: 'サブ管理エリア',
+      subAdminArea: 'サブ管理者エリア',
       subLocality: '地域区分',
       postalCode: '郵便番号',
       isoCountry: 'Iso国',
@@ -5025,7 +5024,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       status: '状態',
       chooseStatus: 'ステータスを選択',
       selectTicketStatus: 'チケットステータスを選択',
-      ticketMisUseNotice: '* 注意: チケット送信の不正使用はアカウント停止の原因となる場合があります。',
+      ticketMisUseNotice: '* 注意：チケット送信の不正使用はアカウント停止の原因となる場合があります。',
       updateMessage: '更新メッセージ',
       updateTicket: 'チケットを更新',
       closeTicket: 'チケットを閉じる',
@@ -5048,7 +5047,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       thanksRegistration: '当コミュニティへようこそ。ご登録ありがとうございます。',
       insteadOf: '] 、 の代わりに [',
       displayNameChanged: '表示名が正常に変更されました [',
-      profilePhotoChanged: 'プロフィール写真が正常に変更されました。',
+      profilePhotoChanged: 'プロフィール写真の変更が完了しました。',
       noNotificationsFound: '通知は見つかりませんでした。',
       notificationsTitle: '通知',
     ),
@@ -5090,7 +5089,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       pointsNotConstantValue: 'ポイントからコインへの交換価値は一定ではなく、日々変動します。',
       coinsYouNeed: '必要なコイン',
       pointsYouWant: '欲しいポイント',
-      readMoreAboutWallet: 'Walletについての詳細はこちらをご覧ください',
+      readMoreAboutWallet: 'Walletについてもっと詳しく知りたい方はこちらをご覧ください。',
       transactionID: '取引ID',
       transactionDate: '取引日',
       transactionDescription: '取引内容の説明',
@@ -5116,7 +5115,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       continueUsingFacebookAccount:
           'Facebookアカウントは引き続きご利用いただけます。アカウントの連携については、よくある質問（FAQ）をご覧ください。',
       continueUsingGoogleAccount:
-          'Googleアカウントは引き続きご利用いただけます。アカウントの連携に関する詳細は、よくある質問（FAQ）をご覧ください。',
+          'Googleアカウントは引き続きご利用いただけます。アカウントの連携については、よくある質問（FAQ）をご覧ください。',
       continueUsingPhone: '引き続き電話をご利用いただけます。アカウントの連携については、よくある質問（FAQ）をご覧ください。',
       continueUsingEmail: 'メールは引き続きご利用いただけます。アカウントの連携については、よくある質問（FAQ）をご覧ください。',
       unKnownErrorTryAgain: '不明なエラーが発生しました。もう一度お試しください。',
@@ -5142,7 +5141,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       jobCannotBeEmpty: '求人枠は空にできません',
       enterCorrectJob: '正しい職種を入力してください',
       enterCorrectPhone: '正しい電話番号を入力してください',
-      phoneCannotBeEmpty: '電話は空にすることはできません',
+      phoneCannotBeEmpty: '電話は空にできません',
       enterWebsiteNotEmail: 'メールアドレスではなくウェブサイトを入力してください。',
       enterWebsiteNotPhone: '電話番号ではなくウェブサイトを入力してください。',
       websiteCannotBeEmpty: 'ウェブサイトは空にすることはできません',
@@ -5153,7 +5152,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       amount: '数字を入力してください（例：250）。ドル記号やセントは不要です。',
       number: '数字を入力してください',
       name: '名前を入力してください',
-      confirmPassword: 'パスワードは一般的ではありません',
+      confirmPassword: 'パスワードが一般的ではありません',
       password: 'パスワードは8文字以上である必要があります',
       passwordCannotBeEmpty: 'パスワードは空欄にできません',
     ),

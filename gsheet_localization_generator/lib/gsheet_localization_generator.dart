@@ -29,11 +29,11 @@ class GSheetLocalizationGenerator
     }
 
     if (element.name != null && !element.name!.endsWith('Delegate')) {
-      final name = element.name;
+      final name = element.name!;
       throw InvalidGenerationSourceError(
         'Generator for target `$name` should have a name ending with `Delegate`.',
         todo:
-        'Rename `$name` to something ending with `Delegate` (example: `${name}Delegate`).',
+        'Rename `$name` to something ending with `Delegate` (example: ${name}Delegate).',
         element: element,
       );
     }
@@ -41,21 +41,38 @@ class GSheetLocalizationGenerator
     final localizationClassName =
         '${element.name!.replaceAll('Delegate', '')}Data';
 
-    final docId =
-    annotation.objectValue.getField('docId')!.toStringValue()!;
-
-    final sheetId =
-    annotation.objectValue.getField('sheetId')!.toStringValue()!;
-
-    final localizations = await _downloadGoogleSheet(
-      documentId: docId,
-      sheetId: sheetId,
+    final localizations = await _loadLocalization(
+      annotation: annotation,
+      buildStep: buildStep,
       name: localizationClassName,
     );
 
-    final builder = DartLocalizationBuilder();
+    return DartLocalizationBuilder().build(localizations);
+  }
 
-    return builder.build(localizations);
+  Future<Localizations> _loadLocalization({
+    required ConstantReader annotation,
+    required BuildStep buildStep,
+    required String name,
+  }) async {
+    final sourceType = annotation.read('sourceType').objectValue;
+    final sourceIndex = sourceType.getField('index')!.toIntValue()!;
+
+    switch (LocalizationSourceType.values[sourceIndex]) {
+      case LocalizationSourceType.googleSheet:
+        return _downloadGoogleSheet(
+          documentId: annotation.read('docId').stringValue,
+          sheetId: annotation.read('sheetId').stringValue,
+          name: name,
+        );
+
+      case LocalizationSourceType.assets:
+        return _loadFromAssets(
+          buildStep: buildStep,
+          assetPath: annotation.read('assetsPath').stringValue,
+          name: name,
+        );
+    }
   }
 
   Future<Localizations> _downloadGoogleSheet({
@@ -67,7 +84,8 @@ class GSheetLocalizationGenerator
         'https://docs.google.com/spreadsheets/d/$documentId/export'
         '?format=csv&id=$documentId&gid=$sheetId';
 
-    log.info('Downloading csv from Google Sheet: $url');
+    log.info('Downloading localization from Google Sheet');
+    log.fine(url);
 
     final response = await http.get(
       Uri.parse(url),
@@ -76,13 +94,48 @@ class GSheetLocalizationGenerator
       },
     );
 
-    final body = utf8.decode(response.bodyBytes);
+    return _parseCsv(
+      body: utf8.decode(response.bodyBytes),
+      name: name,
+    );
+  }
 
-    log.fine(body);
+  Future<Localizations> _loadFromAssets({
+    required BuildStep buildStep,
+    required String assetPath,
+    required String name,
+  }) async {
+    log.info('Loading localization from asset: $assetPath');
 
-    final rows = Csv(dynamicTyping: false).decode(body);
+    final asset = AssetId(
+      buildStep.inputId.package,
+      assetPath,
+    );
+
+    if (!await buildStep.canRead(asset)) {
+      throw InvalidGenerationSourceError(
+        'Localization asset not found: $assetPath',
+      );
+    }
+
+    final body = await buildStep.readAsString(asset);
+
+    return _parseCsv(
+      body: body,
+      name: name,
+    );
+  }
+
+  Localizations _parseCsv({
+    required String body,
+    required String name,
+  }) {
+    final rows = Csv(
+      dynamicTyping: false,
+    ).decode(body);
 
     final parser = CsvLocalizationParser();
+
     final result = parser.parse(
       input: rows,
       name: name,
@@ -91,3 +144,5 @@ class GSheetLocalizationGenerator
     return result.result;
   }
 }
+
+
