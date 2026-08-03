@@ -29,5 +29,5 @@ dependencies:
   template_string:
 #    path: ../template_string
     git:
-      url: https://github.com/MostafaElswefy/flutter_sheet_localization_plus.git
+      url: https://github.com/MostafaElswefy/gsheet_localization.git
       path: template_string
