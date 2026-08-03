@@ -3,6 +3,8 @@ description: String template utilities used by gsheet_localization.
 
 version: 0.7.7
 
+resolution: workspace
+
 homepage: https://github.com/MostafaElswefy/gsheet_localization
 repository: https://github.com/MostafaElswefy/gsheet_localization
 issue_tracker: https://github.com/MostafaElswefy/gsheet_localization/issues

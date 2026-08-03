@@ -1,0 +1,28 @@
+name: gsheet_localization_workspace
+
+repository: https://github.com/MostafaElswefy/gsheet_localization
+
+packages:
+  - "gsheet_localization"
+  - "gsheet_localization_generator"
+  - "localization_builder"
+  - "template_string"
+
+command:
+  bootstrap:
+
+scripts:
+  get:
+    run: melos exec -- flutter pub get
+
+  analyze:
+    run: melos exec -- flutter analyze
+
+  format:
+    run: melos exec -- dart format .
+
+  clean:
+    run: melos exec -- flutter clean
+
+  upgrade:
+    run: melos exec -- flutter pub upgrade

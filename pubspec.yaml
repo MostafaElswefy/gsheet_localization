@@ -1,0 +1,15 @@
+name: gsheet_localization_workspace
+
+publish_to: none
+
+environment:
+  sdk: ">=3.7.0 <4.0.0"
+
+workspace:
+  - gsheet_localization
+  - gsheet_localization_generator
+  - localization_builder
+  - template_string
+
+dev_dependencies:
+  melos: ^8.2.2

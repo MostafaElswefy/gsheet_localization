@@ -3,6 +3,8 @@ description: Localization model builder used by gsheet_localization_generator.
 
 version: 0.16.7
 
+resolution: workspace
+
 homepage: https://github.com/MostafaElswefy/gsheet_localization
 repository: https://github.com/MostafaElswefy/gsheet_localization
 issue_tracker: https://github.com/MostafaElswefy/gsheet_localization/issues

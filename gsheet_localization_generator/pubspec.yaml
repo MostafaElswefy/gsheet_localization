@@ -3,6 +3,8 @@ description: Source generator for gsheet_localization powered by Google Sheets.
 
 version: 7.0.0-dev.1
 
+resolution: workspace
+
 homepage: https://github.com/MostafaElswefy/gsheet_localization
 repository: https://github.com/MostafaElswefy/gsheet_localization
 issue_tracker: https://github.com/MostafaElswefy/gsheet_localization/issues
