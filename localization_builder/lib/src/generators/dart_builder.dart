@@ -36,16 +36,220 @@ import 'package:template_string/template_string.dart';
       ],
       localizations,
     );
+
     for (var c in localizations.categories) {
       _addCategoryDefinition(c);
     }
+
     _addSectionDefinition(
       [
         localizations.name,
       ],
       localizations,
     );
-    return DartFormatter(languageVersion: DartFormatter.latestLanguageVersion).format(_buffer.toString());
+
+    _addLocalizedValueHelper();
+
+    return DartFormatter(
+      languageVersion: DartFormatter.latestLanguageVersion,
+    ).format(
+      _buffer.toString(),
+    );
+  }
+
+
+  void _addLocalizedValueHelper() {
+    _buffer.writeln();
+    _buffer.writeln('// ============================================================');
+    _buffer.writeln('// GENERATED LOCALIZATION RUNTIME HELPER');
+    _buffer.writeln('// ============================================================');
+    _buffer.writeln();
+
+    _buffer.writeln('Locale? _resolveGeneratedLocale(Locale locale) {');
+
+    _buffer.writeln(
+      '  if (localizedLabels.containsKey(locale)) {',
+    );
+
+    _buffer.writeln(
+      '    return locale;',
+    );
+
+    _buffer.writeln(
+      '  }',
+    );
+
+    _buffer.writeln();
+
+    _buffer.writeln(
+      '  final matches = localizedLabels.keys.where(',
+    );
+
+    _buffer.writeln(
+      '    (x) => x.languageCode == locale.languageCode,',
+    );
+
+    _buffer.writeln(
+      '  ).toList();',
+    );
+
+    _buffer.writeln();
+
+    _buffer.writeln(
+      '  if (matches.isEmpty) {',
+    );
+
+    _buffer.writeln(
+      '    return null;',
+    );
+
+    _buffer.writeln(
+      '  }',
+    );
+
+    _buffer.writeln();
+
+    _buffer.writeln(
+      '  final countryMatches = matches.where(',
+    );
+
+    _buffer.writeln(
+      '    (x) => x.countryCode == locale.countryCode,',
+    );
+
+    _buffer.writeln(
+      '  ).toList();',
+    );
+
+    _buffer.writeln();
+
+    _buffer.writeln(
+      '  if (countryMatches.length == 1) {',
+    );
+
+    _buffer.writeln(
+      '    return countryMatches.first;',
+    );
+
+    _buffer.writeln(
+      '  }',
+    );
+
+    _buffer.writeln();
+
+    _buffer.writeln(
+      '  return matches.first;',
+    );
+
+    _buffer.writeln(
+      '}',
+    );
+
+    _buffer.writeln();
+
+    _buffer.writeln(
+      'String? getLocalizedValue(',
+    );
+
+    _buffer.writeln(
+      '  String key,',
+    );
+
+    _buffer.writeln(
+      '  Locale locale,',
+    );
+
+    _buffer.writeln(
+      ') {',
+    );
+
+    _buffer.writeln(
+      '  final resolvedLocale = _resolveGeneratedLocale(locale);',
+    );
+
+    _buffer.writeln();
+
+    _buffer.writeln(
+      '  if (resolvedLocale == null) {',
+    );
+
+    _buffer.writeln(
+      '    return null;',
+    );
+
+    _buffer.writeln(
+      '  }',
+    );
+
+    _buffer.writeln();
+
+    _buffer.writeln(
+      '  final data = localizedLabels[resolvedLocale];',
+    );
+
+    _buffer.writeln();
+
+    _buffer.writeln(
+      '  if (data == null) {',
+    );
+
+    _buffer.writeln(
+      '    return null;',
+    );
+
+    _buffer.writeln(
+      '  }',
+    );
+
+    _buffer.writeln();
+
+    _buffer.writeln(
+      '  dynamic current = data.toJson();',
+    );
+
+    _buffer.writeln();
+
+    _buffer.writeln(
+      '  for (final part in key.split(\'.\')) {',
+    );
+
+    _buffer.writeln(
+      '    if (current is Map<String, Object?> &&',
+    );
+
+    _buffer.writeln(
+      '        current.containsKey(part)) {',
+    );
+
+    _buffer.writeln(
+      '      current = current[part];',
+    );
+
+    _buffer.writeln(
+      '    } else {',
+    );
+
+    _buffer.writeln(
+      '      return null;',
+    );
+
+    _buffer.writeln(
+      '    }',
+    );
+
+    _buffer.writeln(
+      '  }',
+    );
+
+    _buffer.writeln();
+
+    _buffer.writeln(
+      '  return current?.toString();',
+    );
+
+    _buffer.writeln(
+      '}',
+    );
   }
 
   void _createLocalization(List<String> path, Localizations localizations) {
@@ -293,3 +497,9 @@ String _escapeString(String value) => value
     .replaceAll('\n', '\\n')
     .replaceAll('\'', '\\\'')
     .replaceAll('\$', '\\\$');
+
+
+
+
+
+
