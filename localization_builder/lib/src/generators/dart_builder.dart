@@ -29,10 +29,6 @@ import 'package:template_string/template_string.dart';
 
   String build(Localizations localizations) {
 
-    throw Exception(
-      '🔥🔥🔥 NEW DartLocalizationBuilder IS RUNNING 🔥🔥🔥',
-    );
-
     _buffer = StringBuffer();
 
     _createLocalization(
