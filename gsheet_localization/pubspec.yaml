@@ -1,6 +1,6 @@
 name: gsheet_localization
 description: Generate Flutter localizations directly from Google Sheets.
-version: 7.0.0-dev.1
+version: 7.0.1
 
 resolution: workspace
 

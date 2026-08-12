@@ -17,7 +17,7 @@
     },
     {
       "name": "gsheet_localization",
-      "version": "7.0.0-dev.1",
+      "version": "7.0.1",
       "dependencies": [
         "intl",
         "meta",
@@ -27,7 +27,7 @@
     },
     {
       "name": "gsheet_localization_generator",
-      "version": "7.0.0-dev.1",
+      "version": "7.0.1",
       "dependencies": [
         "analyzer",
         "build",
@@ -54,7 +54,7 @@
     },
     {
       "name": "localization_builder",
-      "version": "0.16.7",
+      "version": "7.0.1",
       "dependencies": [
         "collection",
         "dart_style",
@@ -73,7 +73,7 @@
     },
     {
       "name": "template_string",
-      "version": "0.7.7",
+      "version": "7.0.1",
       "dependencies": [
         "intl",
         "meta"

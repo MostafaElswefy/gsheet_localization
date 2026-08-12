@@ -1,7 +1,7 @@
 name: template_string
 description: String template utilities used by gsheet_localization.
+version: 7.0.1
 
-version: 0.7.7
 
 resolution: workspace
 

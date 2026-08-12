@@ -1,7 +1,7 @@
 name: localization_builder
 description: Localization model builder used by gsheet_localization_generator.
+version: 7.0.1
 
-version: 0.16.7
 
 resolution: workspace
 

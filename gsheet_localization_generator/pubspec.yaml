@@ -1,7 +1,7 @@
 name: gsheet_localization_generator
 description: Source generator for gsheet_localization powered by Google Sheets.
+version: 7.0.1
 
-version: 7.0.0-dev.1
 
 resolution: workspace
 
