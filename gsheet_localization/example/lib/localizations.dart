@@ -4,6 +4,13 @@ import 'package:gsheet_localization/gsheet_localization.dart';
 
 part 'localizations.g.dart';
 
+
+
+
+/// To Generate Files
+/// dart run build_runner build --delete-conflicting-outputs
+
+
 // @GSheetLocalization.assets(
 //   "assets/localization/app.csv",
 // )
