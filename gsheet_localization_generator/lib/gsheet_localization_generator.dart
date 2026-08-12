@@ -19,6 +19,14 @@ class GSheetLocalizationGenerator
       ConstantReader annotation,
       BuildStep buildStep,
       ) async {
+
+
+    throw InvalidGenerationSourceError(
+      '🔥🔥🔥 GSheetLocalizationGenerator NEW VERSION IS RUNNING 🔥🔥🔥',
+    );
+
+
+
     if (element is! ClassElement) {
       final name = element.name;
       throw InvalidGenerationSourceError(
