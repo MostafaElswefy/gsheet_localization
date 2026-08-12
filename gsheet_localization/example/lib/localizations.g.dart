@@ -7,7 +7,10 @@ part of 'localizations.dart';
 // **************************************************************************
 
 final localizedLabels = <Locale, AppLocalizationsData>{
-  Locale.fromSubtags(languageCode: 'en'): const AppLocalizationsData(
+  Locale.fromSubtags(
+    languageCode: 'en',
+    countryCode: 'US',
+  ): const AppLocalizationsData(
     codes: AppLocalizationsDataCodes(
       maxLength: 'Max Length',
       minLength: 'Min Length',
@@ -148,6 +151,24 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       messagesHistory: 'Messages History',
       messages: 'Messages',
     ),
+    dashboard: AppLocalizationsDataDashboard(
+      filterUserInfoToDisplay: 'Filter User info to Display',
+      completelyDeleteUser: 'Completely Delete User',
+      deleteUser: 'Delete User',
+      controlWallets: 'Control Wallets',
+      adminControlWallet: 'Admin Control Wallet',
+      fAQCenter: 'FAQ Center',
+      adminControlFAQ: 'Admin Control FAQ',
+      ticketsCenter: 'Tickets Center',
+      adminControlTickets: 'Admin Control Tickets',
+      manageUsers: 'Manage Users',
+      adminControlUsers: 'Admin Control Users',
+      allUsers: 'All Users',
+      listAllUsers: 'List All Users',
+      listUsers: 'List Users',
+      adminListUsers: 'Admin List Users',
+      title: 'Dashboard',
+    ),
     tickets: AppLocalizationsDataTickets(
       choosePriority: 'Choose Priority',
       selectTicketPriority: 'Select Ticket Priority',
@@ -172,6 +193,14 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       ticketID: 'Ticket ID',
       adminTickets: 'Admin Tickets',
       ticketsTitle: 'Tickets',
+    ),
+    pushNotifications: AppLocalizationsDataPushNotifications(
+      entityCreatedBody:
+          'Your entity has been created successfully and is now ready to use.',
+      entityCreatedTitle: '🏢 Entity Created',
+      userWelcomeBody:
+          'Welcome to our community. We\'re glad to have you with us.',
+      userWelcomeTitle: '👋 Welcome!',
     ),
     notifications: AppLocalizationsDataNotifications(
       showUnRead: 'UnRead',
@@ -243,62 +272,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       cash: 'Cash',
       title: 'Wallet',
     ),
-    validator: AppLocalizationsDataValidator(
-      emailNotRegistered:
-          'This email is Not Registered before \nYou can Sign Up OR Link Your Account',
-      emailAlreadyRegisteredReadFAQ:
-          'This email is already Registered before \nYou can read more about Linking Accounts in FAQ',
-      emailAlreadyRegistered:
-          'This email is already Registered before\nYou can Sign in',
-      canotLinkAccount:
-          'Can Not Link This Account\nAs it is Already associated',
-      continueUsingFacebookAccount:
-          'You Can Continue using Facebook Account\nYou can read more about Linking Accounts in FAQ',
-      continueUsingGoogleAccount:
-          'You Can Continue using Google Account\nYou can read more about Linking Accounts in FAQ',
-      continueUsingPhone:
-          'You Can Continue using Phone\nYou can read more about Linking Accounts in FAQ',
-      continueUsingEmail:
-          'You Can Continue using Email\nYou can read more about Linking Accounts in FAQ',
-      unKnownErrorTryAgain: 'UnKnown Error Occurred , Please Try Again',
-      acceptTermsFirst: 'You should Accept Terms in First',
-      enterOTPCorrectly: 'Please Enter Received OTP Correctly',
-      checkInternetThenTryAgain:
-          'Please check Your internet Connection and try again',
-      completeFieldsCorrectly: 'Please Complete Fields Correctly',
-      notEmpty: 'Please complete fields',
-      enterInvitationCode: 'Please Enter invitation Code',
-      enterCorrectAddress: 'Please enter Correct Address',
-      enterAddressNotPhone: 'Please enter Correct Address Not Phone',
-      enterAddressNotWebsite: 'Please enter Correct Address Not Website',
-      enterAddressNotEmail: 'Please enter Correct Address Not Email',
-      addressCannotBeEmpty: 'Address can Not Be Empty',
-      enterCorrectCompany: 'Please enter Correct Company',
-      enterCompanyNotPhone: 'Please enter Correct Company Not Phone',
-      enterCompanyNotWebsite: 'Please enter Correct Company Not Website',
-      enterCompanyNotEmail: 'Please enter Correct Company Not Email',
-      companyCannotBeEmpty: 'Company can Not Be Empty',
-      enterJobNotWebsite: 'Please enter Correct Job Not Website',
-      enterJobNotEmail: 'Please enter Correct Job Not Email',
-      enterJobNotPhone: 'Please enter Correct Job Not Phone',
-      jobCannotBeEmpty: 'Job can Not Be Empty',
-      enterCorrectJob: 'Please enter Correct Job',
-      enterCorrectPhone: 'Please enter Correct Phone Number',
-      phoneCannotBeEmpty: 'Phone can Not Be Empty',
-      enterWebsiteNotEmail: 'Please enter Website Not Email',
-      enterWebsiteNotPhone: 'Please enter Website Not Phone',
-      websiteCannotBeEmpty: 'Website can Not Be Empty',
-      website: 'Please enter Website',
-      emailCannotBeEmpty: 'Email can Not be Empty',
-      cannotUseEmailProvider: 'Can Not Use this Email Provider',
-      email: 'Please enter a valid email address',
-      amount: 'Please enter a number i.e. 250 - no dollar symbol and no cents',
-      number: 'Please enter a number',
-      name: 'Please enter a name',
-      confirmPassword: 'Password is not typical',
-      password: 'Password must be at least 8 characters',
-      passwordCannotBeEmpty: 'Password can Not Be Empty',
-    ),
     home: AppLocalizationsDataHome(
       adminUserLabel: 'Admin User',
       userStatusLabel: 'Status',
@@ -306,24 +279,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       uidLabel: 'UID',
       nameLabel: 'Name',
       title: 'Home',
-    ),
-    dashboard: AppLocalizationsDataDashboard(
-      filterUserInfoToDisplay: 'Filter User info to Display',
-      completelyDeleteUser: 'Completely Delete User',
-      deleteUser: 'Delete User',
-      controlWallets: 'Control Wallets',
-      adminControlWallet: 'Admin Control Wallet',
-      fAQCenter: 'FAQ Center',
-      adminControlFAQ: 'Admin Control FAQ',
-      ticketsCenter: 'Tickets Center',
-      adminControlTickets: 'Admin Control Tickets',
-      manageUsers: 'Manage Users',
-      adminControlUsers: 'Admin Control Users',
-      allUsers: 'All Users',
-      listAllUsers: 'List All Users',
-      listUsers: 'List Users',
-      adminListUsers: 'Admin List Users',
-      title: 'Dashboard',
     ),
     invitation: AppLocalizationsDataInvitation(
       title2: 'Home',
@@ -526,6 +481,74 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       termsAndPolicies: 'Terms and Policies',
       termsPoliciesLink: 'Terms Policies',
     ),
+    languages: AppLocalizationsDataLanguages(
+      langJapanese: 'Chinese\n',
+      langRussian: 'Russian\n',
+      langPortuguese: 'Portuguese\n',
+      langSpanish: 'Spanish\n',
+      langItalian: 'Italian\n',
+      langGerman: 'German\n',
+      langFrench: 'French\n',
+      langArabic: 'Arabic',
+      langEnglish: 'English',
+      selectLanguage: 'Select Language',
+    ),
+    validator: AppLocalizationsDataValidator(
+      emailNotRegistered:
+          'This email is Not Registered before \nYou can Sign Up OR Link Your Account',
+      emailAlreadyRegisteredReadFAQ:
+          'This email is already Registered before \nYou can read more about Linking Accounts in FAQ',
+      emailAlreadyRegistered:
+          'This email is already Registered before\nYou can Sign in',
+      canotLinkAccount:
+          'Can Not Link This Account\nAs it is Already associated',
+      continueUsingFacebookAccount:
+          'You Can Continue using Facebook Account\nYou can read more about Linking Accounts in FAQ',
+      continueUsingGoogleAccount:
+          'You Can Continue using Google Account\nYou can read more about Linking Accounts in FAQ',
+      continueUsingPhone:
+          'You Can Continue using Phone\nYou can read more about Linking Accounts in FAQ',
+      continueUsingEmail:
+          'You Can Continue using Email\nYou can read more about Linking Accounts in FAQ',
+      unKnownErrorTryAgain: 'UnKnown Error Occurred , Please Try Again',
+      acceptTermsFirst: 'You should Accept Terms in First',
+      enterOTPCorrectly: 'Please Enter Received OTP Correctly',
+      checkInternetThenTryAgain:
+          'Please check Your internet Connection and try again',
+      completeFieldsCorrectly: 'Please Complete Fields Correctly',
+      notEmpty: 'Please complete fields',
+      enterInvitationCode: 'Please Enter invitation Code',
+      enterCorrectAddress: 'Please enter Correct Address',
+      enterAddressNotPhone: 'Please enter Correct Address Not Phone',
+      enterAddressNotWebsite: 'Please enter Correct Address Not Website',
+      enterAddressNotEmail: 'Please enter Correct Address Not Email',
+      addressCannotBeEmpty: 'Address can Not Be Empty',
+      enterCorrectCompany: 'Please enter Correct Company',
+      enterCompanyNotPhone: 'Please enter Correct Company Not Phone',
+      enterCompanyNotWebsite: 'Please enter Correct Company Not Website',
+      enterCompanyNotEmail: 'Please enter Correct Company Not Email',
+      companyCannotBeEmpty: 'Company can Not Be Empty',
+      enterJobNotWebsite: 'Please enter Correct Job Not Website',
+      enterJobNotEmail: 'Please enter Correct Job Not Email',
+      enterJobNotPhone: 'Please enter Correct Job Not Phone',
+      jobCannotBeEmpty: 'Job can Not Be Empty',
+      enterCorrectJob: 'Please enter Correct Job',
+      enterCorrectPhone: 'Please enter Correct Phone Number',
+      phoneCannotBeEmpty: 'Phone can Not Be Empty',
+      enterWebsiteNotEmail: 'Please enter Website Not Email',
+      enterWebsiteNotPhone: 'Please enter Website Not Phone',
+      websiteCannotBeEmpty: 'Website can Not Be Empty',
+      website: 'Please enter Website',
+      emailCannotBeEmpty: 'Email can Not be Empty',
+      cannotUseEmailProvider: 'Can Not Use this Email Provider',
+      email: 'Please enter a valid email address',
+      amount: 'Please enter a number i.e. 250 - no dollar symbol and no cents',
+      number: 'Please enter a number',
+      name: 'Please enter a name',
+      confirmPassword: 'Password is not typical',
+      password: 'Password must be at least 8 characters',
+      passwordCannotBeEmpty: 'Password can Not Be Empty',
+    ),
     globals: AppLocalizationsDataGlobals(
       search: 'Search',
       edit: 'Edit',
@@ -578,16 +601,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       home: 'Home',
       wallet: 'Wallet',
       profile: 'Profile',
-      langJapanese: 'Japanese\n',
-      langRussian: 'Russian\n',
-      langPortuguese: 'Portuguese\n',
-      langSpanish: 'Spanish\n',
-      langItalian: 'Italian\n',
-      langGerman: 'German\n',
-      langFrench: 'French\n',
-      langArabic: 'Arabic',
-      langEnglish: 'English',
-      selectLanguage: 'Select Language',
     ),
     splash: AppLocalizationsDataSplash(loading: 'Loading'),
     app: AppLocalizationsDataApp(
@@ -596,7 +609,10 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       titleSMS: 'Smart SMS',
     ),
   ),
-  Locale.fromSubtags(languageCode: 'ar'): const AppLocalizationsData(
+  Locale.fromSubtags(
+    languageCode: 'ar',
+    countryCode: 'EG',
+  ): const AppLocalizationsData(
     codes: AppLocalizationsDataCodes(
       maxLength: 'أقصى طول',
       minLength: 'أقل طول',
@@ -736,6 +752,24 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       messagesHistory: 'سجل الرسائل',
       messages: 'الرسائل',
     ),
+    dashboard: AppLocalizationsDataDashboard(
+      filterUserInfoToDisplay: 'Filter User info to Display',
+      completelyDeleteUser: 'حذف المستخدم كليا',
+      deleteUser: 'حذف المستخدم',
+      controlWallets: 'إدارة المحافظ',
+      adminControlWallet: 'Admin Control Wallet',
+      fAQCenter: 'FAQ Center',
+      adminControlFAQ: 'Admin Control FAQ',
+      ticketsCenter: 'مركز الدعم',
+      adminControlTickets: 'Admin Control Tickets',
+      manageUsers: 'إدارة المستخدمين',
+      adminControlUsers: 'Admin Control Users',
+      allUsers: 'جميع المستخدمين',
+      listAllUsers: 'عرض جميع المستخدمين',
+      listUsers: 'عرض المستخدمين',
+      adminListUsers: 'Admin List Users',
+      title: 'لوحة التحكم',
+    ),
     tickets: AppLocalizationsDataTickets(
       choosePriority: 'اختر الأولوية',
       selectTicketPriority: 'اختر أولوية البطاقة',
@@ -760,6 +794,13 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       ticketID: 'الرقم التعريفى للبطاقة',
       adminTickets: 'Admin Tickets',
       ticketsTitle: 'بطاقات الدعم',
+    ),
+    pushNotifications: AppLocalizationsDataPushNotifications(
+      entityCreatedBody:
+          'تم إنشاء الكيان الخاص بك بنجاح، وأصبح الآن جاهزًا للاستخدام.',
+      entityCreatedTitle: '🏢 تم إنشاء الكيان',
+      userWelcomeBody: 'أهلاً بك في مجتمعنا، سعداء بانضمامك إلينا. 🎉',
+      userWelcomeTitle: '👋 أهلاً بك!',
     ),
     notifications: AppLocalizationsDataNotifications(
       showUnRead: 'غير المقروء',
@@ -830,60 +871,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       cash: 'Cash',
       title: 'المحفظة',
     ),
-    validator: AppLocalizationsDataValidator(
-      emailNotRegistered:
-          'لم يتم انشاء حساب باستخدام هذا البريد الالكترونى من قبل يمكنك انشاء حساب جديد او ربط البريد الالكترونى بحساب موجود بالفعل',
-      emailAlreadyRegisteredReadFAQ:
-          'تم انشاء حساب باستخدام هذا البريد الالكترونى مسبقا يمكنك قراءة المزيد عن ربط الحسابات من خلال مركز الدعم',
-      emailAlreadyRegistered:
-          'تم انشاء حساب باستخدام هذا البريد الالكترونى مسبقا يمكنك تسجيل الدخول',
-      canotLinkAccount: 'لا يمكنك ربط هذا الحساب لأنه بالفعل مستخدم',
-      continueUsingFacebookAccount:
-          'يمكنك الاستمرار باستخدام حساب الفيسبوك و يمكنك قراءة المزيد عن ربط الحسابات من خلال مركز الدعم',
-      continueUsingGoogleAccount:
-          'يمكنك الاستمرار باستخدام حساب جوجل و يمكنك قراءة المزيد عن ربط الحسابات من خلال مركز الدعم',
-      continueUsingPhone:
-          'يمكنك الاستمرار باستخدام رقم الهاتف و يمكنك قراءة المزيد عن ربط الحسابات من خلال مركز الدعم',
-      continueUsingEmail:
-          'يمكنك الاستمرار باستخدام البريد الالكترونى و يمكنك قراءة المزيد عن ربط الحسابات من خلال مركز الدعم',
-      unKnownErrorTryAgain: 'حدث خطأ غير معروف ، برجاء المحاولة لاحقا',
-      acceptTermsFirst: 'يجب الموافقة على الشروط و السياسات أولا',
-      enterOTPCorrectly: 'برجاء ادخال الرقم السرى المتغير بشكل صحيح',
-      checkInternetThenTryAgain: 'برجاء مراجعة الاتصال بالشبكة و حاول مرة أخرى',
-      completeFieldsCorrectly: 'برجاء ملئ الحقول بشكل صحيح',
-      notEmpty: 'برجاء ملئ الحقل',
-      enterInvitationCode: 'برجاء كتابة كود الدعوة',
-      enterCorrectAddress: 'برجاء كتابة العنوان بشكل صحيح',
-      enterAddressNotPhone: 'برجاء كتابة عنوان و ليس رقم هاتف',
-      enterAddressNotWebsite: 'برجاء كتابة عنوان و ليس موقع',
-      enterAddressNotEmail: 'برجاء كتابة عنوان و ليس بريد الكترونى',
-      addressCannotBeEmpty: 'برجاء كتابة العنوان',
-      enterCorrectCompany: 'برجاء كتابة جهة العمل بشكل صحيح',
-      enterCompanyNotPhone: 'برجاء كتابة جهة عمل و ليس رقم هاتف',
-      enterCompanyNotWebsite: 'برجاء كتابة جهة عمل و ليس موقع',
-      enterCompanyNotEmail: 'برجاء كتابة جهة عمل و ليس بريد الكترونى',
-      companyCannotBeEmpty: 'برجاء كتابة جهة العمل',
-      enterJobNotWebsite: 'برجاء كتابة وظيفة و ليس موقع',
-      enterJobNotEmail: 'برجاء كتابة وظيفة و ليس بريد الكترونى',
-      enterJobNotPhone: 'برجاء كتابة وظيفة و ليس رقم هاتف',
-      jobCannotBeEmpty: 'برجاء كتابة الوظيفة',
-      enterCorrectJob: 'برجاء كتابة الوظيفة بشكل صحيح',
-      enterCorrectPhone: 'برجاء كتابة رقم الهاتف بشكل صحيح',
-      phoneCannotBeEmpty: 'برجاء كتابة رقم الهاتف',
-      enterWebsiteNotEmail: 'برجاء كتابة موقع و ليس بريد الكترونى',
-      enterWebsiteNotPhone: 'برجاء كتابة موقع و ليس رقم هاتف',
-      websiteCannotBeEmpty: 'برجاء كتابة الموقع الالكترونى',
-      website: 'برجاء كتابة الموقع الالكترونى',
-      emailCannotBeEmpty: 'برجاء كتابة البريد الالكترونى',
-      cannotUseEmailProvider: 'لا يمكنك استخدام هذا البريد الالكترونى',
-      email: 'برجاء ادخال البريد الالكترونى بشكل صحيح',
-      amount: 'برجاء ادخال رقم صحيح و بدون رموز',
-      number: 'برجاء ادخال رقم الهاتف .',
-      name: 'برجاء ادخال اسم .',
-      confirmPassword: 'كلمة السر غير مطابقة',
-      password: 'يجب ان لا تقل كلمة السر عن 8 احرف',
-      passwordCannotBeEmpty: 'برجاء كتابة كلمة السر',
-    ),
     home: AppLocalizationsDataHome(
       adminUserLabel: 'مستخدم ادمن',
       userStatusLabel: 'الحالة',
@@ -891,24 +878,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       uidLabel: 'UID',
       nameLabel: 'الاسم',
       title: 'الرئيسية',
-    ),
-    dashboard: AppLocalizationsDataDashboard(
-      filterUserInfoToDisplay: 'Filter User info to Display',
-      completelyDeleteUser: 'حذف المستخدم كليا',
-      deleteUser: 'حذف المستخدم',
-      controlWallets: 'إدارة المحافظ',
-      adminControlWallet: 'Admin Control Wallet',
-      fAQCenter: 'FAQ Center',
-      adminControlFAQ: 'Admin Control FAQ',
-      ticketsCenter: 'مركز الدعم',
-      adminControlTickets: 'Admin Control Tickets',
-      manageUsers: 'إدارة المستخدمين',
-      adminControlUsers: 'Admin Control Users',
-      allUsers: 'جميع المستخدمين',
-      listAllUsers: 'عرض جميع المستخدمين',
-      listUsers: 'عرض المستخدمين',
-      adminListUsers: 'Admin List Users',
-      title: 'لوحة التحكم',
     ),
     invitation: AppLocalizationsDataInvitation(
       title2: 'الرئيسية',
@@ -1114,6 +1083,72 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       termsAndPolicies: 'سياسة الشروط و الخصوصية',
       termsPoliciesLink: 'سياسة الشروط و الخصوصية',
     ),
+    languages: AppLocalizationsDataLanguages(
+      langJapanese: 'صينى',
+      langRussian: 'روسى',
+      langPortuguese: 'برتغالى',
+      langSpanish: 'اسبانى',
+      langItalian: 'إيطالى',
+      langGerman: 'ألمانى',
+      langFrench: 'فرنسى',
+      langArabic: 'عربى',
+      langEnglish: 'انجليزى',
+      selectLanguage: 'اختر اللغة',
+    ),
+    validator: AppLocalizationsDataValidator(
+      emailNotRegistered:
+          'لم يتم انشاء حساب باستخدام هذا البريد الالكترونى من قبل يمكنك انشاء حساب جديد او ربط البريد الالكترونى بحساب موجود بالفعل',
+      emailAlreadyRegisteredReadFAQ:
+          'تم انشاء حساب باستخدام هذا البريد الالكترونى مسبقا يمكنك قراءة المزيد عن ربط الحسابات من خلال مركز الدعم',
+      emailAlreadyRegistered:
+          'تم انشاء حساب باستخدام هذا البريد الالكترونى مسبقا يمكنك تسجيل الدخول',
+      canotLinkAccount: 'لا يمكنك ربط هذا الحساب لأنه بالفعل مستخدم',
+      continueUsingFacebookAccount:
+          'يمكنك الاستمرار باستخدام حساب الفيسبوك و يمكنك قراءة المزيد عن ربط الحسابات من خلال مركز الدعم',
+      continueUsingGoogleAccount:
+          'يمكنك الاستمرار باستخدام حساب جوجل و يمكنك قراءة المزيد عن ربط الحسابات من خلال مركز الدعم',
+      continueUsingPhone:
+          'يمكنك الاستمرار باستخدام رقم الهاتف و يمكنك قراءة المزيد عن ربط الحسابات من خلال مركز الدعم',
+      continueUsingEmail:
+          'يمكنك الاستمرار باستخدام البريد الالكترونى و يمكنك قراءة المزيد عن ربط الحسابات من خلال مركز الدعم',
+      unKnownErrorTryAgain: 'حدث خطأ غير معروف ، برجاء المحاولة لاحقا',
+      acceptTermsFirst: 'يجب الموافقة على الشروط و السياسات أولا',
+      enterOTPCorrectly: 'برجاء ادخال الرقم السرى المتغير بشكل صحيح',
+      checkInternetThenTryAgain: 'برجاء مراجعة الاتصال بالشبكة و حاول مرة أخرى',
+      completeFieldsCorrectly: 'برجاء ملئ الحقول بشكل صحيح',
+      notEmpty: 'برجاء ملئ الحقل',
+      enterInvitationCode: 'برجاء كتابة كود الدعوة',
+      enterCorrectAddress: 'برجاء كتابة العنوان بشكل صحيح',
+      enterAddressNotPhone: 'برجاء كتابة عنوان و ليس رقم هاتف',
+      enterAddressNotWebsite: 'برجاء كتابة عنوان و ليس موقع',
+      enterAddressNotEmail: 'برجاء كتابة عنوان و ليس بريد الكترونى',
+      addressCannotBeEmpty: 'برجاء كتابة العنوان',
+      enterCorrectCompany: 'برجاء كتابة جهة العمل بشكل صحيح',
+      enterCompanyNotPhone: 'برجاء كتابة جهة عمل و ليس رقم هاتف',
+      enterCompanyNotWebsite: 'برجاء كتابة جهة عمل و ليس موقع',
+      enterCompanyNotEmail: 'برجاء كتابة جهة عمل و ليس بريد الكترونى',
+      companyCannotBeEmpty: 'برجاء كتابة جهة العمل',
+      enterJobNotWebsite: 'برجاء كتابة وظيفة و ليس موقع',
+      enterJobNotEmail: 'برجاء كتابة وظيفة و ليس بريد الكترونى',
+      enterJobNotPhone: 'برجاء كتابة وظيفة و ليس رقم هاتف',
+      jobCannotBeEmpty: 'برجاء كتابة الوظيفة',
+      enterCorrectJob: 'برجاء كتابة الوظيفة بشكل صحيح',
+      enterCorrectPhone: 'برجاء كتابة رقم الهاتف بشكل صحيح',
+      phoneCannotBeEmpty: 'برجاء كتابة رقم الهاتف',
+      enterWebsiteNotEmail: 'برجاء كتابة موقع و ليس بريد الكترونى',
+      enterWebsiteNotPhone: 'برجاء كتابة موقع و ليس رقم هاتف',
+      websiteCannotBeEmpty: 'برجاء كتابة الموقع الالكترونى',
+      website: 'برجاء كتابة الموقع الالكترونى',
+      emailCannotBeEmpty: 'برجاء كتابة البريد الالكترونى',
+      cannotUseEmailProvider: 'لا يمكنك استخدام هذا البريد الالكترونى',
+      email: 'برجاء ادخال البريد الالكترونى بشكل صحيح',
+      amount: 'برجاء ادخال رقم صحيح و بدون رموز',
+      number: 'برجاء ادخال رقم الهاتف .',
+      name: 'برجاء ادخال اسم .',
+      confirmPassword: 'كلمة السر غير مطابقة',
+      password: 'يجب ان لا تقل كلمة السر عن 8 احرف',
+      passwordCannotBeEmpty: 'برجاء كتابة كلمة السر',
+    ),
     globals: AppLocalizationsDataGlobals(
       search: 'بحث',
       edit: 'تعديل',
@@ -1166,16 +1201,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       home: 'الرئيسية',
       wallet: 'المحفظة',
       profile: 'الملف الشخصى',
-      langJapanese: 'يابانى',
-      langRussian: 'روسى',
-      langPortuguese: 'برتغالى',
-      langSpanish: 'اسبانى',
-      langItalian: 'إيطالى',
-      langGerman: 'ألمانى',
-      langFrench: 'فرنسى',
-      langArabic: 'عربى',
-      langEnglish: 'انجليزى',
-      selectLanguage: 'اختر اللغة',
     ),
     splash: AppLocalizationsDataSplash(loading: 'برجاء الانتظار'),
     app: AppLocalizationsDataApp(
@@ -1184,7 +1209,10 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       titleSMS: 'Smart SMS',
     ),
   ),
-  Locale.fromSubtags(languageCode: 'fr'): const AppLocalizationsData(
+  Locale.fromSubtags(
+    languageCode: 'fr',
+    countryCode: 'FR',
+  ): const AppLocalizationsData(
     codes: AppLocalizationsDataCodes(
       maxLength: 'Longueur maximale',
       minLength: 'Longueur minimale',
@@ -1328,6 +1356,25 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       messagesHistory: 'Historique des messages',
       messages: 'Messages',
     ),
+    dashboard: AppLocalizationsDataDashboard(
+      filterUserInfoToDisplay:
+          'Filtrer les informations utilisateur à afficher',
+      completelyDeleteUser: 'Supprimer complètement l\'utilisateur',
+      deleteUser: 'Supprimer l\'utilisateur',
+      controlWallets: 'Contrôler les portefeuilles',
+      adminControlWallet: 'Portefeuille de contrôle d\'administration',
+      fAQCenter: 'Centre de FAQ',
+      adminControlFAQ: 'FAQ sur le contrôle d\'administration',
+      ticketsCenter: 'Billetterie',
+      adminControlTickets: 'Tickets de contrôle d\'administration',
+      manageUsers: 'Gérer les utilisateurs',
+      adminControlUsers: 'Utilisateurs de contrôle d\'administration',
+      allUsers: 'Tous les utilisateurs',
+      listAllUsers: 'Liste de tous les utilisateurs',
+      listUsers: 'Liste des utilisateurs',
+      adminListUsers: 'Liste des utilisateurs de l\'administrateur',
+      title: 'Tableau de bord',
+    ),
     tickets: AppLocalizationsDataTickets(
       choosePriority: 'Choisir la priorité',
       selectTicketPriority: 'Sélectionner la priorité des billets',
@@ -1352,6 +1399,14 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       ticketID: 'Numéro de billet',
       adminTickets: 'Tickets d\'administration',
       ticketsTitle: 'Billets',
+    ),
+    pushNotifications: AppLocalizationsDataPushNotifications(
+      entityCreatedBody:
+          'Votre entité a été créée avec succès et est maintenant prête à être utilisée.',
+      entityCreatedTitle: '🏢 Entité créée',
+      userWelcomeBody:
+          'Bienvenue dans notre communauté. Nous sommes ravis de vous compter parmi nous.',
+      userWelcomeTitle: '👋 Bienvenue !',
     ),
     notifications: AppLocalizationsDataNotifications(
       showUnRead: 'Non lu',
@@ -1427,74 +1482,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       cash: 'Espèces',
       title: 'Portefeuille',
     ),
-    validator: AppLocalizationsDataValidator(
-      emailNotRegistered:
-          'Cette adresse e-mail n\'est pas enregistrée avant \nVous pouvez vous inscrire ou lier votre compte',
-      emailAlreadyRegisteredReadFAQ:
-          'Cette adresse e-mail est déjà enregistrée. Vous pouvez en savoir plus sur la liaison des comptes dans la FAQ.',
-      emailAlreadyRegistered:
-          'Cette adresse e-mail est déjà enregistrée.\nVous pouvez vous connecter',
-      canotLinkAccount: 'Impossible de lier ce compte car il est déjà associé.',
-      continueUsingFacebookAccount:
-          'Vous pouvez continuer à utiliser votre compte Facebook. Pour en savoir plus sur la liaison des comptes, consultez la FAQ.',
-      continueUsingGoogleAccount:
-          'Vous pouvez continuer à utiliser votre compte Google. Pour en savoir plus sur la liaison des comptes, consultez la FAQ.',
-      continueUsingPhone:
-          'Vous pouvez continuer à utiliser votre téléphone. Pour en savoir plus sur la liaison des comptes, consultez la FAQ.',
-      continueUsingEmail:
-          'Vous pouvez continuer à utiliser votre messagerie électronique. Pour en savoir plus sur la liaison des comptes, consultez la FAQ.',
-      unKnownErrorTryAgain:
-          'Une erreur inconnue s\'est produite. Veuillez réessayer.',
-      acceptTermsFirst: 'Vous devez accepter les conditions en premier.',
-      enterOTPCorrectly: 'Veuillez saisir correctement le code OTP reçu.',
-      checkInternetThenTryAgain:
-          'Veuillez vérifier votre connexion Internet et réessayer.',
-      completeFieldsCorrectly: 'Veuillez remplir correctement les champs.',
-      notEmpty: 'Veuillez remplir les champs.',
-      enterInvitationCode: 'Veuillez saisir le code d\'invitation',
-      enterCorrectAddress: 'Veuillez saisir l\'adresse correcte',
-      enterAddressNotPhone:
-          'Veuillez saisir l\'adresse correcte, pas le numéro de téléphone.',
-      enterAddressNotWebsite:
-          'Veuillez saisir l\'adresse correcte et non le site web.',
-      enterAddressNotEmail:
-          'Veuillez saisir l\'adresse postale correcte et non l\'adresse électronique.',
-      addressCannotBeEmpty: 'L\'adresse ne peut pas être vide.',
-      enterCorrectCompany: 'Veuillez saisir la bonne entreprise',
-      enterCompanyNotPhone:
-          'Veuillez saisir le nom de l\'entreprise, pas le numéro de téléphone.',
-      enterCompanyNotWebsite:
-          'Veuillez saisir le nom de l\'entreprise, et non son site web.',
-      enterCompanyNotEmail:
-          'Veuillez saisir le nom de l\'entreprise, et non son adresse e-mail.',
-      companyCannotBeEmpty: 'Une entreprise ne peut pas être vide.',
-      enterJobNotWebsite: 'Veuillez saisir le poste correct, pas le site web.',
-      enterJobNotEmail:
-          'Veuillez saisir le poste correct, et non l\'adresse e-mail.',
-      enterJobNotPhone:
-          'Veuillez saisir le poste correct, pas le numéro de téléphone.',
-      jobCannotBeEmpty: 'Un poste ne peut pas rester vacant.',
-      enterCorrectJob: 'Veuillez saisir le poste correct',
-      enterCorrectPhone: 'Veuillez saisir un numéro de téléphone correct',
-      phoneCannotBeEmpty: 'Le téléphone ne peut pas être vide',
-      enterWebsiteNotEmail:
-          'Veuillez saisir un site web et non une adresse e-mail.',
-      enterWebsiteNotPhone:
-          'Veuillez saisir un site web, pas un numéro de téléphone.',
-      websiteCannotBeEmpty: 'Un site web ne peut pas être vide.',
-      website: 'Veuillez saisir le site Web',
-      emailCannotBeEmpty: 'Une adresse électronique ne peut pas être vide.',
-      cannotUseEmailProvider:
-          'Impossible d\'utiliser ce fournisseur de messagerie',
-      email: 'S\'il vous plaît, mettez une adresse email valide',
-      amount:
-          'Veuillez saisir un nombre, par exemple 250 (sans le symbole dollar ni les centimes).',
-      number: 'Veuillez saisir un nombre',
-      name: 'Veuillez saisir un nom',
-      confirmPassword: 'Le mot de passe n\'est pas typique',
-      password: 'Le mot de passe doit comporter au moins 8 caractères.',
-      passwordCannotBeEmpty: 'Le mot de passe ne peut pas être vide.',
-    ),
     home: AppLocalizationsDataHome(
       adminUserLabel: 'Utilisateur administrateur',
       userStatusLabel: 'Statut',
@@ -1502,25 +1489,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       uidLabel: 'UID',
       nameLabel: 'Nom',
       title: 'Maison',
-    ),
-    dashboard: AppLocalizationsDataDashboard(
-      filterUserInfoToDisplay:
-          'Filtrer les informations utilisateur à afficher',
-      completelyDeleteUser: 'Supprimer complètement l\'utilisateur',
-      deleteUser: 'Supprimer l\'utilisateur',
-      controlWallets: 'Contrôler les portefeuilles',
-      adminControlWallet: 'Portefeuille de contrôle d\'administration',
-      fAQCenter: 'Centre de FAQ',
-      adminControlFAQ: 'FAQ sur le contrôle d\'administration',
-      ticketsCenter: 'Billetterie',
-      adminControlTickets: 'Tickets de contrôle d\'administration',
-      manageUsers: 'Gérer les utilisateurs',
-      adminControlUsers: 'Utilisateurs de contrôle d\'administration',
-      allUsers: 'Tous les utilisateurs',
-      listAllUsers: 'Liste de tous les utilisateurs',
-      listUsers: 'Liste des utilisateurs',
-      adminListUsers: 'Liste des utilisateurs de l\'administrateur',
-      title: 'Tableau de bord',
     ),
     invitation: AppLocalizationsDataInvitation(
       title2: 'Maison',
@@ -1533,12 +1501,12 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       codeFilledAutomatic:
           'Code d\'invitation rempli via le lien de parrainage.',
       congratulationsInvitation:
-          'Félicitations, vous avez gagné plus de pièces pour avoir utilisé le code d\'invitation.',
+          'Félicitations, vous avez gagné plus de pièces en utilisant le code d\'invitation.',
       readAboutCoins: 'Vous pouvez en savoir plus sur les pièces de monnaie.',
       skipInvitation: 'Je n\'ai pas de code d\'invitation, passez cette étape.',
       earnInvitationNotification:
           'Vous pouvez gagner plus de pièces en utilisant un code d\'invitation.',
-      balanceOnInvitation: 'Votre solde de pièces =',
+      balanceOnInvitation: 'Solde de vos pièces =',
       invitationLink: 'Lien d\'invitation',
       invitationCode: 'Code d\'invitation',
       title: 'Invitation',
@@ -1676,7 +1644,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       disabled: 'Désactivé',
       userRole: 'Rôle de l\'utilisateur',
       role: 'Rôle',
-      googlePhotoURL: 'URL de Google Photos',
+      googlePhotoURL: 'URL de Google Photo',
       googleID: 'Identifiant Google',
       facebookURL: 'URL Facebook',
       facebookID: 'Identifiant Facebook',
@@ -1732,6 +1700,86 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       termsAndPolicies: 'Conditions générales et politiques',
       termsPoliciesLink: 'Conditions générales',
     ),
+    languages: AppLocalizationsDataLanguages(
+      langJapanese: 'Chinois\n',
+      langRussian: 'Russe\n\n',
+      langPortuguese: 'Portugais\n\n',
+      langSpanish: 'Espagnol\n',
+      langItalian: 'Italien\n\n',
+      langGerman: 'Allemand\n',
+      langFrench: 'Français\n',
+      langArabic: 'arabe',
+      langEnglish: 'Anglais',
+      selectLanguage: 'Sélectionner la langue',
+    ),
+    validator: AppLocalizationsDataValidator(
+      emailNotRegistered:
+          'Cette adresse e-mail n\'est pas enregistrée avant \nVous pouvez vous inscrire ou lier votre compte',
+      emailAlreadyRegisteredReadFAQ:
+          'Cette adresse e-mail est déjà enregistrée. Vous pouvez en savoir plus sur la liaison des comptes dans la FAQ.',
+      emailAlreadyRegistered:
+          'Cette adresse e-mail est déjà enregistrée.\nVous pouvez vous connecter',
+      canotLinkAccount: 'Impossible de lier ce compte car il est déjà associé.',
+      continueUsingFacebookAccount:
+          'Vous pouvez continuer à utiliser votre compte Facebook. Pour en savoir plus sur la liaison des comptes, consultez la FAQ.',
+      continueUsingGoogleAccount:
+          'Vous pouvez continuer à utiliser votre compte Google. Pour en savoir plus sur la liaison des comptes, consultez la FAQ.',
+      continueUsingPhone:
+          'Vous pouvez continuer à utiliser votre téléphone. Pour en savoir plus sur la liaison des comptes, consultez la FAQ.',
+      continueUsingEmail:
+          'Vous pouvez continuer à utiliser votre messagerie électronique. Pour en savoir plus sur la liaison des comptes, consultez la FAQ.',
+      unKnownErrorTryAgain:
+          'Une erreur inconnue s\'est produite. Veuillez réessayer.',
+      acceptTermsFirst: 'Vous devez accepter les conditions en premier.',
+      enterOTPCorrectly: 'Veuillez saisir correctement le code OTP reçu.',
+      checkInternetThenTryAgain:
+          'Veuillez vérifier votre connexion Internet et réessayer.',
+      completeFieldsCorrectly: 'Veuillez remplir correctement les champs.',
+      notEmpty: 'Veuillez remplir les champs.',
+      enterInvitationCode: 'Veuillez saisir le code d\'invitation',
+      enterCorrectAddress: 'Veuillez saisir l\'adresse correcte',
+      enterAddressNotPhone:
+          'Veuillez saisir l\'adresse correcte, pas le numéro de téléphone.',
+      enterAddressNotWebsite:
+          'Veuillez saisir l\'adresse correcte et non le site web.',
+      enterAddressNotEmail:
+          'Veuillez saisir une adresse postale correcte, et non une adresse e-mail.',
+      addressCannotBeEmpty: 'L\'adresse ne peut pas être vide.',
+      enterCorrectCompany: 'Veuillez saisir la bonne entreprise',
+      enterCompanyNotPhone:
+          'Veuillez saisir le nom de l\'entreprise, et non le numéro de téléphone.',
+      enterCompanyNotWebsite:
+          'Veuillez saisir le nom de l\'entreprise, et non son site web.',
+      enterCompanyNotEmail:
+          'Veuillez saisir le nom de l\'entreprise, et non son adresse e-mail.',
+      companyCannotBeEmpty: 'Une entreprise ne peut pas être vide.',
+      enterJobNotWebsite: 'Veuillez saisir le poste correct, pas le site web.',
+      enterJobNotEmail:
+          'Veuillez saisir le poste correct, et non l\'adresse e-mail.',
+      enterJobNotPhone:
+          'Veuillez saisir le poste correct, pas le numéro de téléphone.',
+      jobCannotBeEmpty: 'Un poste ne peut pas rester vacant.',
+      enterCorrectJob: 'Veuillez saisir le poste correct',
+      enterCorrectPhone: 'Veuillez saisir un numéro de téléphone correct',
+      phoneCannotBeEmpty: 'Le téléphone ne peut pas être vide',
+      enterWebsiteNotEmail:
+          'Veuillez saisir un site web et non une adresse e-mail.',
+      enterWebsiteNotPhone:
+          'Veuillez saisir un site web, pas un numéro de téléphone.',
+      websiteCannotBeEmpty: 'Un site web ne peut pas être vide.',
+      website: 'Veuillez saisir le site Web',
+      emailCannotBeEmpty: 'Une adresse électronique ne peut pas être vide.',
+      cannotUseEmailProvider:
+          'Impossible d\'utiliser ce fournisseur de messagerie',
+      email: 'S\'il vous plaît, mettez une adresse email valide',
+      amount:
+          'Veuillez saisir un nombre, par exemple 250 (sans le symbole dollar ni les centimes).',
+      number: 'Veuillez saisir un nombre',
+      name: 'Veuillez saisir un nom',
+      confirmPassword: 'Le mot de passe n\'est pas typique',
+      password: 'Le mot de passe doit comporter au moins 8 caractères.',
+      passwordCannotBeEmpty: 'Le mot de passe ne peut pas être vide.',
+    ),
     globals: AppLocalizationsDataGlobals(
       search: 'Recherche',
       edit: 'Modifier',
@@ -1785,16 +1833,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       home: 'Maison',
       wallet: 'Portefeuille',
       profile: 'Profil',
-      langJapanese: 'Japonais\n',
-      langRussian: 'Russe\n\n',
-      langPortuguese: 'Portugais\n\n',
-      langSpanish: 'Espagnol\n',
-      langItalian: 'Italien\n\n',
-      langGerman: 'Allemand\n',
-      langFrench: 'Français\n',
-      langArabic: 'arabe',
-      langEnglish: 'Anglais',
-      selectLanguage: 'Sélectionner la langue',
     ),
     splash: AppLocalizationsDataSplash(loading: 'Chargement'),
     app: AppLocalizationsDataApp(
@@ -1803,7 +1841,10 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       titleSMS: 'SMS intelligents',
     ),
   ),
-  Locale.fromSubtags(languageCode: 'de'): const AppLocalizationsData(
+  Locale.fromSubtags(
+    languageCode: 'de',
+    countryCode: 'DE',
+  ): const AppLocalizationsData(
     codes: AppLocalizationsDataCodes(
       maxLength: 'Maximale Länge',
       minLength: 'Mindestlänge',
@@ -1948,6 +1989,25 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       messagesHistory: 'Nachrichtenverlauf',
       messages: 'Nachrichten',
     ),
+    dashboard: AppLocalizationsDataDashboard(
+      filterUserInfoToDisplay:
+          'Benutzerinformationen filtern, die angezeigt werden sollen',
+      completelyDeleteUser: 'Benutzer vollständig löschen',
+      deleteUser: 'Benutzer löschen',
+      controlWallets: 'Wallets kontrollieren',
+      adminControlWallet: 'Admin-Kontroll-Wallet',
+      fAQCenter: 'FAQ-Center',
+      adminControlFAQ: 'Häufig gestellte Fragen zur Administratorsteuerung',
+      ticketsCenter: 'Ticketzentrum',
+      adminControlTickets: 'Admin-Kontrolltickets',
+      manageUsers: 'Benutzer verwalten',
+      adminControlUsers: 'Administratoren steuern Benutzer',
+      allUsers: 'Alle Benutzer',
+      listAllUsers: 'Alle Benutzer auflisten',
+      listUsers: 'Benutzerliste',
+      adminListUsers: 'Administratorliste Benutzer',
+      title: 'Armaturenbrett',
+    ),
     tickets: AppLocalizationsDataTickets(
       choosePriority: 'Priorität auswählen',
       selectTicketPriority: 'Ticketpriorität auswählen',
@@ -1972,6 +2032,14 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       ticketID: 'Ticket-ID',
       adminTickets: 'Admin-Tickets',
       ticketsTitle: 'Tickets',
+    ),
+    pushNotifications: AppLocalizationsDataPushNotifications(
+      entityCreatedBody:
+          'Ihre Entität wurde erfolgreich erstellt und ist nun einsatzbereit.',
+      entityCreatedTitle: '🏢 Entität erstellt',
+      userWelcomeBody:
+          'Herzlich willkommen in unserer Community. Wir freuen uns, Sie bei uns zu haben.',
+      userWelcomeTitle: '👋 Herzlich willkommen!',
     ),
     notifications: AppLocalizationsDataNotifications(
       showUnRead: 'Ungelesen',
@@ -2019,7 +2087,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       controlUserCash: 'Benutzergeld kontrollieren',
       lastTotalPoints: 'Gesamtpunktzahl',
       lastTotalCoins: 'Letzter Gesamtmünzenbetrag',
-      lastTotalCash: 'Letzter Gesamtbetrag',
+      lastTotalCash: 'Letzter Bargeldbetrag',
       allPointsTransactions: 'Alle Punktetransaktionen',
       allCoinsTransactions: 'Alle Münztransaktionen',
       allCashTransactions: 'Alle Bargeldtransaktionen',
@@ -2047,76 +2115,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       cash: 'Kasse',
       title: 'Geldbörse',
     ),
-    validator: AppLocalizationsDataValidator(
-      emailNotRegistered:
-          'Diese E-Mail-Adresse ist noch nicht registriert. Sie können sich anmelden oder Ihr Konto verknüpfen.',
-      emailAlreadyRegisteredReadFAQ:
-          'Diese E-Mail-Adresse ist bereits registriert. Weitere Informationen zur Kontoverknüpfung finden Sie in den FAQ.',
-      emailAlreadyRegistered:
-          'Diese E-Mail-Adresse ist bereits registriert. Sie können sich anmelden.',
-      canotLinkAccount:
-          'Dieses Konto kann nicht verknüpft werden, da es bereits zugeordnet ist.',
-      continueUsingFacebookAccount:
-          'Sie können Ihr Facebook-Konto weiterhin nutzen. Weitere Informationen zur Kontoverknüpfung finden Sie in den FAQ.',
-      continueUsingGoogleAccount:
-          'Sie können Ihr Google-Konto weiterhin nutzen.\nWeitere Informationen zur Kontoverknüpfung finden Sie in den FAQ.',
-      continueUsingPhone:
-          'Sie können Ihr Telefon weiterhin nutzen.\nWeitere Informationen zur Kontoverknüpfung finden Sie in den FAQ.',
-      continueUsingEmail:
-          'Sie können Ihre E-Mail-Adresse weiterhin verwenden.\nWeitere Informationen zur Kontoverknüpfung finden Sie in den FAQ.',
-      unKnownErrorTryAgain:
-          'Es ist ein unbekannter Fehler aufgetreten. Bitte versuchen Sie es erneut.',
-      acceptTermsFirst: 'Sie sollten die Bedingungen zuerst akzeptieren.',
-      enterOTPCorrectly: 'Bitte geben Sie den erhaltenen OTP-Code korrekt ein.',
-      checkInternetThenTryAgain:
-          'Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.',
-      completeFieldsCorrectly: 'Bitte füllen Sie die Felder korrekt aus.',
-      notEmpty: 'Bitte füllen Sie die Felder aus.',
-      enterInvitationCode: 'Bitte geben Sie den Einladungscode ein.',
-      enterCorrectAddress: 'Bitte geben Sie die korrekte Adresse ein.',
-      enterAddressNotPhone:
-          'Bitte geben Sie die korrekte Adresse und nicht die Telefonnummer ein.',
-      enterAddressNotWebsite:
-          'Bitte geben Sie die korrekte Adresse ein, nicht die Website.',
-      enterAddressNotEmail:
-          'Bitte geben Sie eine korrekte Adresse (keine E-Mail-Adresse) ein.',
-      addressCannotBeEmpty: 'Die Adresse darf nicht leer sein.',
-      enterCorrectCompany: 'Bitte geben Sie das korrekte Unternehmen ein.',
-      enterCompanyNotPhone:
-          'Bitte geben Sie die korrekte Firma und nicht die Telefonnummer ein.',
-      enterCompanyNotWebsite:
-          'Bitte geben Sie das korrekte Unternehmen und nicht die Website ein.',
-      enterCompanyNotEmail:
-          'Bitte geben Sie die korrekte Firma und nicht die E-Mail-Adresse ein.',
-      companyCannotBeEmpty: 'Das Unternehmen kann nicht leer sein',
-      enterJobNotWebsite:
-          'Bitte geben Sie die korrekte Stellenbezeichnung und nicht die Website ein.',
-      enterJobNotEmail:
-          'Bitte geben Sie die korrekte Berufsbezeichnung und nicht die E-Mail-Adresse ein.',
-      enterJobNotPhone:
-          'Bitte geben Sie die korrekte Berufsbezeichnung und nicht die Telefonnummer ein.',
-      jobCannotBeEmpty: 'Die Stelle darf nicht leer sein',
-      enterCorrectJob: 'Bitte geben Sie die korrekte Stellenbezeichnung ein.',
-      enterCorrectPhone: 'Bitte geben Sie die korrekte Telefonnummer ein.',
-      phoneCannotBeEmpty: 'Das Telefon darf nicht leer sein.',
-      enterWebsiteNotEmail:
-          'Bitte geben Sie die Website-Adresse und nicht die E-Mail-Adresse ein.',
-      enterWebsiteNotPhone:
-          'Bitte geben Sie die Website und nicht die Telefonnummer ein.',
-      websiteCannotBeEmpty: 'Die Website darf nicht leer sein.',
-      website: 'Bitte geben Sie die Website ein.',
-      emailCannotBeEmpty: 'Die E-Mail-Adresse darf nicht leer sein.',
-      cannotUseEmailProvider:
-          'Dieser E-Mail-Anbieter kann nicht verwendet werden.',
-      email: 'Bitte geben Sie eine gültige E-Mail-Adresse ein',
-      amount:
-          'Bitte geben Sie eine Zahl ein, z. B. 250 – ohne Dollarzeichen und ohne Centbetrag.',
-      number: 'Bitte geben Sie eine Zahl ein',
-      name: 'Bitte geben Sie einen Namen ein',
-      confirmPassword: 'Das Passwort ist ungewöhnlich.',
-      password: 'Das Passwort muss mindestens 8 Zeichen lang sein.',
-      passwordCannotBeEmpty: 'Das Passwort darf nicht leer sein.',
-    ),
     home: AppLocalizationsDataHome(
       adminUserLabel: 'Administratorbenutzer',
       userStatusLabel: 'Status',
@@ -2124,25 +2122,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       uidLabel: 'UID',
       nameLabel: 'Name',
       title: 'Heim',
-    ),
-    dashboard: AppLocalizationsDataDashboard(
-      filterUserInfoToDisplay:
-          'Benutzerinformationen filtern, die angezeigt werden sollen',
-      completelyDeleteUser: 'Benutzer vollständig löschen',
-      deleteUser: 'Benutzer löschen',
-      controlWallets: 'Wallets kontrollieren',
-      adminControlWallet: 'Admin-Kontroll-Wallet',
-      fAQCenter: 'FAQ-Center',
-      adminControlFAQ: 'Häufig gestellte Fragen zur Administratorsteuerung',
-      ticketsCenter: 'Ticketzentrum',
-      adminControlTickets: 'Admin-Kontrolltickets',
-      manageUsers: 'Benutzer verwalten',
-      adminControlUsers: 'Administratoren steuern Benutzer',
-      allUsers: 'Alle Benutzer',
-      listAllUsers: 'Alle Benutzer auflisten',
-      listUsers: 'Benutzerliste',
-      adminListUsers: 'Administratorliste Benutzer',
-      title: 'Armaturenbrett',
     ),
     invitation: AppLocalizationsDataInvitation(
       title2: 'Heim',
@@ -2157,7 +2136,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
           'Herzlichen Glückwunsch, Sie haben durch die Verwendung des Einladungscodes weitere Münzen gewonnen.',
       readAboutCoins: 'Sie können mehr über Münzen lesen.',
       skipInvitation:
-          'Ich habe keinen Einladungscode, überspringen Sie diesen Schritt.',
+          'Ich habe keinen Einladungscode, ÜBERSPRINGEN SIE DIESEN SCHRITT.',
       earnInvitationNotification:
           'Du kannst mehr Münzen verdienen, wenn du den Einladungscode verwendest.',
       balanceOnInvitation: 'Ihr Münzguthaben =',
@@ -2354,6 +2333,88 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       termsAndPolicies: 'Nutzungsbedingungen und Datenschutzrichtlinien',
       termsPoliciesLink: 'Nutzungsbedingungen',
     ),
+    languages: AppLocalizationsDataLanguages(
+      langJapanese: 'Chinesisch\n\n',
+      langRussian: 'Russisch\n\n',
+      langPortuguese: 'Portugiesisch\n\n\nPortugiesisch',
+      langSpanish: 'Spanisch\n\n\nSpanisch',
+      langItalian: 'Italienisch\n\n',
+      langGerman: 'Deutsch\n',
+      langFrench: 'Französisch\n',
+      langArabic: 'Arabisch',
+      langEnglish: 'Englisch',
+      selectLanguage: 'Sprache auswählen',
+    ),
+    validator: AppLocalizationsDataValidator(
+      emailNotRegistered:
+          'Diese E-Mail-Adresse ist noch nicht registriert. Sie können sich anmelden oder Ihr Konto verknüpfen.',
+      emailAlreadyRegisteredReadFAQ:
+          'Diese E-Mail-Adresse ist bereits registriert. Weitere Informationen zur Kontoverknüpfung finden Sie in den FAQ.',
+      emailAlreadyRegistered:
+          'Diese E-Mail-Adresse ist bereits registriert. Sie können sich anmelden.',
+      canotLinkAccount:
+          'Dieses Konto kann nicht verknüpft werden, da es bereits zugeordnet ist.',
+      continueUsingFacebookAccount:
+          'Sie können Ihr Facebook-Konto weiterhin nutzen. Weitere Informationen zur Kontoverknüpfung finden Sie in den FAQ.',
+      continueUsingGoogleAccount:
+          'Sie können Ihr Google-Konto weiterhin nutzen.\nWeitere Informationen zur Kontoverknüpfung finden Sie in den FAQ.',
+      continueUsingPhone:
+          'Sie können Ihr Telefon weiterhin nutzen.\nWeitere Informationen zur Kontoverknüpfung finden Sie in den FAQ.',
+      continueUsingEmail:
+          'Sie können Ihre E-Mail-Adresse weiterhin verwenden.\nWeitere Informationen zur Kontoverknüpfung finden Sie in den FAQ.',
+      unKnownErrorTryAgain:
+          'Es ist ein unbekannter Fehler aufgetreten. Bitte versuchen Sie es erneut.',
+      acceptTermsFirst: 'Sie sollten die Bedingungen zuerst akzeptieren.',
+      enterOTPCorrectly: 'Bitte geben Sie den erhaltenen OTP-Code korrekt ein.',
+      checkInternetThenTryAgain:
+          'Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.',
+      completeFieldsCorrectly: 'Bitte füllen Sie die Felder korrekt aus.',
+      notEmpty: 'Bitte füllen Sie die Felder aus.',
+      enterInvitationCode: 'Bitte geben Sie den Einladungscode ein.',
+      enterCorrectAddress: 'Bitte geben Sie die korrekte Adresse ein.',
+      enterAddressNotPhone:
+          'Bitte geben Sie die korrekte Adresse und nicht die Telefonnummer ein.',
+      enterAddressNotWebsite:
+          'Bitte geben Sie die korrekte Adresse ein, nicht die Website.',
+      enterAddressNotEmail:
+          'Bitte geben Sie eine korrekte Adresse (keine E-Mail-Adresse) ein.',
+      addressCannotBeEmpty: 'Die Adresse darf nicht leer sein.',
+      enterCorrectCompany: 'Bitte geben Sie das korrekte Unternehmen ein.',
+      enterCompanyNotPhone:
+          'Bitte geben Sie die korrekte Firma und nicht die Telefonnummer ein.',
+      enterCompanyNotWebsite:
+          'Bitte geben Sie das korrekte Unternehmen und nicht die Website ein.',
+      enterCompanyNotEmail:
+          'Bitte geben Sie die korrekte Firma und nicht die E-Mail-Adresse ein.',
+      companyCannotBeEmpty: 'Das Unternehmen kann nicht leer sein',
+      enterJobNotWebsite:
+          'Bitte geben Sie die korrekte Stellenbezeichnung und nicht die Website ein.',
+      enterJobNotEmail:
+          'Bitte geben Sie die korrekte Berufsbezeichnung und nicht die E-Mail-Adresse ein.',
+      enterJobNotPhone:
+          'Bitte geben Sie die korrekte Berufsbezeichnung und nicht die Telefonnummer ein.',
+      jobCannotBeEmpty: 'Die Stelle darf nicht leer sein',
+      enterCorrectJob: 'Bitte geben Sie die korrekte Stellenbezeichnung ein.',
+      enterCorrectPhone: 'Bitte geben Sie die korrekte Telefonnummer ein.',
+      phoneCannotBeEmpty: 'Das Telefon darf nicht leer sein.',
+      enterWebsiteNotEmail:
+          'Bitte geben Sie die Website-Adresse und nicht die E-Mail-Adresse ein.',
+      enterWebsiteNotPhone:
+          'Bitte geben Sie die Website und nicht die Telefonnummer ein.',
+      websiteCannotBeEmpty: 'Die Website darf nicht leer sein.',
+      website: 'Bitte geben Sie die Website ein.',
+      emailCannotBeEmpty: 'Die E-Mail-Adresse darf nicht leer sein.',
+      cannotUseEmailProvider:
+          'Dieser E-Mail-Anbieter kann nicht verwendet werden.',
+      email: 'Bitte geben Sie eine gültige E-Mail-Adresse ein',
+      amount:
+          'Bitte geben Sie eine Zahl ein, z. B. 250 – ohne Dollarzeichen und ohne Centbetrag.',
+      number: 'Bitte geben Sie eine Zahl ein',
+      name: 'Bitte geben Sie einen Namen ein',
+      confirmPassword: 'Das Passwort ist ungewöhnlich.',
+      password: 'Das Passwort muss mindestens 8 Zeichen lang sein.',
+      passwordCannotBeEmpty: 'Das Passwort darf nicht leer sein.',
+    ),
     globals: AppLocalizationsDataGlobals(
       search: 'Suchen',
       edit: 'Bearbeiten',
@@ -2406,16 +2467,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       home: 'Heim',
       wallet: 'Geldbörse',
       profile: 'Profil',
-      langJapanese: 'Japanisch\n\n',
-      langRussian: 'Russisch\n\n',
-      langPortuguese: 'Portugiesisch\n\n\nPortugiesisch',
-      langSpanish: 'Spanisch\n\n\nSpanisch',
-      langItalian: 'Italienisch\n\n',
-      langGerman: 'Deutsch\n',
-      langFrench: 'Französisch\n',
-      langArabic: 'Arabisch',
-      langEnglish: 'Englisch',
-      selectLanguage: 'Sprache auswählen',
     ),
     splash: AppLocalizationsDataSplash(loading: 'Laden'),
     app: AppLocalizationsDataApp(
@@ -2424,7 +2475,10 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       titleSMS: 'Smart SMS',
     ),
   ),
-  Locale.fromSubtags(languageCode: 'it'): const AppLocalizationsData(
+  Locale.fromSubtags(
+    languageCode: 'it',
+    countryCode: 'IT',
+  ): const AppLocalizationsData(
     codes: AppLocalizationsDataCodes(
       maxLength: 'Lunghezza massima',
       minLength: 'Lunghezza minima',
@@ -2568,6 +2622,24 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       messagesHistory: 'Cronologia dei messaggi',
       messages: 'Messaggi',
     ),
+    dashboard: AppLocalizationsDataDashboard(
+      filterUserInfoToDisplay: 'Filtra le informazioni utente da visualizzare',
+      completelyDeleteUser: 'Elimina completamente l\'utente',
+      deleteUser: 'Elimina utente',
+      controlWallets: 'Controllo dei portafogli',
+      adminControlWallet: 'Portafoglio di controllo amministratore',
+      fAQCenter: 'Centro FAQ',
+      adminControlFAQ: 'Domande frequenti sul controllo amministrativo',
+      ticketsCenter: 'Biglietteria',
+      adminControlTickets: 'Ticket di controllo amministrativo',
+      manageUsers: 'Gestisci utenti',
+      adminControlUsers: 'Utenti del controllo amministrativo',
+      allUsers: 'Tutti gli utenti',
+      listAllUsers: 'Elenca tutti gli utenti',
+      listUsers: 'Elenco utenti',
+      adminListUsers: 'Elenco utenti amministratori',
+      title: 'Pannello di controllo',
+    ),
     tickets: AppLocalizationsDataTickets(
       choosePriority: 'Scegli la priorità',
       selectTicketPriority: 'Seleziona la priorità del biglietto',
@@ -2592,6 +2664,14 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       ticketID: 'ID del biglietto',
       adminTickets: 'Ticket amministrativi',
       ticketsTitle: 'Biglietti',
+    ),
+    pushNotifications: AppLocalizationsDataPushNotifications(
+      entityCreatedBody:
+          'La tua entità è stata creata correttamente ed è ora pronta per l\'uso.',
+      entityCreatedTitle: '🏢 Entità creata',
+      userWelcomeBody:
+          'Benvenuto nella nostra comunità. Siamo felici di averti con noi.',
+      userWelcomeTitle: '👋 Benvenuti!',
     ),
     notifications: AppLocalizationsDataNotifications(
       showUnRead: 'Non letto',
@@ -2665,71 +2745,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       cash: 'Contanti',
       title: 'Portafoglio',
     ),
-    validator: AppLocalizationsDataValidator(
-      emailNotRegistered:
-          'Questo indirizzo email non è registrato prima. Puoi registrarti o collegare il tuo account.',
-      emailAlreadyRegisteredReadFAQ:
-          'Questo indirizzo email è già stato registrato in precedenza. Puoi leggere ulteriori informazioni sul collegamento degli account nelle FAQ.',
-      emailAlreadyRegistered:
-          'Questo indirizzo email è già registrato in precedenza\nPuoi accedere',
-      canotLinkAccount:
-          'Impossibile collegare questo account\nIn quanto è già associato',
-      continueUsingFacebookAccount:
-          'Puoi continuare a utilizzare il tuo account Facebook. Puoi trovare maggiori informazioni sul collegamento degli account nelle FAQ.',
-      continueUsingGoogleAccount:
-          'Puoi continuare a utilizzare il tuo account Google. Puoi trovare maggiori informazioni sul collegamento degli account nelle FAQ.',
-      continueUsingPhone:
-          'Puoi continuare a usare il telefono. Puoi trovare maggiori informazioni sul collegamento degli account nelle FAQ.',
-      continueUsingEmail:
-          'Puoi continuare a utilizzare l\'email. Puoi trovare maggiori informazioni sul collegamento degli account nelle FAQ.',
-      unKnownErrorTryAgain: 'Si è verificato un errore sconosciuto. Riprova.',
-      acceptTermsFirst: 'Dovresti accettare i termini prima',
-      enterOTPCorrectly: 'Inserisci correttamente il codice OTP ricevuto.',
-      checkInternetThenTryAgain:
-          'Verifica la tua connessione internet e riprova.',
-      completeFieldsCorrectly: 'Si prega di compilare i campi correttamente.',
-      notEmpty: 'Si prega di compilare i campi',
-      enterInvitationCode: 'Inserisci il codice di invito',
-      enterCorrectAddress: 'Inserisci l\'indirizzo corretto',
-      enterAddressNotPhone:
-          'Inserisci l\'indirizzo corretto, non il numero di telefono.',
-      enterAddressNotWebsite:
-          'Inserisci l\'indirizzo corretto, non il sito web.',
-      enterAddressNotEmail: 'Inserisci l\'indirizzo corretto, non l\'email.',
-      addressCannotBeEmpty: 'L\'indirizzo non può essere vuoto',
-      enterCorrectCompany: 'Inserisci l\'azienda corretta',
-      enterCompanyNotPhone:
-          'Inserisci il nome corretto dell\'azienda, non il numero di telefono.',
-      enterCompanyNotWebsite:
-          'Inserisci il nome corretto dell\'azienda (non il sito web).',
-      enterCompanyNotEmail:
-          'Inserisci l\'azienda corretta (non l\'indirizzo email)',
-      companyCannotBeEmpty: 'L\'azienda non può essere vuota',
-      enterJobNotWebsite: 'Inserisci il lavoro CORRETTO (non il sito web)',
-      enterJobNotEmail: 'Inserisci il lavoro corretto, non l\'indirizzo email.',
-      enterJobNotPhone:
-          'Inserisci il lavoro CORRETTO, non il numero di telefono',
-      jobCannotBeEmpty: 'Il lavoro non può essere vuoto',
-      enterCorrectJob: 'Inserisci la posizione lavorativa CORRETTA',
-      enterCorrectPhone: 'Inserisci il numero di telefono CORRETTO',
-      phoneCannotBeEmpty: 'Il telefono non può essere vuoto',
-      enterWebsiteNotEmail: 'Inserisci il sito web, non l\'indirizzo email.',
-      enterWebsiteNotPhone:
-          'Inserisci il nome del sito web, non il numero di telefono.',
-      websiteCannotBeEmpty: 'Il sito web non può essere vuoto',
-      website: 'Si prega di accedere al sito web',
-      emailCannotBeEmpty: 'L\'indirizzo email non può essere vuoto.',
-      cannotUseEmailProvider:
-          'Impossibile utilizzare questo provider di posta elettronica',
-      email: 'Si prega di inserire un indirizzo email valido',
-      amount:
-          'Inserisci un numero, ad esempio 250 - senza simbolo del dollaro e senza centesimi.',
-      number: 'Inserisci un numero',
-      name: 'Inserisci un nome',
-      confirmPassword: 'La password non è tipica',
-      password: 'La password deve essere lunga almeno 8 caratteri.',
-      passwordCannotBeEmpty: 'La password non può essere vuota',
-    ),
     home: AppLocalizationsDataHome(
       adminUserLabel: 'Utente amministratore',
       userStatusLabel: 'Stato',
@@ -2737,24 +2752,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       uidLabel: 'UID',
       nameLabel: 'Nome',
       title: 'Casa',
-    ),
-    dashboard: AppLocalizationsDataDashboard(
-      filterUserInfoToDisplay: 'Filtra le informazioni utente da visualizzare',
-      completelyDeleteUser: 'Elimina completamente l\'utente',
-      deleteUser: 'Elimina utente',
-      controlWallets: 'Controllo dei portafogli',
-      adminControlWallet: 'Portafoglio di controllo amministratore',
-      fAQCenter: 'Centro FAQ',
-      adminControlFAQ: 'Domande frequenti sul controllo amministrativo',
-      ticketsCenter: 'Biglietteria',
-      adminControlTickets: 'Ticket di controllo amministrativo',
-      manageUsers: 'Gestisci utenti',
-      adminControlUsers: 'Utenti del controllo amministrativo',
-      allUsers: 'Tutti gli utenti',
-      listAllUsers: 'Elenca tutti gli utenti',
-      listUsers: 'Elenco utenti',
-      adminListUsers: 'Elenco utenti amministratori',
-      title: 'Pannello di controllo',
     ),
     invitation: AppLocalizationsDataInvitation(
       title2: 'Casa',
@@ -2961,6 +2958,83 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       termsAndPolicies: 'Termini e condizioni',
       termsPoliciesLink: 'Termini e condizioni',
     ),
+    languages: AppLocalizationsDataLanguages(
+      langJapanese: 'cinese\n\n',
+      langRussian: 'Russo\n\n',
+      langPortuguese: 'Portoghese\n',
+      langSpanish: 'Spagnolo\n\n',
+      langItalian: 'Italiano\n',
+      langGerman: 'Tedesco\n\n',
+      langFrench: 'francese\n\n',
+      langArabic: 'arabo',
+      langEnglish: 'Inglese',
+      selectLanguage: 'Seleziona la lingua',
+    ),
+    validator: AppLocalizationsDataValidator(
+      emailNotRegistered:
+          'Questo indirizzo email non è registrato prima. Puoi registrarti o collegare il tuo account.',
+      emailAlreadyRegisteredReadFAQ:
+          'Questo indirizzo email è già stato registrato in precedenza. Puoi leggere ulteriori informazioni sul collegamento degli account nelle FAQ.',
+      emailAlreadyRegistered:
+          'Questo indirizzo email è già registrato in precedenza\nPuoi accedere',
+      canotLinkAccount:
+          'Impossibile collegare questo account\nIn quanto è già associato',
+      continueUsingFacebookAccount:
+          'Puoi continuare a utilizzare il tuo account Facebook. Puoi trovare maggiori informazioni sul collegamento degli account nelle FAQ.',
+      continueUsingGoogleAccount:
+          'Puoi continuare a utilizzare il tuo account Google. Puoi trovare maggiori informazioni sul collegamento degli account nelle FAQ.',
+      continueUsingPhone:
+          'Puoi continuare a usare il telefono. Puoi trovare maggiori informazioni sul collegamento degli account nelle FAQ.',
+      continueUsingEmail:
+          'Puoi continuare a utilizzare l\'email\nPuoi trovare maggiori informazioni sul collegamento degli account nelle FAQ',
+      unKnownErrorTryAgain: 'Si è verificato un errore sconosciuto. Riprova.',
+      acceptTermsFirst: 'Dovresti accettare i termini prima',
+      enterOTPCorrectly: 'Inserisci correttamente il codice OTP ricevuto.',
+      checkInternetThenTryAgain:
+          'Verifica la tua connessione internet e riprova.',
+      completeFieldsCorrectly: 'Si prega di compilare i campi correttamente.',
+      notEmpty: 'Si prega di compilare i campi',
+      enterInvitationCode: 'Inserisci il codice di invito',
+      enterCorrectAddress: 'Inserisci l\'indirizzo corretto',
+      enterAddressNotPhone:
+          'Inserisci l\'indirizzo corretto, non il numero di telefono.',
+      enterAddressNotWebsite:
+          'Inserisci l\'indirizzo corretto, non il sito web.',
+      enterAddressNotEmail: 'Inserisci l\'indirizzo corretto, non l\'email.',
+      addressCannotBeEmpty: 'L\'indirizzo non può essere vuoto',
+      enterCorrectCompany: 'Inserisci l\'azienda corretta',
+      enterCompanyNotPhone:
+          'Inserisci il nome corretto dell\'azienda, non il numero di telefono.',
+      enterCompanyNotWebsite:
+          'Inserisci il nome corretto dell\'azienda (non il sito web).',
+      enterCompanyNotEmail:
+          'Inserisci l\'azienda corretta (non l\'indirizzo email)',
+      companyCannotBeEmpty: 'L\'azienda non può essere vuota',
+      enterJobNotWebsite: 'Inserisci il lavoro CORRETTO (non il sito web)',
+      enterJobNotEmail: 'Inserisci il lavoro corretto, non l\'indirizzo email.',
+      enterJobNotPhone:
+          'Inserisci il lavoro CORRETTO, non il numero di telefono',
+      jobCannotBeEmpty: 'Il lavoro non può essere vuoto',
+      enterCorrectJob: 'Inserisci la posizione lavorativa CORRETTA',
+      enterCorrectPhone: 'Inserisci il numero di telefono CORRETTO',
+      phoneCannotBeEmpty: 'Il telefono non può essere vuoto',
+      enterWebsiteNotEmail: 'Inserisci il sito web, non l\'indirizzo email.',
+      enterWebsiteNotPhone:
+          'Inserisci il nome del sito web, non il numero di telefono.',
+      websiteCannotBeEmpty: 'Il sito web non può essere vuoto',
+      website: 'Si prega di accedere al sito web',
+      emailCannotBeEmpty: 'L\'indirizzo email non può essere vuoto.',
+      cannotUseEmailProvider:
+          'Impossibile utilizzare questo provider di posta elettronica',
+      email: 'Si prega di inserire un indirizzo email valido',
+      amount:
+          'Inserisci un numero, ad esempio 250 - senza simbolo del dollaro e senza centesimi.',
+      number: 'Inserisci un numero',
+      name: 'Inserisci un nome',
+      confirmPassword: 'La password non è tipica',
+      password: 'La password deve essere lunga almeno 8 caratteri.',
+      passwordCannotBeEmpty: 'La password non può essere vuota',
+    ),
     globals: AppLocalizationsDataGlobals(
       search: 'Ricerca',
       edit: 'Modificare',
@@ -3014,16 +3088,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       home: 'Casa',
       wallet: 'Portafoglio',
       profile: 'Profilo',
-      langJapanese: 'Giapponese\n',
-      langRussian: 'Russo\n\n',
-      langPortuguese: 'Portoghese\n',
-      langSpanish: 'Spagnolo\n\n',
-      langItalian: 'Italiano\n',
-      langGerman: 'Tedesco\n\n',
-      langFrench: 'francese\n\n',
-      langArabic: 'arabo',
-      langEnglish: 'Inglese',
-      selectLanguage: 'Seleziona la lingua',
     ),
     splash: AppLocalizationsDataSplash(loading: 'Laden'),
     app: AppLocalizationsDataApp(
@@ -3032,7 +3096,10 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       titleSMS: 'Smart SMS',
     ),
   ),
-  Locale.fromSubtags(languageCode: 'es'): const AppLocalizationsData(
+  Locale.fromSubtags(
+    languageCode: 'es',
+    countryCode: 'ES',
+  ): const AppLocalizationsData(
     codes: AppLocalizationsDataCodes(
       maxLength: 'Longitud máxima',
       minLength: 'Longitud mínima',
@@ -3165,7 +3232,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       campaignDate: 'Fecha de la campaña',
       campaignID: 'ID de campaña',
       undefined: 'Indefinido',
-      undefinedLang: 'Idioma no definido',
+      undefinedLang: 'Idioma indefinido',
       noDataToPreview: 'No hay datos para previsualizar',
       noCampaignWithID: 'No existe ninguna campaña con este ID.',
       showAll: 'Mostrar todo',
@@ -3174,6 +3241,25 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       allCampaigns: 'Todas las campañas',
       messagesHistory: 'Historial de mensajes',
       messages: 'Mensajes',
+    ),
+    dashboard: AppLocalizationsDataDashboard(
+      filterUserInfoToDisplay:
+          'Filtrar la información del usuario para mostrarla',
+      completelyDeleteUser: 'Eliminar usuario por completo',
+      deleteUser: 'Eliminar usuario',
+      controlWallets: 'Controlar las carteras',
+      adminControlWallet: 'Cartera de control administrativo',
+      fAQCenter: 'Centro de preguntas frecuentes',
+      adminControlFAQ: 'Preguntas frecuentes sobre el control administrativo',
+      ticketsCenter: 'Centro de venta de entradas',
+      adminControlTickets: 'Tickets de control administrativo',
+      manageUsers: 'Administrar usuarios',
+      adminControlUsers: 'Usuarios con control administrativo',
+      allUsers: 'Todos los usuarios',
+      listAllUsers: 'Listar todos los usuarios',
+      listUsers: 'Lista de usuarios',
+      adminListUsers: 'Lista de usuarios administradores',
+      title: 'Panel',
     ),
     tickets: AppLocalizationsDataTickets(
       choosePriority: 'Elija la prioridad',
@@ -3196,9 +3282,17 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       ticketSubject: 'Tema del boleto',
       addTicket: 'Agregar boleto',
       updateTicketID: 'Actualizar ID de ticket',
-      ticketID: 'ID del ticket',
+      ticketID: 'ID del boleto',
       adminTickets: 'Tickets de administración',
       ticketsTitle: 'Entradas',
+    ),
+    pushNotifications: AppLocalizationsDataPushNotifications(
+      entityCreatedBody:
+          'Su entidad se ha creado correctamente y ya está lista para su uso.',
+      entityCreatedTitle: '🏢 Entidad creada',
+      userWelcomeBody:
+          'Bienvenidos a nuestra comunidad. Nos alegra tenerlos con nosotros.',
+      userWelcomeTitle: '👋 ¡Bienvenidos!',
     ),
     notifications: AppLocalizationsDataNotifications(
       showUnRead: 'No leído',
@@ -3275,76 +3369,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       cash: 'Dinero',
       title: 'Billetera',
     ),
-    validator: AppLocalizationsDataValidator(
-      emailNotRegistered:
-          'Este correo electrónico no está registrado. Puedes registrarte o vincular tu cuenta.',
-      emailAlreadyRegisteredReadFAQ:
-          'Este correo electrónico ya está registrado. Puedes leer más sobre cómo vincular cuentas en las preguntas frecuentes.',
-      emailAlreadyRegistered:
-          'Este correo electrónico ya está registrado. Puedes iniciar sesión.',
-      canotLinkAccount: 'No se puede vincular esta cuenta\nYa está asociada.',
-      continueUsingFacebookAccount:
-          'Puedes seguir usando tu cuenta de Facebook. Puedes leer más sobre cómo vincular cuentas en las preguntas frecuentes.',
-      continueUsingGoogleAccount:
-          'Puedes seguir usando tu cuenta de Google. Puedes encontrar más información sobre cómo vincular cuentas en las preguntas frecuentes.',
-      continueUsingPhone:
-          'Puedes seguir usando el teléfono. Puedes leer más sobre cómo vincular cuentas en las preguntas frecuentes.',
-      continueUsingEmail:
-          'Puedes seguir usando el correo electrónico. Puedes leer más sobre cómo vincular cuentas en las preguntas frecuentes.',
-      unKnownErrorTryAgain:
-          'Se ha producido un error desconocido. Inténtelo de nuevo.',
-      acceptTermsFirst: 'Debe aceptar los términos en primer lugar.',
-      enterOTPCorrectly:
-          'Por favor, introduzca correctamente el código OTP recibido.',
-      checkInternetThenTryAgain:
-          'Por favor, compruebe su conexión a Internet e inténtelo de nuevo.',
-      completeFieldsCorrectly: 'Por favor, complete los campos correctamente.',
-      notEmpty: 'Por favor, complete los campos.',
-      enterInvitationCode: 'Por favor, introduzca el código de invitación.',
-      enterCorrectAddress: 'Por favor, introduzca la dirección correcta.',
-      enterAddressNotPhone:
-          'Por favor, introduzca la dirección correcta, no el número de teléfono.',
-      enterAddressNotWebsite:
-          'Por favor, introduzca la dirección correcta, no el sitio web.',
-      enterAddressNotEmail:
-          'Por favor, introduzca la dirección correcta, no el correo electrónico.',
-      addressCannotBeEmpty: 'La dirección no puede estar vacía.',
-      enterCorrectCompany: 'Por favor, introduzca la empresa correcta.',
-      enterCompanyNotPhone:
-          'Por favor, introduzca la empresa correcta, no el número de teléfono.',
-      enterCompanyNotWebsite:
-          'Por favor, introduzca la empresa correcta, no el sitio web.',
-      enterCompanyNotEmail:
-          'Por favor, introduzca la empresa correcta, no el correo electrónico.',
-      companyCannotBeEmpty: 'La empresa no puede estar vacía.',
-      enterJobNotWebsite:
-          'Por favor, ingrese el puesto de trabajo correcto, no el sitio web.',
-      enterJobNotEmail:
-          'Por favor, ingrese el puesto de trabajo correcto, no el correo electrónico.',
-      enterJobNotPhone:
-          'Por favor, ingrese el trabajo correcto, no el número de teléfono.',
-      jobCannotBeEmpty: 'El trabajo no puede estar vacío.',
-      enterCorrectJob: 'Por favor, introduzca el trabajo correcto.',
-      enterCorrectPhone:
-          'Por favor, introduzca el número de teléfono correcto.',
-      phoneCannotBeEmpty: 'El teléfono no puede estar vacío',
-      enterWebsiteNotEmail:
-          'Por favor, ingrese la dirección web, no el correo electrónico.',
-      enterWebsiteNotPhone: 'Por favor, ingrese Sitio web, no Teléfono',
-      websiteCannotBeEmpty: 'El sitio web no puede estar vacío.',
-      website: 'Por favor, ingrese al sitio web',
-      emailCannotBeEmpty: 'El correo electrónico no puede estar vacío.',
-      cannotUseEmailProvider:
-          'No puedo usar este proveedor de correo electrónico.',
-      email: 'Por favor, introduce una dirección de correo electrónico válida',
-      amount:
-          'Ingrese un número, por ejemplo, 250 (sin símbolo de dólar ni centavos).',
-      number: 'Por favor, introduzca un número',
-      name: 'Por favor, introduzca un nombre.',
-      confirmPassword: 'La contraseña no es típica',
-      password: 'La contraseña debe tener al menos 8 caracteres.',
-      passwordCannotBeEmpty: 'La contraseña no puede estar vacía.',
-    ),
     home: AppLocalizationsDataHome(
       adminUserLabel: 'Usuario administrador',
       userStatusLabel: 'Estado',
@@ -3352,25 +3376,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       uidLabel: 'UID',
       nameLabel: 'Nombre',
       title: 'Hogar',
-    ),
-    dashboard: AppLocalizationsDataDashboard(
-      filterUserInfoToDisplay:
-          'Filtrar la información del usuario para mostrarla',
-      completelyDeleteUser: 'Eliminar usuario por completo',
-      deleteUser: 'Eliminar usuario',
-      controlWallets: 'Controlar las carteras',
-      adminControlWallet: 'Cartera de control administrativo',
-      fAQCenter: 'Centro de preguntas frecuentes',
-      adminControlFAQ: 'Preguntas frecuentes sobre el control administrativo',
-      ticketsCenter: 'Centro de venta de entradas',
-      adminControlTickets: 'Tickets de control administrativo',
-      manageUsers: 'Administrar usuarios',
-      adminControlUsers: 'Usuarios con control administrativo',
-      allUsers: 'Todos los usuarios',
-      listAllUsers: 'Listar todos los usuarios',
-      listUsers: 'Lista de usuarios',
-      adminListUsers: 'Lista de usuarios administradores',
-      title: 'Panel',
     ),
     invitation: AppLocalizationsDataInvitation(
       title2: 'Hogar',
@@ -3525,7 +3530,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       disabled: 'Desactivado',
       userRole: 'Rol de usuario',
       role: 'Role',
-      googlePhotoURL: 'URL de Google Photo',
+      googlePhotoURL: 'URL de Google Fotos',
       googleID: 'ID de Google',
       facebookURL: 'URL de Facebook',
       facebookID: 'ID de Facebook',
@@ -3581,6 +3586,88 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       termsAndPolicies: 'Términos y políticas',
       termsPoliciesLink: 'Términos y políticas',
     ),
+    languages: AppLocalizationsDataLanguages(
+      langJapanese: 'Chino\n',
+      langRussian: 'Ruso\n',
+      langPortuguese: 'Portugués\n',
+      langSpanish: 'Español\n',
+      langItalian: 'Italiano\n',
+      langGerman: 'Alemán\n',
+      langFrench: 'Francés\n',
+      langArabic: 'árabe',
+      langEnglish: 'Inglés',
+      selectLanguage: 'Seleccionar idioma',
+    ),
+    validator: AppLocalizationsDataValidator(
+      emailNotRegistered:
+          'Este correo electrónico no está registrado. Puedes registrarte o vincular tu cuenta.',
+      emailAlreadyRegisteredReadFAQ:
+          'Este correo electrónico ya está registrado. Puedes leer más sobre cómo vincular cuentas en las preguntas frecuentes.',
+      emailAlreadyRegistered:
+          'Este correo electrónico ya está registrado. Puedes iniciar sesión.',
+      canotLinkAccount: 'No se puede vincular esta cuenta\nYa está asociada.',
+      continueUsingFacebookAccount:
+          'Puedes seguir usando tu cuenta de Facebook. Puedes leer más sobre cómo vincular cuentas en las preguntas frecuentes.',
+      continueUsingGoogleAccount:
+          'Puedes seguir usando tu cuenta de Google. Puedes encontrar más información sobre cómo vincular cuentas en las preguntas frecuentes.',
+      continueUsingPhone:
+          'Puedes seguir usando el teléfono. Puedes leer más sobre cómo vincular cuentas en las preguntas frecuentes.',
+      continueUsingEmail:
+          'Puedes seguir usando el correo electrónico. Puedes leer más sobre cómo vincular cuentas en las preguntas frecuentes.',
+      unKnownErrorTryAgain:
+          'Se ha producido un error desconocido. Inténtelo de nuevo.',
+      acceptTermsFirst: 'Debe aceptar los términos en primer lugar.',
+      enterOTPCorrectly:
+          'Por favor, introduzca correctamente el código OTP recibido.',
+      checkInternetThenTryAgain:
+          'Por favor, compruebe su conexión a Internet e inténtelo de nuevo.',
+      completeFieldsCorrectly: 'Por favor, complete los campos correctamente.',
+      notEmpty: 'Por favor, complete los campos.',
+      enterInvitationCode: 'Por favor, introduzca el código de invitación.',
+      enterCorrectAddress: 'Por favor, introduzca la dirección correcta.',
+      enterAddressNotPhone:
+          'Por favor, introduzca la dirección correcta, no el número de teléfono.',
+      enterAddressNotWebsite:
+          'Por favor, introduzca la dirección correcta, no el sitio web.',
+      enterAddressNotEmail:
+          'Por favor, introduzca la dirección correcta, no el correo electrónico.',
+      addressCannotBeEmpty: 'La dirección no puede estar vacía.',
+      enterCorrectCompany: 'Por favor, introduzca la empresa correcta.',
+      enterCompanyNotPhone:
+          'Por favor, introduzca la empresa correcta, no el número de teléfono.',
+      enterCompanyNotWebsite:
+          'Por favor, introduzca la empresa correcta, no el sitio web.',
+      enterCompanyNotEmail:
+          'Por favor, introduzca la empresa correcta, no el correo electrónico.',
+      companyCannotBeEmpty: 'La empresa no puede estar vacía.',
+      enterJobNotWebsite:
+          'Por favor, ingrese el puesto de trabajo correcto, no el sitio web.',
+      enterJobNotEmail:
+          'Por favor, ingrese el puesto de trabajo correcto, no el correo electrónico.',
+      enterJobNotPhone:
+          'Por favor, ingrese el trabajo correcto, no el número de teléfono.',
+      jobCannotBeEmpty: 'El trabajo no puede estar vacío.',
+      enterCorrectJob: 'Por favor, introduzca el trabajo correcto.',
+      enterCorrectPhone:
+          'Por favor, introduzca el número de teléfono correcto.',
+      phoneCannotBeEmpty: 'El teléfono no puede estar vacío',
+      enterWebsiteNotEmail:
+          'Por favor, ingrese Sitio web, no Correo electrónico',
+      enterWebsiteNotPhone: 'Por favor, ingrese Sitio web, no Teléfono',
+      websiteCannotBeEmpty: 'El sitio web no puede estar vacío.',
+      website: 'Por favor, ingrese al sitio web',
+      emailCannotBeEmpty: 'El correo electrónico no puede estar vacío.',
+      cannotUseEmailProvider:
+          'No puedo usar este proveedor de correo electrónico.',
+      email: 'Por favor, introduce una dirección de correo electrónico válida',
+      amount:
+          'Ingrese un número, por ejemplo, 250 (sin símbolo de dólar ni centavos).',
+      number: 'Por favor, introduzca un número',
+      name: 'Por favor, introduzca un nombre.',
+      confirmPassword: 'La contraseña no es típica',
+      password: 'La contraseña debe tener al menos 8 caracteres.',
+      passwordCannotBeEmpty: 'La contraseña no puede estar vacía.',
+    ),
     globals: AppLocalizationsDataGlobals(
       search: 'Buscar',
       edit: 'Editar',
@@ -3634,16 +3721,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       home: 'Hogar',
       wallet: 'Billetera',
       profile: 'Perfil',
-      langJapanese: 'Japonés\n',
-      langRussian: 'Ruso\n',
-      langPortuguese: 'Portugués\n',
-      langSpanish: 'Español\n',
-      langItalian: 'Italiano\n',
-      langGerman: 'Alemán\n',
-      langFrench: 'Francés\n',
-      langArabic: 'árabe',
-      langEnglish: 'Inglés',
-      selectLanguage: 'Seleccionar idioma',
     ),
     splash: AppLocalizationsDataSplash(loading: 'Cargando'),
     app: AppLocalizationsDataApp(
@@ -3652,7 +3729,10 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       titleSMS: 'SMS inteligentes',
     ),
   ),
-  Locale.fromSubtags(languageCode: 'pt'): const AppLocalizationsData(
+  Locale.fromSubtags(
+    languageCode: 'pt',
+    countryCode: 'PT',
+  ): const AppLocalizationsData(
     codes: AppLocalizationsDataCodes(
       maxLength: 'Comprimento máximo',
       minLength: 'Comprimento mínimo',
@@ -3683,7 +3763,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       both: 'Ambos',
       back: 'Voltar',
       front: 'Frente',
-      placeQR: 'Insira o QR Code em',
+      placeQR: 'Insira o QR em',
       editWebsite: 'Editar site',
       website: 'Site',
       editEmail: 'Editar e-mail',
@@ -3795,6 +3875,24 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       messagesHistory: 'Histórico de mensagens',
       messages: 'Mensagens',
     ),
+    dashboard: AppLocalizationsDataDashboard(
+      filterUserInfoToDisplay: 'Filtrar informações do usuário para exibir',
+      completelyDeleteUser: 'Excluir usuário completamente',
+      deleteUser: 'Excluir usuário',
+      controlWallets: 'Carteiras de controle',
+      adminControlWallet: 'Carteira de Controle Administrativo',
+      fAQCenter: 'Central de Perguntas Frequentes',
+      adminControlFAQ: 'Perguntas frequentes sobre o controle administrativo',
+      ticketsCenter: 'Central de Ingressos',
+      adminControlTickets: 'Tickets de controle administrativo',
+      manageUsers: 'Gerenciar usuários',
+      adminControlUsers: 'Usuários de controle administrativo',
+      allUsers: 'Todos os usuários',
+      listAllUsers: 'Listar todos os usuários',
+      listUsers: 'Lista de usuários',
+      adminListUsers: 'Usuários da lista de administradores',
+      title: 'Painel',
+    ),
     tickets: AppLocalizationsDataTickets(
       choosePriority: 'Escolha a prioridade',
       selectTicketPriority: 'Selecione a prioridade do ingresso',
@@ -3819,6 +3917,14 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       ticketID: 'ID do bilhete',
       adminTickets: 'Ingressos Administrativos',
       ticketsTitle: 'Ingressos',
+    ),
+    pushNotifications: AppLocalizationsDataPushNotifications(
+      entityCreatedBody:
+          'Sua entidade foi criada com sucesso e já está pronta para uso.',
+      entityCreatedTitle: '🏢 Entidade Criada',
+      userWelcomeBody:
+          'Bem-vindo(a) à nossa comunidade. Ficamos felizes em tê-lo(a) conosco.',
+      userWelcomeTitle: '👋 Bem-vindo(a)!',
     ),
     notifications: AppLocalizationsDataNotifications(
       showUnRead: 'Não lido',
@@ -3859,14 +3965,14 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       processTransaction: 'Processar transação',
       controlUserWallet: 'Controle da carteira do usuário',
       controlUserPoints: 'Pontos de controle do usuário',
-      controlUserCoins: 'Controle de Moedas do Usuário',
+      controlUserCoins: 'Controle de moedas do usuário',
       controlUserCash: 'Controle de caixa do usuário',
       lastTotalPoints: 'Último total de pontos',
       lastTotalCoins: 'Último total de moedas',
       lastTotalCash: 'Último Total em Dinheiro',
       allPointsTransactions: 'Todas as transações de pontos',
       allCoinsTransactions: 'Todas as transações de moedas',
-      allCashTransactions: 'Todas as transações são em dinheiro.',
+      allCashTransactions: 'Todas as transações em dinheiro',
       buyPointsPlans: 'Planos de compra de pontos',
       buyPoints: 'Comprar Pontos',
       buy: 'Comprar',
@@ -3891,72 +3997,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       cash: 'Dinheiro',
       title: 'Carteira',
     ),
-    validator: AppLocalizationsDataValidator(
-      emailNotRegistered:
-          'Este e-mail ainda não está cadastrado. Você pode se cadastrar ou vincular sua conta.',
-      emailAlreadyRegisteredReadFAQ:
-          'Este e-mail já está cadastrado. Você pode ler mais sobre como vincular contas nas Perguntas Frequentes.',
-      emailAlreadyRegistered:
-          'Este e-mail já está cadastrado.\nVocê pode fazer login.',
-      canotLinkAccount:
-          'Não é possível vincular esta conta, pois ela já está associada.',
-      continueUsingFacebookAccount:
-          'Você pode continuar usando sua conta do Facebook.\nVocê pode ler mais sobre como vincular contas nas Perguntas Frequentes.',
-      continueUsingGoogleAccount:
-          'Você pode continuar usando sua Conta do Google.\nVocê pode ler mais sobre como vincular contas nas Perguntas Frequentes.',
-      continueUsingPhone:
-          'Você pode continuar usando o telefone.\nVocê pode ler mais sobre como vincular contas nas Perguntas Frequentes.',
-      continueUsingEmail:
-          'Você pode continuar usando o e-mail.\nVocê pode ler mais sobre como vincular contas nas Perguntas Frequentes.',
-      unKnownErrorTryAgain: 'Ocorreu um erro desconhecido. Tente novamente.',
-      acceptTermsFirst: 'Você deve aceitar os termos primeiro.',
-      enterOTPCorrectly:
-          'Por favor, insira o código OTP recebido corretamente.',
-      checkInternetThenTryAgain:
-          'Por favor, verifique sua conexão com a internet e tente novamente.',
-      completeFieldsCorrectly: 'Por favor, preencha os campos corretamente.',
-      notEmpty: 'Por favor, preencha os campos.',
-      enterInvitationCode: 'Por favor, insira o código de convite.',
-      enterCorrectAddress: 'Por favor, insira o endereço correto.',
-      enterAddressNotPhone:
-          'Por favor, insira o endereço correto, não o telefone.',
-      enterAddressNotWebsite:
-          'Por favor, insira o endereço correto, não o site.',
-      enterAddressNotEmail:
-          'Por favor, insira o endereço correto, não o e-mail.',
-      addressCannotBeEmpty: 'O endereço não pode estar vazio.',
-      enterCorrectCompany: 'Por favor, insira a empresa correta.',
-      enterCompanyNotPhone:
-          'Por favor, insira a empresa correta, não o telefone.',
-      enterCompanyNotWebsite:
-          'Por favor, insira o nome da empresa correto, não o site.',
-      enterCompanyNotEmail:
-          'Por favor, insira a empresa correta, não o e-mail.',
-      companyCannotBeEmpty: 'A empresa não pode ficar vazia.',
-      enterJobNotWebsite: 'Por favor, insira a vaga correta, não o site.',
-      enterJobNotEmail: 'Por favor, insira o cargo correto, não o e-mail.',
-      enterJobNotPhone:
-          'Por favor, insira o cargo correto, não o número de telefone.',
-      jobCannotBeEmpty: 'O trabalho não pode estar vazio.',
-      enterCorrectJob: 'Por favor, insira o trabalho correto.',
-      enterCorrectPhone: 'Por favor, insira o número de telefone correto.',
-      phoneCannotBeEmpty: 'O telefone não pode estar vazio.',
-      enterWebsiteNotEmail:
-          'Por favor, insira o endereço de e-mail e não o site.',
-      enterWebsiteNotPhone: 'Por favor, digite "Site", não "Telefone".',
-      websiteCannotBeEmpty: 'O site não pode estar vazio.',
-      website: 'Por favor, acesse o site.',
-      emailCannotBeEmpty: 'O e-mail não pode estar vazio.',
-      cannotUseEmailProvider: 'Não é possível usar este provedor de e-mail.',
-      email: 'Por favor, insira um endereço de e-mail válido.',
-      amount:
-          'Por favor, insira um número, por exemplo, 250 - sem o símbolo de dólar e sem centavos.',
-      number: 'Por favor, insira um número.',
-      name: 'Por favor, insira um nome.',
-      confirmPassword: 'A senha não é típica.',
-      password: 'A senha deve ter pelo menos 8 caracteres.',
-      passwordCannotBeEmpty: 'A senha não pode estar vazia.',
-    ),
     home: AppLocalizationsDataHome(
       adminUserLabel: 'Usuário administrador',
       userStatusLabel: 'Status',
@@ -3964,24 +4004,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       uidLabel: 'UID',
       nameLabel: 'Nome',
       title: 'Lar',
-    ),
-    dashboard: AppLocalizationsDataDashboard(
-      filterUserInfoToDisplay: 'Filtrar informações do usuário para exibir',
-      completelyDeleteUser: 'Excluir usuário completamente',
-      deleteUser: 'Excluir usuário',
-      controlWallets: 'Carteiras de controle',
-      adminControlWallet: 'Carteira de Controle Administrativo',
-      fAQCenter: 'Central de Perguntas Frequentes',
-      adminControlFAQ: 'Perguntas frequentes sobre o controle administrativo',
-      ticketsCenter: 'Central de Ingressos',
-      adminControlTickets: 'Tickets de controle administrativo',
-      manageUsers: 'Gerenciar usuários',
-      adminControlUsers: 'Usuários de controle administrativo',
-      allUsers: 'Todos os usuários',
-      listAllUsers: 'Listar todos os usuários',
-      listUsers: 'Lista de usuários',
-      adminListUsers: 'Usuários da lista de administradores',
-      title: 'Painel',
     ),
     invitation: AppLocalizationsDataInvitation(
       title2: 'Lar',
@@ -4158,7 +4180,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       birthDate: 'Data de nascimento',
       religion: 'Religião',
       genderBoth: 'Ambos',
-      onlyFemale: 'Somente mulheres',
+      onlyFemale: 'Apenas mulheres',
       onlyMale: 'Apenas homens',
       gender: 'Gênero',
       displayName: 'Nome de exibição',
@@ -4188,6 +4210,84 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       termsAndPolicies: 'Termos e Políticas',
       termsPoliciesLink: 'Termos e Políticas',
     ),
+    languages: AppLocalizationsDataLanguages(
+      langJapanese: 'Chinês\n',
+      langRussian: 'Russo\n',
+      langPortuguese: 'Português\n',
+      langSpanish: 'Espanhol\n',
+      langItalian: 'Italiano\n',
+      langGerman: 'Alemão\n',
+      langFrench: 'Francês\n',
+      langArabic: 'árabe',
+      langEnglish: 'Inglês',
+      selectLanguage: 'Selecione o idioma',
+    ),
+    validator: AppLocalizationsDataValidator(
+      emailNotRegistered:
+          'Este e-mail ainda não está cadastrado. Você pode se cadastrar ou vincular sua conta.',
+      emailAlreadyRegisteredReadFAQ:
+          'Este e-mail já está cadastrado. Você pode ler mais sobre como vincular contas nas Perguntas Frequentes.',
+      emailAlreadyRegistered:
+          'Este e-mail já está cadastrado.\nVocê pode fazer login.',
+      canotLinkAccount:
+          'Não é possível vincular esta conta, pois ela já está associada.',
+      continueUsingFacebookAccount:
+          'Você pode continuar usando sua conta do Facebook.\nVocê pode ler mais sobre como vincular contas nas Perguntas Frequentes.',
+      continueUsingGoogleAccount:
+          'Você pode continuar usando sua Conta do Google.\nVocê pode ler mais sobre como vincular contas nas Perguntas Frequentes.',
+      continueUsingPhone:
+          'Você pode continuar usando o telefone.\nVocê pode ler mais sobre como vincular contas nas Perguntas Frequentes.',
+      continueUsingEmail:
+          'Você pode continuar usando o e-mail.\nVocê pode ler mais sobre como vincular contas nas Perguntas Frequentes.',
+      unKnownErrorTryAgain: 'Ocorreu um erro desconhecido. Tente novamente.',
+      acceptTermsFirst: 'Você deve aceitar os termos primeiro.',
+      enterOTPCorrectly:
+          'Por favor, insira o código OTP recebido corretamente.',
+      checkInternetThenTryAgain:
+          'Por favor, verifique sua conexão com a internet e tente novamente.',
+      completeFieldsCorrectly: 'Por favor, preencha os campos corretamente.',
+      notEmpty: 'Por favor, preencha os campos.',
+      enterInvitationCode: 'Por favor, insira o código de convite.',
+      enterCorrectAddress: 'Por favor, insira o endereço correto.',
+      enterAddressNotPhone:
+          'Por favor, insira o endereço correto, não o número de telefone.',
+      enterAddressNotWebsite:
+          'Por favor, insira o endereço correto, não o site.',
+      enterAddressNotEmail:
+          'Por favor, insira o endereço correto, não o e-mail.',
+      addressCannotBeEmpty: 'O endereço não pode estar vazio.',
+      enterCorrectCompany: 'Por favor, insira a empresa correta.',
+      enterCompanyNotPhone:
+          'Por favor, insira a empresa correta, não o telefone.',
+      enterCompanyNotWebsite:
+          'Por favor, insira o nome da empresa correto, não o site.',
+      enterCompanyNotEmail:
+          'Por favor, insira a empresa correta, não o e-mail.',
+      companyCannotBeEmpty: 'A empresa não pode ficar vazia.',
+      enterJobNotWebsite: 'Por favor, insira a vaga correta, não o site.',
+      enterJobNotEmail: 'Por favor, insira o cargo correto, não o e-mail.',
+      enterJobNotPhone:
+          'Por favor, insira o cargo correto, não o número de telefone.',
+      jobCannotBeEmpty: 'O trabalho não pode estar vazio.',
+      enterCorrectJob: 'Por favor, insira o trabalho correto.',
+      enterCorrectPhone: 'Por favor, insira o número de telefone correto.',
+      phoneCannotBeEmpty: 'O telefone não pode estar vazio.',
+      enterWebsiteNotEmail:
+          'Por favor, insira o endereço de e-mail e não o site.',
+      enterWebsiteNotPhone: 'Por favor, digite "Site", não "Telefone".',
+      websiteCannotBeEmpty: 'O site não pode estar vazio.',
+      website: 'Por favor, acesse o site.',
+      emailCannotBeEmpty: 'O e-mail não pode estar vazio.',
+      cannotUseEmailProvider: 'Não é possível usar este provedor de e-mail.',
+      email: 'Por favor, insira um endereço de e-mail válido.',
+      amount:
+          'Por favor, insira um número, por exemplo, 250 - sem o símbolo de dólar e sem centavos.',
+      number: 'Por favor, insira um número.',
+      name: 'Por favor, insira um nome.',
+      confirmPassword: 'A senha não é típica.',
+      password: 'A senha deve ter pelo menos 8 caracteres.',
+      passwordCannotBeEmpty: 'A senha não pode estar vazia.',
+    ),
     globals: AppLocalizationsDataGlobals(
       search: 'Procurar',
       edit: 'Editar',
@@ -4214,7 +4314,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       failedToGetData: 'Falha ao obter dados',
       lessInfo: 'Menos informações',
       moreInfo: 'Mais informações',
-      allNone: 'Tudo/Nada',
+      allNone: 'Tudo/Nenhum',
       dataToShow: 'Dados a serem exibidos',
       noDataToShow: 'Não há dados para exibir.',
       controlUserInfoToDisplay:
@@ -4241,16 +4341,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       home: 'Lar',
       wallet: 'Carteira',
       profile: 'Perfil',
-      langJapanese: 'Japonês\n',
-      langRussian: 'Russo\n',
-      langPortuguese: 'Português\n',
-      langSpanish: 'Espanhol\n',
-      langItalian: 'Italiano\n',
-      langGerman: 'Alemão\n',
-      langFrench: 'Francês\n',
-      langArabic: 'árabe',
-      langEnglish: 'Inglês',
-      selectLanguage: 'Selecione o idioma',
     ),
     splash: AppLocalizationsDataSplash(loading: 'Carregando'),
     app: AppLocalizationsDataApp(
@@ -4259,7 +4349,10 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       titleSMS: 'SMS inteligente',
     ),
   ),
-  Locale.fromSubtags(languageCode: 'ru'): const AppLocalizationsData(
+  Locale.fromSubtags(
+    languageCode: 'ru',
+    countryCode: 'RU',
+  ): const AppLocalizationsData(
     codes: AppLocalizationsDataCodes(
       maxLength: 'Максимальная длина',
       minLength: 'Минимальная длина',
@@ -4402,6 +4495,25 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       messagesHistory: 'История сообщений',
       messages: 'Сообщения',
     ),
+    dashboard: AppLocalizationsDataDashboard(
+      filterUserInfoToDisplay:
+          'Фильтрация информации о пользователе для отображения',
+      completelyDeleteUser: 'Полностью удалить пользователя',
+      deleteUser: 'Удалить пользователя',
+      controlWallets: 'Контрольные кошельки',
+      adminControlWallet: 'Административный контроль кошелька',
+      fAQCenter: 'Центр часто задаваемых вопросов',
+      adminControlFAQ: 'Часто задаваемые вопросы по управлению администратором',
+      ticketsCenter: 'Билетный центр',
+      adminControlTickets: 'Административные контрольные заявки',
+      manageUsers: 'Управление пользователями',
+      adminControlUsers: 'Административный контроль пользователей',
+      allUsers: 'Все пользователи',
+      listAllUsers: 'Список всех пользователей',
+      listUsers: 'Список пользователей',
+      adminListUsers: 'Список пользователей администратора',
+      title: 'Панель управления',
+    ),
     tickets: AppLocalizationsDataTickets(
       choosePriority: 'Выберите приоритет',
       selectTicketPriority: 'Выберите приоритет заявки',
@@ -4426,6 +4538,14 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       ticketID: 'Идентификатор билета',
       adminTickets: 'Административные заявки',
       ticketsTitle: 'Билеты',
+    ),
+    pushNotifications: AppLocalizationsDataPushNotifications(
+      entityCreatedBody:
+          'Ваша сущность успешно создана и готова к использованию.',
+      entityCreatedTitle: '🏢 Создана сущность',
+      userWelcomeBody:
+          'Добро пожаловать в наше сообщество! Мы рады видеть вас среди нас.',
+      userWelcomeTitle: '👋 Добро пожаловать!',
     ),
     notifications: AppLocalizationsDataNotifications(
       showUnRead: 'Непрочитано',
@@ -4500,76 +4620,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       cash: 'Наличные',
       title: 'Кошелек',
     ),
-    validator: AppLocalizationsDataValidator(
-      emailNotRegistered:
-          'Этот адрес электронной почты ранее не был зарегистрирован. Вы можете зарегистрироваться или связать свою учетную запись.',
-      emailAlreadyRegisteredReadFAQ:
-          'Этот адрес электронной почты уже зарегистрирован ранее. Подробнее о связывании учетных записей можно прочитать в разделе часто задаваемых вопросов (FAQ).',
-      emailAlreadyRegistered:
-          'Этот адрес электронной почты уже зарегистрирован ранее. Вы можете войти в систему.',
-      canotLinkAccount:
-          'Невозможно связать этот аккаунт, так как он уже связан.',
-      continueUsingFacebookAccount:
-          'Вы можете продолжать использовать учетную запись Facebook. Подробнее о связывании учетных записей можно прочитать в разделе часто задаваемых вопросов (FAQ).',
-      continueUsingGoogleAccount:
-          'Вы можете продолжить использовать учетную запись Google. Подробнее о связывании учетных записей можно прочитать в разделе часто задаваемых вопросов (FAQ).',
-      continueUsingPhone:
-          'Вы можете продолжать пользоваться телефоном. Подробнее о связывании учетных записей можно прочитать в разделе часто задаваемых вопросов (FAQ).',
-      continueUsingEmail:
-          'Вы можете продолжить использовать электронную почту. Подробнее о связывании учетных записей можно прочитать в разделе часто задаваемых вопросов (FAQ).',
-      unKnownErrorTryAgain:
-          'Произошла неизвестная ошибка. Пожалуйста, попробуйте еще раз.',
-      acceptTermsFirst: 'Вам следует сначала принять условия.',
-      enterOTPCorrectly: 'Пожалуйста, правильно введите полученный OTP-код.',
-      checkInternetThenTryAgain:
-          'Пожалуйста, проверьте ваше интернет-соединение и попробуйте снова.',
-      completeFieldsCorrectly: 'Пожалуйста, заполните поля правильно.',
-      notEmpty: 'Пожалуйста, заполните поля.',
-      enterInvitationCode: 'Пожалуйста, введите код приглашения.',
-      enterCorrectAddress: 'Пожалуйста, введите правильный адрес.',
-      enterAddressNotPhone:
-          'Пожалуйста, введите правильный адрес, а не номер телефона.',
-      enterAddressNotWebsite:
-          'Пожалуйста, введите правильный адрес, а не веб-сайт.',
-      enterAddressNotEmail:
-          'Пожалуйста, введите правильный адрес, а не адрес электронной почты.',
-      addressCannotBeEmpty: 'Адрес не может быть пустым.',
-      enterCorrectCompany: 'Пожалуйста, введите название правильной компании.',
-      enterCompanyNotPhone:
-          'Пожалуйста, введите название компании, а не номер телефона.',
-      enterCompanyNotWebsite:
-          'Пожалуйста, введите название компании, а не веб-сайт.',
-      enterCompanyNotEmail:
-          'Пожалуйста, введите название компании, а не адрес электронной почты.',
-      companyCannotBeEmpty: 'Компания не может быть пустой.',
-      enterJobNotWebsite:
-          'Пожалуйста, введите правильную должность, а не веб-сайт.',
-      enterJobNotEmail:
-          'Пожалуйста, введите правильную должность, а не адрес электронной почты.',
-      enterJobNotPhone:
-          'Пожалуйста, введите правильную должность, а не номер телефона.',
-      jobCannotBeEmpty: 'Работа не может быть пустой.',
-      enterCorrectJob: 'Пожалуйста, введите правильную должность.',
-      enterCorrectPhone: 'Пожалуйста, введите правильный номер телефона.',
-      phoneCannotBeEmpty: 'Телефон не может быть пустым.',
-      enterWebsiteNotEmail:
-          'Пожалуйста, введите адрес веб-сайта, а не электронной почты.',
-      enterWebsiteNotPhone:
-          'Пожалуйста, введите адрес веб-сайта, а не телефона.',
-      websiteCannotBeEmpty: 'Веб-сайт не может быть пустым.',
-      website: 'Пожалуйста, перейдите на сайт.',
-      emailCannotBeEmpty: 'Адрес электронной почты не может быть пустым.',
-      cannotUseEmailProvider:
-          'Невозможно использовать этот почтовый провайдер.',
-      email: 'Пожалуйста, введите действительный адрес электронной почты',
-      amount:
-          'Пожалуйста, введите число, например, 250 — без знака доллара и без центов.',
-      number: 'Пожалуйста, введите число',
-      name: 'Пожалуйста, введите имя.',
-      confirmPassword: 'Пароль нетипичный',
-      password: 'Пароль должен состоять как минимум из 8 символов.',
-      passwordCannotBeEmpty: 'Пароль не может быть пустым.',
-    ),
     home: AppLocalizationsDataHome(
       adminUserLabel: 'Администратор',
       userStatusLabel: 'Статус',
@@ -4577,25 +4627,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       uidLabel: 'UID',
       nameLabel: 'Имя',
       title: 'Дом',
-    ),
-    dashboard: AppLocalizationsDataDashboard(
-      filterUserInfoToDisplay:
-          'Фильтрация информации о пользователе для отображения',
-      completelyDeleteUser: 'Полностью удалить пользователя',
-      deleteUser: 'Удалить пользователя',
-      controlWallets: 'Контрольные кошельки',
-      adminControlWallet: 'Административный контроль кошелька',
-      fAQCenter: 'Центр часто задаваемых вопросов',
-      adminControlFAQ: 'Часто задаваемые вопросы по управлению администратором',
-      ticketsCenter: 'Билетный центр',
-      adminControlTickets: 'Административные контрольные заявки',
-      manageUsers: 'Управление пользователями',
-      adminControlUsers: 'Административный контроль пользователей',
-      allUsers: 'Все пользователи',
-      listAllUsers: 'Список всех пользователей',
-      listUsers: 'Список пользователей',
-      adminListUsers: 'Список пользователей администратора',
-      title: 'Панель управления',
     ),
     invitation: AppLocalizationsDataInvitation(
       title2: 'Дом',
@@ -4669,7 +4700,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
           'Проверьте свою электронную почту и следуйте инструкциям, чтобы сбросить пароль.',
       resetPasswordNoticeTitle:
           'Электронное письмо для сброса пароля отправлено.',
-      signInLabelButton: 'У вас есть аккаунт? Войдите.',
+      signInLabelButton: 'У вас есть аккаунт? Войти.',
       signUpError:
           'Возникла проблема при регистрации. Пожалуйста, попробуйте позже.',
       signUpErrorTitle: 'Регистрация не удалась.',
@@ -4734,7 +4765,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       themeSelected: 'Выбранная тема',
       languageUsed: 'Используемый язык',
       languageSelected: 'Выбранный язык',
-      connected: 'Подключен',
+      connected: 'Подключено',
       offline: 'Офлайн',
       onLine: 'Онлайн',
       lastSeen: 'Последний раз видели',
@@ -4804,6 +4835,88 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       termsAndPolicies: 'Условия и положения',
       termsPoliciesLink: 'Условия использования Политика',
     ),
+    languages: AppLocalizationsDataLanguages(
+      langJapanese: 'Китайский\n',
+      langRussian: 'Русский\n',
+      langPortuguese: 'Португальский\n',
+      langSpanish: 'Испанский\n',
+      langItalian: 'Итальянский\n',
+      langGerman: 'Немецкий\n',
+      langFrench: 'Французский\n',
+      langArabic: 'арабский',
+      langEnglish: 'Английский',
+      selectLanguage: 'Выберите язык',
+    ),
+    validator: AppLocalizationsDataValidator(
+      emailNotRegistered:
+          'Этот адрес электронной почты ранее не был зарегистрирован. Вы можете зарегистрироваться или связать свою учетную запись.',
+      emailAlreadyRegisteredReadFAQ:
+          'Этот адрес электронной почты уже зарегистрирован ранее. Подробнее о связывании учетных записей можно прочитать в разделе часто задаваемых вопросов (FAQ).',
+      emailAlreadyRegistered:
+          'Этот адрес электронной почты уже зарегистрирован ранее. Вы можете войти в систему.',
+      canotLinkAccount:
+          'Невозможно связать этот аккаунт, так как он уже связан.',
+      continueUsingFacebookAccount:
+          'Вы можете продолжать использовать учетную запись Facebook. Подробнее о связывании учетных записей можно прочитать в разделе часто задаваемых вопросов (FAQ).',
+      continueUsingGoogleAccount:
+          'Вы можете продолжить использовать учетную запись Google. Подробнее о связывании учетных записей можно прочитать в разделе часто задаваемых вопросов (FAQ).',
+      continueUsingPhone:
+          'Вы можете продолжать пользоваться телефоном. Подробнее о связывании учетных записей можно прочитать в разделе часто задаваемых вопросов (FAQ).',
+      continueUsingEmail:
+          'Вы можете продолжить использовать электронную почту. Подробнее о связывании учетных записей можно прочитать в разделе часто задаваемых вопросов (FAQ).',
+      unKnownErrorTryAgain:
+          'Произошла неизвестная ошибка. Пожалуйста, попробуйте еще раз.',
+      acceptTermsFirst: 'Вам следует сначала принять условия.',
+      enterOTPCorrectly: 'Пожалуйста, правильно введите полученный OTP-код.',
+      checkInternetThenTryAgain:
+          'Пожалуйста, проверьте ваше интернет-соединение и попробуйте снова.',
+      completeFieldsCorrectly: 'Пожалуйста, заполните поля правильно.',
+      notEmpty: 'Пожалуйста, заполните поля.',
+      enterInvitationCode: 'Пожалуйста, введите код приглашения.',
+      enterCorrectAddress: 'Пожалуйста, введите правильный адрес.',
+      enterAddressNotPhone:
+          'Пожалуйста, введите правильный адрес, а не номер телефона.',
+      enterAddressNotWebsite:
+          'Пожалуйста, введите правильный адрес, а не веб-сайт.',
+      enterAddressNotEmail:
+          'Пожалуйста, введите правильный адрес, а не адрес электронной почты.',
+      addressCannotBeEmpty: 'Адрес не может быть пустым.',
+      enterCorrectCompany: 'Пожалуйста, введите название правильной компании.',
+      enterCompanyNotPhone:
+          'Пожалуйста, введите название компании, а не номер телефона.',
+      enterCompanyNotWebsite:
+          'Пожалуйста, введите название компании, а не веб-сайт.',
+      enterCompanyNotEmail:
+          'Пожалуйста, введите название компании, а не адрес электронной почты.',
+      companyCannotBeEmpty: 'Компания не может быть пустой.',
+      enterJobNotWebsite:
+          'Пожалуйста, введите правильную должность, а не веб-сайт.',
+      enterJobNotEmail:
+          'Пожалуйста, введите правильную должность, а не адрес электронной почты.',
+      enterJobNotPhone:
+          'Пожалуйста, введите правильную должность, а не номер телефона.',
+      jobCannotBeEmpty: 'Работа не может быть пустой.',
+      enterCorrectJob: 'Пожалуйста, введите правильную должность.',
+      enterCorrectPhone: 'Пожалуйста, введите правильный номер телефона.',
+      phoneCannotBeEmpty: 'Телефон не может быть пустым.',
+      enterWebsiteNotEmail:
+          'Пожалуйста, введите адрес веб-сайта, а не электронной почты.',
+      enterWebsiteNotPhone:
+          'Пожалуйста, введите адрес веб-сайта, а не телефона.',
+      websiteCannotBeEmpty: 'Веб-сайт не может быть пустым.',
+      website: 'Пожалуйста, перейдите на сайт.',
+      emailCannotBeEmpty: 'Адрес электронной почты не может быть пустым.',
+      cannotUseEmailProvider:
+          'Невозможно использовать этот почтовый провайдер.',
+      email: 'Пожалуйста, введите действительный адрес электронной почты',
+      amount:
+          'Пожалуйста, введите число, например, 250 — без символа доллара и без центов.',
+      number: 'Пожалуйста, введите число',
+      name: 'Пожалуйста, введите имя.',
+      confirmPassword: 'Пароль нетипичный',
+      password: 'Пароль должен состоять как минимум из 8 символов.',
+      passwordCannotBeEmpty: 'Пароль не может быть пустым.',
+    ),
     globals: AppLocalizationsDataGlobals(
       search: 'Поиск',
       edit: 'Редактировать',
@@ -4857,16 +4970,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       home: 'Дом',
       wallet: 'Кошелек',
       profile: 'Профиль',
-      langJapanese: 'японский\n',
-      langRussian: 'Русский\n',
-      langPortuguese: 'Португальский\n',
-      langSpanish: 'Испанский\n',
-      langItalian: 'Итальянский\n',
-      langGerman: 'Немецкий\n',
-      langFrench: 'Французский\n',
-      langArabic: 'арабский',
-      langEnglish: 'Английский',
-      selectLanguage: 'Выберите язык',
     ),
     splash: AppLocalizationsDataSplash(loading: 'Загрузка'),
     app: AppLocalizationsDataApp(
@@ -4875,7 +4978,10 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       titleSMS: 'Умный SMS',
     ),
   ),
-  Locale.fromSubtags(languageCode: 'ja'): const AppLocalizationsData(
+  Locale.fromSubtags(
+    languageCode: 'ja',
+    countryCode: 'JP',
+  ): const AppLocalizationsData(
     codes: AppLocalizationsDataCodes(
       maxLength: '最大長さ',
       minLength: '最小長さ',
@@ -4943,7 +5049,7 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       note: '注記',
       neighborhood: '近所',
       poBox: '私書箱',
-      subAdminArea: 'サブ管理者エリア',
+      subAdminArea: 'サブ管理エリア',
       subLocality: '地域区分',
       postalCode: '郵便番号',
       isoCountry: 'Iso国',
@@ -5014,6 +5120,24 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       messagesHistory: 'メッセージ履歴',
       messages: 'メッセージ',
     ),
+    dashboard: AppLocalizationsDataDashboard(
+      filterUserInfoToDisplay: '表示するユーザー情報をフィルタリングします',
+      completelyDeleteUser: 'ユーザーを完全に削除する',
+      deleteUser: 'ユーザーを削除',
+      controlWallets: 'コントロールウォレット',
+      adminControlWallet: '管理者コントロールウォレット',
+      fAQCenter: 'よくある質問センター',
+      adminControlFAQ: '管理者コントロールに関するよくある質問',
+      ticketsCenter: 'チケットセンター',
+      adminControlTickets: '管理者コントロールチケット',
+      manageUsers: 'ユーザー管理',
+      adminControlUsers: '管理者コントロールユーザー',
+      allUsers: 'すべてのユーザー',
+      listAllUsers: 'すべてのユーザーを一覧表示する',
+      listUsers: 'ユーザー一覧',
+      adminListUsers: '管理者ユーザー一覧',
+      title: 'ダッシュボード',
+    ),
     tickets: AppLocalizationsDataTickets(
       choosePriority: '優先順位を選択してください',
       selectTicketPriority: 'チケットの優先順位を選択してください',
@@ -5023,10 +5147,10 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       newStatus: '新しいステータス',
       status: '状態',
       chooseStatus: 'ステータスを選択',
-      selectTicketStatus: 'チケットステータスを選択',
+      selectTicketStatus: 'チケットステータスを選択してください',
       ticketMisUseNotice: '* 注意：チケット送信の不正使用はアカウント停止の原因となる場合があります。',
       updateMessage: '更新メッセージ',
-      updateTicket: 'チケットを更新',
+      updateTicket: 'チケットの更新',
       closeTicket: 'チケットを閉じる',
       submitTicket: 'チケットを送信',
       expectedResult: '期待される結果',
@@ -5037,6 +5161,12 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       ticketID: 'チケットID',
       adminTickets: '管理者チケット',
       ticketsTitle: 'チケット',
+    ),
+    pushNotifications: AppLocalizationsDataPushNotifications(
+      entityCreatedBody: 'エンティティが正常に作成されました。これで使用できます。',
+      entityCreatedTitle: '🏢 エンティティが作成されました',
+      userWelcomeBody: '当コミュニティへようこそ。あなたをお迎えできて嬉しく思います。',
+      userWelcomeTitle: '👋 ようこそ！',
     ),
     notifications: AppLocalizationsDataNotifications(
       showUnRead: '未読',
@@ -5106,56 +5236,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       cash: '現金',
       title: '財布',
     ),
-    validator: AppLocalizationsDataValidator(
-      emailNotRegistered: 'このメールアドレスは登録されていません。サインアップするか、アカウントをリンクしてください。',
-      emailAlreadyRegisteredReadFAQ:
-          'このメールアドレスは既に登録済みです。アカウントの連携については、FAQをご覧ください。',
-      emailAlreadyRegistered: 'このメールアドレスは既に登録済みです\nサインインできます',
-      canotLinkAccount: 'このアカウントは既に関連付けられているため、リンクできません。',
-      continueUsingFacebookAccount:
-          'Facebookアカウントは引き続きご利用いただけます。アカウントの連携については、よくある質問（FAQ）をご覧ください。',
-      continueUsingGoogleAccount:
-          'Googleアカウントは引き続きご利用いただけます。アカウントの連携については、よくある質問（FAQ）をご覧ください。',
-      continueUsingPhone: '引き続き電話をご利用いただけます。アカウントの連携については、よくある質問（FAQ）をご覧ください。',
-      continueUsingEmail: 'メールは引き続きご利用いただけます。アカウントの連携については、よくある質問（FAQ）をご覧ください。',
-      unKnownErrorTryAgain: '不明なエラーが発生しました。もう一度お試しください。',
-      acceptTermsFirst: 'まず最初に利用規約に同意する必要があります',
-      enterOTPCorrectly: '受信したワンタイムパスワードを正しく入力してください',
-      checkInternetThenTryAgain: 'インターネット接続を確認して、もう一度お試しください。',
-      completeFieldsCorrectly: '各項目を正しく入力してください',
-      notEmpty: '該当する項目を入力してください',
-      enterInvitationCode: '招待コードを入力してください',
-      enterCorrectAddress: '正しい住所を入力してください',
-      enterAddressNotPhone: '電話番号ではなく、正しい住所を入力してください。',
-      enterAddressNotWebsite: 'ウェブサイトではなく、正しい住所を入力してください。',
-      enterAddressNotEmail: 'メールアドレスではなく、正しい住所を入力してください。',
-      addressCannotBeEmpty: '住所は空欄にできません',
-      enterCorrectCompany: '正しい会社名を入力してください',
-      enterCompanyNotPhone: '電話番号ではなく、正しい会社名を入力してください。',
-      enterCompanyNotWebsite: 'ウェブサイトではなく、正しい会社名を入力してください。',
-      enterCompanyNotEmail: 'メールアドレスではなく、正しい会社名を入力してください。',
-      companyCannotBeEmpty: '会社は空であってはならない',
-      enterJobNotWebsite: 'ウェブサイトではなく、正しい求人情報を入力してください。',
-      enterJobNotEmail: 'メールアドレスではなく、正しい職種を入力してください。',
-      enterJobNotPhone: '電話番号ではなく、正しい職種を入力してください。',
-      jobCannotBeEmpty: '求人枠は空にできません',
-      enterCorrectJob: '正しい職種を入力してください',
-      enterCorrectPhone: '正しい電話番号を入力してください',
-      phoneCannotBeEmpty: '電話は空にできません',
-      enterWebsiteNotEmail: 'メールアドレスではなくウェブサイトを入力してください。',
-      enterWebsiteNotPhone: '電話番号ではなくウェブサイトを入力してください。',
-      websiteCannotBeEmpty: 'ウェブサイトは空にすることはできません',
-      website: 'ウェブサイトを入力してください',
-      emailCannotBeEmpty: 'メールは空にすることはできません',
-      cannotUseEmailProvider: 'このメールプロバイダーは使用できません',
-      email: '有効なメールアドレスを入力してください',
-      amount: '数字を入力してください（例：250）。ドル記号やセントは不要です。',
-      number: '数字を入力してください',
-      name: '名前を入力してください',
-      confirmPassword: 'パスワードが一般的ではありません',
-      password: 'パスワードは8文字以上である必要があります',
-      passwordCannotBeEmpty: 'パスワードは空欄にできません',
-    ),
     home: AppLocalizationsDataHome(
       adminUserLabel: '管理者ユーザー',
       userStatusLabel: '状態',
@@ -5163,24 +5243,6 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       uidLabel: 'UID',
       nameLabel: '名前',
       title: '家',
-    ),
-    dashboard: AppLocalizationsDataDashboard(
-      filterUserInfoToDisplay: '表示するユーザー情報をフィルタリングする',
-      completelyDeleteUser: 'ユーザーを完全に削除する',
-      deleteUser: 'ユーザーを削除',
-      controlWallets: 'コントロールウォレット',
-      adminControlWallet: '管理者コントロールウォレット',
-      fAQCenter: 'よくある質問センター',
-      adminControlFAQ: '管理者コントロールに関するよくある質問',
-      ticketsCenter: 'チケットセンター',
-      adminControlTickets: '管理者コントロールチケット',
-      manageUsers: 'ユーザー管理',
-      adminControlUsers: '管理者コントロールユーザー',
-      allUsers: 'すべてのユーザー',
-      listAllUsers: 'すべてのユーザーを一覧表示する',
-      listUsers: 'ユーザー一覧',
-      adminListUsers: '管理者ユーザー一覧',
-      title: 'ダッシュボード',
     ),
     invitation: AppLocalizationsDataInvitation(
       title2: '家',
@@ -5378,6 +5440,68 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       termsAndPolicies: '利用規約とポリシー',
       termsPoliciesLink: '利用規約とポリシー',
     ),
+    languages: AppLocalizationsDataLanguages(
+      langJapanese: '中国語\n\n',
+      langRussian: 'ロシア語\n\n',
+      langPortuguese: 'ポルトガル語\n\n',
+      langSpanish: 'スペイン語\n\n',
+      langItalian: 'イタリア語\n\n',
+      langGerman: 'ドイツ語\n\n',
+      langFrench: 'フランス語\n\n',
+      langArabic: 'アラビア語',
+      langEnglish: '英語',
+      selectLanguage: '言語を選択',
+    ),
+    validator: AppLocalizationsDataValidator(
+      emailNotRegistered: 'このメールアドレスは登録されていません。サインアップするか、アカウントをリンクしてください。',
+      emailAlreadyRegisteredReadFAQ:
+          'このメールアドレスは既に登録済みです。アカウントの連携については、FAQをご覧ください。',
+      emailAlreadyRegistered: 'このメールアドレスは既に登録済みです\nサインインできます',
+      canotLinkAccount: 'このアカウントは既に関連付けられているため、リンクできません。',
+      continueUsingFacebookAccount:
+          'Facebookアカウントは引き続きご利用いただけます。アカウントの連携については、よくある質問（FAQ）をご覧ください。',
+      continueUsingGoogleAccount:
+          'Googleアカウントは引き続きご利用いただけます。アカウントの連携については、よくある質問（FAQ）をご覧ください。',
+      continueUsingPhone: '引き続き電話をご利用いただけます。アカウントの連携については、よくある質問（FAQ）をご覧ください。',
+      continueUsingEmail: 'メールは引き続きご利用いただけます。アカウントの連携については、よくある質問（FAQ）をご覧ください。',
+      unKnownErrorTryAgain: '不明なエラーが発生しました。もう一度お試しください。',
+      acceptTermsFirst: 'まず最初に利用規約に同意する必要があります',
+      enterOTPCorrectly: '受信したワンタイムパスワードを正しく入力してください',
+      checkInternetThenTryAgain: 'インターネット接続を確認して、もう一度お試しください。',
+      completeFieldsCorrectly: '各項目を正しく入力してください',
+      notEmpty: '該当する項目を入力してください',
+      enterInvitationCode: '招待コードを入力してください',
+      enterCorrectAddress: '正しい住所を入力してください',
+      enterAddressNotPhone: '電話番号ではなく、正しい住所を入力してください。',
+      enterAddressNotWebsite: 'ウェブサイトではなく、正しい住所を入力してください。',
+      enterAddressNotEmail: 'メールアドレスではなく、正しい住所を入力してください。',
+      addressCannotBeEmpty: '住所は空欄にできません',
+      enterCorrectCompany: '正しい会社名を入力してください',
+      enterCompanyNotPhone: '電話番号ではなく、正しい会社名を入力してください。',
+      enterCompanyNotWebsite: 'ウェブサイトではなく、正しい会社名を入力してください。',
+      enterCompanyNotEmail: 'メールアドレスではなく、正しい会社名を入力してください。',
+      companyCannotBeEmpty: '会社は空であってはならない',
+      enterJobNotWebsite: 'ウェブサイトではなく、正しい求人情報を入力してください。',
+      enterJobNotEmail: 'メールアドレスではなく、正しい職種を入力してください。',
+      enterJobNotPhone: '電話番号ではなく、正しい職種を入力してください。',
+      jobCannotBeEmpty: '求人枠は空にできません',
+      enterCorrectJob: '正しい職種を入力してください',
+      enterCorrectPhone: '正しい電話番号を入力してください',
+      phoneCannotBeEmpty: '電話は空にできません',
+      enterWebsiteNotEmail: 'メールアドレスではなくウェブサイトを入力してください。',
+      enterWebsiteNotPhone: '電話番号ではなくウェブサイトを入力してください。',
+      websiteCannotBeEmpty: 'ウェブサイトは空にすることはできません',
+      website: 'ウェブサイトを入力してください',
+      emailCannotBeEmpty: 'メールは空にすることはできません',
+      cannotUseEmailProvider: 'このメールプロバイダーは使用できません',
+      email: '有効なメールアドレスを入力してください',
+      amount: '数字を入力してください（例：250）。ドル記号やセントは不要です。',
+      number: '数字を入力してください',
+      name: '名前を入力してください',
+      confirmPassword: 'パスワードが一般的ではありません',
+      password: 'パスワードは8文字以上である必要があります',
+      passwordCannotBeEmpty: 'パスワードは空欄にできません',
+    ),
     globals: AppLocalizationsDataGlobals(
       search: '検索',
       edit: '編集',
@@ -5430,22 +5554,595 @@ final localizedLabels = <Locale, AppLocalizationsData>{
       home: '家',
       wallet: '財布',
       profile: 'プロフィール',
-      langJapanese: '日本語\n',
-      langRussian: 'ロシア語\n\n',
-      langPortuguese: 'ポルトガル語\n\n',
-      langSpanish: 'スペイン語\n\n',
-      langItalian: 'イタリア語\n\n',
-      langGerman: 'ドイツ語\n\n',
-      langFrench: 'フランス語\n\n',
-      langArabic: 'アラビア語',
-      langEnglish: '英語',
-      selectLanguage: '言語を選択',
     ),
     splash: AppLocalizationsDataSplash(loading: 'ロード中'),
     app: AppLocalizationsDataApp(
       titleCodes: 'スマートコード',
       titleContacts: 'スマートコンタクト',
       titleSMS: 'スマートS​​MS',
+    ),
+  ),
+  Locale.fromSubtags(
+    languageCode: 'zh',
+    countryCode: 'CN',
+  ): const AppLocalizationsData(
+    codes: AppLocalizationsDataCodes(
+      maxLength: '最大长度',
+      minLength: '最小长度',
+      description: '描述',
+      data: '数据',
+      createCode: '创建代码',
+      selectType: '选择类型',
+      codeType: '代码类型',
+      previewScanResult: '预览扫描结果',
+      scan: '扫描',
+      qr: '二维码',
+      create: '创造',
+      history: '历史',
+    ),
+    vcf: AppLocalizationsDataVcf(
+      textColor: '文本颜色',
+      cardColor: '卡片颜色',
+      qrBackColor: '二维码背面颜色',
+      qrColor: '二维码颜色',
+      updateOrCancelToDownload: '您应该更新更改或取消更改才能下载。',
+      select: '选择',
+      changes: '变化',
+      cancel: '取消',
+      cancelChanges: '取消更改',
+      updateChanges: '更新变更',
+      generateCard: '生成卡',
+      both: '两个都',
+      back: '后退',
+      front: '正面',
+      placeQR: '将二维码放在',
+      editWebsite: '编辑网站',
+      website: '网站',
+      editEmail: '编辑电子邮件',
+      email: '电子邮件',
+      editAddress: '编辑地址',
+      address: '地址',
+      editCompany: '编辑公司',
+      company: '公司',
+      editJob: '编辑职位',
+      job: '工作',
+      editPhone: '编辑手机',
+      phone: '电话',
+      editName: '编辑名称',
+      name: '姓名',
+      photo: '照片',
+      vcfTitle: 'VCF',
+    ),
+    contacts: AppLocalizationsDataContacts(
+      canUploadContactsToCloud: '您可以将联系人上传到云端',
+      noContactsAssociatedAccount: '账户未关联任何联系人',
+      totalContactsNotCorrect: '联系人总数不正确',
+      totalContactsAlreadyExist: '现有联系人总数',
+      totalContactsAdded: '新增联系人总数',
+      totalContactsSelected: '已选联系人总数',
+      noContactsFound: '未找到联系人',
+      sureDeleteContacts: '您确定要删除选定的联系人吗？',
+      sureDeleteContact: '您确定要删除此联系人吗？',
+      confirmDeleteContacts: '确认删除联系人',
+      confirmDeleteContact: '确认删除联系人',
+      deleteFromBoth: '从两者中删除',
+      deleteOnlyFromCloud: '仅从云端删除',
+      deleteOnlyFromDevice: '仅从设备中删除',
+      contactExistsOnCloud: '此联系人存在于云端。',
+      contactExistsOnDevice: '此联系人存在于设备上。',
+      note: '笔记',
+      neighborhood: '邻里',
+      poBox: '邮政信箱',
+      subAdminArea: '子管理区域',
+      subLocality: '次区域',
+      postalCode: '邮政编码',
+      isoCountry: '伊索国家',
+      country: '国家',
+      state: '状态',
+      city: '城市',
+      street: '街道',
+      address: '地址',
+      symbol: '象征',
+      phoneticName: '音标名称',
+      officeLocation: '办公地点',
+      department: '部门',
+      jobDescription: '职位描述',
+      jobTitle: '职称',
+      company: '公司',
+      website: '网站',
+      email: '电子邮件',
+      phone: '电话',
+      nickName: '昵称',
+      lastPhoneticName: '姓氏（音译）',
+      middlePhoneticName: '中间名',
+      firstPhoneticName: '名字（音译）',
+      nameSuffix: '名称后缀',
+      lastName: '姓',
+      middleName: '中间名字',
+      firstName: '名',
+      namePrefix: '名称前缀',
+      listCards: '列表卡片',
+      publicDynamicCard: '公共动态卡',
+      cloud: '云',
+      localDevice: '本地设备',
+    ),
+    messages: AppLocalizationsDataMessages(
+      successfullyDone: '成功完成',
+      failedTo: '失败',
+      sending: '发送',
+      messagePointsConfirmation: '您将使用 () 点数进行发送。\n 您要发送吗？',
+      noSavedMessages: '没有已保存的消息与所选语言匹配。',
+      messageBody: '邮件正文',
+      messageTitle: '消息标题',
+      addToLanguage: '添加到语言',
+      update: '更新',
+      add: '添加',
+      delete: '删除',
+      edit: '编辑',
+      phoneNumberEntry: '电话号码',
+      sendMessages: '发送',
+      savedMessagesLanguage: '已保存消息语言',
+      savedMessages: '已保存的消息',
+      messageContent: '信息',
+      chooseSenderID: '选择发件人 ID',
+      senderID: '发件人 ID',
+      numbers: '数字',
+      campaignStatusFailure: '发布成功',
+      campaignStatusSuccess: '发布失败',
+      campaignStatusDraft: '活动已保存为草稿',
+      campaignStatus: '竞选状态',
+      campaignDate: '活动日期',
+      campaignID: '活动 ID',
+      undefined: '不明确的',
+      undefinedLang: '未定义语言',
+      noDataToPreview: '暂无数据可供预览',
+      noCampaignWithID: '没有使用此 ID 的活动',
+      showAll: '显示全部',
+      filteredCampaigns: '筛选后的广告系列',
+      specifiedCampaign: '指定活动',
+      allCampaigns: '所有活动',
+      messagesHistory: '消息历史记录',
+      messages: '消息',
+    ),
+    dashboard: AppLocalizationsDataDashboard(
+      filterUserInfoToDisplay: '筛选用户信息以显示',
+      completelyDeleteUser: '彻底删除用户',
+      deleteUser: '删除用户',
+      controlWallets: '控制钱包',
+      adminControlWallet: '管理员控制钱包',
+      fAQCenter: '常见问题解答中心',
+      adminControlFAQ: '管理员控制常见问题解答',
+      ticketsCenter: '票务中心',
+      adminControlTickets: '管理员控制票',
+      manageUsers: '管理用户',
+      adminControlUsers: '管理员控制用户',
+      allUsers: '所有用户',
+      listAllUsers: '列出所有用户',
+      listUsers: '列出用户',
+      adminListUsers: '管理员列表用户',
+      title: '仪表板',
+    ),
+    tickets: AppLocalizationsDataTickets(
+      choosePriority: '选择优先级',
+      selectTicketPriority: '选择票务优先级',
+      newDepartment: '新部门',
+      chooseDepartment: '选择部门',
+      selectTicketDepartment: '选择票务部门',
+      newStatus: '新状态',
+      status: '地位',
+      chooseStatus: '选择状态',
+      selectTicketStatus: '选择票务状态',
+      ticketMisUseNotice: '* 注意：滥用工单提交可能会导致账号被暂停。',
+      updateMessage: '更新消息',
+      updateTicket: '更新工单',
+      closeTicket: '关闭票务',
+      submitTicket: '提交工单',
+      expectedResult: '预期结果',
+      ticketMessage: '工单信息',
+      ticketSubject: '票务主题',
+      addTicket: '添加票',
+      updateTicketID: '更新票号',
+      ticketID: '票号',
+      adminTickets: '管理员票务',
+      ticketsTitle: '门票',
+    ),
+    pushNotifications: AppLocalizationsDataPushNotifications(
+      entityCreatedBody: '您的实体已成功创建，现在可以使用了。',
+      entityCreatedTitle: '🏢 实体已创建',
+      userWelcomeBody: '欢迎加入我们的社区。我们很高兴您能成为我们的一份子。',
+      userWelcomeTitle: '👋 欢迎！',
+    ),
+    notifications: AppLocalizationsDataNotifications(
+      showUnRead: '未读',
+      showRead: '读',
+      showAll: '全部',
+      registrationPoints: '您已获得注册奖励积分。',
+      registrationCoins: '您获得了注册奖励——金币。',
+      thanksRegistration: '欢迎加入我们的社区，感谢您的注册。',
+      insteadOf: ']，而不是[',
+      displayNameChanged: '您的显示名称已成功更改为[',
+      profilePhotoChanged: '您的个人资料照片已成功更改。',
+      noNotificationsFound: '未找到通知。',
+      notificationsTitle: '通知',
+    ),
+    faq: AppLocalizationsDataFaq(
+      deleteQuestionMessage: '您确定要删除此问题吗？',
+      signInFirst: '请先登录再提问。',
+      answer: '回答',
+      question: '问题',
+      answerTime: '答题时间',
+      questionTime: '问答环节',
+      answeredBy: '回答者',
+      questionBy: '提问者',
+      addQuestionToLanguage: '将问题添加到语言',
+      noFAQLanguage: '没有常见问题解答与所选语言匹配。',
+      answered: '已回答',
+      waitingAnswer: '等待答复',
+      adminFAQForm: '管理员表单常见问题解答',
+      adminFAQLanguage: '管理员常见问题解答语言',
+      adminFAQ: '管理员常见问题解答',
+      faqLanguage: '常见问题解答语言',
+      faqTitle: '常问问题',
+    ),
+    wallet: AppLocalizationsDataWallet(
+      noTransactionsFound: '未找到交易记录。',
+      processTransaction: '处理交易',
+      controlUserWallet: '控制用户钱包',
+      controlUserPoints: '用户控制点',
+      controlUserCoins: '控制用户代币',
+      controlUserCash: '控制用户现金',
+      lastTotalPoints: '上次总得分',
+      lastTotalCoins: '最新总金币数',
+      lastTotalCash: '最新总现金',
+      allPointsTransactions: '所有积分交易',
+      allCoinsTransactions: '所有加密货币交易',
+      allCashTransactions: '所有现金交易',
+      buyPointsPlans: '购买积分计划',
+      buyPoints: '购买积分',
+      buy: '买',
+      pointsNotConstantValue: '点对点兑换价值并非固定值，每日都会有变化。',
+      coinsYouNeed: '你需要的硬币',
+      pointsYouWant: '你想要的分数',
+      readMoreAboutWallet: '您可以阅读更多关于钱包的信息',
+      transactionID: '交易 ID',
+      transactionDate: '交易日期',
+      transactionDescription: '交易说明',
+      transactionValue: '交易价值',
+      transactionFrom: '交易来源',
+      transactionTo: '交易至',
+      pointsTransactions: '积分交易',
+      coinsTransactions: '硬币交易',
+      cashTransactions: '现金交易',
+      invitationCode: '邀请码',
+      yourBalance: '您的余额',
+      points: '积分',
+      coins: '硬币',
+      cash: '现金',
+      title: '钱包',
+    ),
+    home: AppLocalizationsDataHome(
+      adminUserLabel: '管理员用户',
+      userStatusLabel: '地位',
+      emailLabel: '电子邮件',
+      uidLabel: 'UID',
+      nameLabel: '姓名',
+      title: '家',
+    ),
+    invitation: AppLocalizationsDataInvitation(
+      title2: '家',
+      winMoreCoins: '您还可以通过邀请好友使用（邀请码）或（推荐链接）加入应用程序来赢取更多金币。',
+      invitedLoggedMessage: '您通过推荐链接注册应用后进入此页面，但您已经注册过了。',
+      welcomeBack: '欢迎回到我们的社区。',
+      invitedLogged: '受邀登录用户',
+      codeFilledAutomatic: '使用推荐链接填写邀请码。',
+      congratulationsInvitation: '恭喜！您使用邀请码赢得了更多金币。',
+      readAboutCoins: '您可以阅读更多关于硬币的信息。',
+      skipInvitation: '我没有邀请码，请跳过此步骤',
+      earnInvitationNotification: '使用邀请码可以赚取更多金币',
+      balanceOnInvitation: '您的金币余额 =',
+      invitationLink: '邀请链接',
+      invitationCode: '邀请码',
+      title: '邀请函',
+    ),
+    auth: AppLocalizationsDataAuth(
+      mustLoggedToEnableFeature: '您必须登录才能启用此功能',
+      useLinkToRegister: '使用此链接注册',
+      skipAuth: '跳过此步骤',
+      signInFirst: '先登录',
+      animatedBTNWithApple: '苹果',
+      animatedBTNWithTwitter: '通过 Twitter',
+      animatedBTNWithFacebook: '通过 Facebook',
+      animatedBTNWithGoogle: '使用谷歌',
+      signByApple: '苹果标志',
+      signByTwitter: '通过 Twitter 签名',
+      signByFacebook: '通过 Facebook 签名',
+      signByGoogle: '谷歌签名',
+      usingSocialAccounts: '使用社交账号',
+      useSocialAccounts: '使用社交账号',
+      animatedBTNSuccess: '成功完成',
+      animatedBTNFailure: '失败',
+      animatedBTNLoading: '加载中',
+      termsPoliciesLink: '条款和政策',
+      termsAccept: '我接受',
+      faqLink: '常问问题',
+      continueBTN: '继续',
+      unknownError: '未知错误',
+      or: '或者',
+      phoneUseEmailInstead: '使用电子邮件',
+      phoneChangeNumber: '更改号码',
+      codeNotReceived: '没有收到验证码？',
+      enterCodeReceived: '请输入发送到您的邮箱的验证码',
+      resend: '重新发送',
+      sendOTP: '发送验证码',
+      confirmSendOTP: '确认发送验证码',
+      isCorrectNumber: '这是您的正确号码吗？',
+      wrongPasswordNotice: '密码与我们的记录不符。',
+      wrongPasswordNoticeTitle: '登录失败',
+      updateProfileTitle: '更新个人资料',
+      resetPasswordTitle: '重置密码',
+      changePasswordLabelButton: '更改密码',
+      submit: '提交',
+      cancel: '取消',
+      enterPassword: '请输入您的密码',
+      updateUserFailNotice: '用户更新失败',
+      updateUserSuccessNotice: '用户信息已成功更新。',
+      updateUserSuccessNoticeTitle: '用户更新',
+      updateUser: '更新个人资料',
+      signInonResetPasswordLabelButton: '登入',
+      resetPasswordFailed: '密码重置邮件发送失败',
+      resetPasswordNotice: '请查看您的电子邮件并按照说明重置密码。',
+      resetPasswordNoticeTitle: '密码重置邮件已发送',
+      signInLabelButton: '已有账号？登录。',
+      signUpError: '注册时出现问题，请稍后再试。',
+      signUpErrorTitle: '注册失败。',
+      signUpLabelButton: '创建一个帐户',
+      rememberMeCheckBox: '记住账号',
+      resetPasswordLabelButton: '忘记密码？',
+      signInError: '登录失败：邮箱或密码错误。',
+      signInErrorTitle: '登录错误',
+      countryField: '国家',
+      nameFormField: '姓名',
+      confirmPasswordFormField: '确认密码',
+      passwordFormField: '密码',
+      emailOrPhoneFormField: '电子邮件或电话',
+      phoneNumberFormField: '电话号码',
+      emailFormField: '电子邮件',
+      resetPasswordButton: '发送密码重置',
+      loginButton: '登录',
+      signInButton: '登入',
+      signUpButton: '报名',
+      varResetPass: '重置密码',
+      varInvitation: '加工',
+      varLink: '关联',
+      varLogin: '登入',
+      varRegister: '报名',
+    ),
+    profile: AppLocalizationsDataProfile(
+      updateProfile: '更新个人资料',
+      signOut: '登出',
+      screenModeNormal: '普通的',
+      screenModeFull: '全屏',
+      screenMode: '屏幕模式',
+      system: '系统',
+      light: '光',
+      dark: '黑暗的',
+      theme: '主题',
+      language: '语言',
+      settings: '设置',
+      suspendUser: '暂停用户',
+      viewProfile: '查看个人资料',
+      linkAccount: '关联账户',
+      verifyEmailInFirst: '您必须先验证电子邮件',
+      verifyEmailDialogTitle: '谨慎核实',
+      resetPassConfirm: '您确定要重置密码吗？',
+      resetPassDialogTitle: '注意：重置密码',
+      verifiedPhone: '已验证电话',
+      verifiedMail: '已验证邮件',
+      connection: '联系',
+      phone: '电话',
+      phoneNumber: '电话号码',
+      avatar: '阿凡达',
+      pointsBalance: '积分余额',
+      coinsBalance: '硬币余额',
+      invitedUsers: '受邀用户',
+      invitingUser: '邀请用户',
+      invitationCodeTrials: '邀请码试用',
+      askedInvitationCode: '请求邀请码',
+      invitationLink: '邀请链接',
+      invitationCode: '邀请码',
+      themeUsed: '使用的主题',
+      themeSelected: '主题已选',
+      languageUsed: '使用的语言',
+      languageSelected: '已选择语言',
+      connected: '已连接',
+      offline: '离线',
+      onLine: '在线的',
+      lastSeen: '最后出现时间',
+      lastSeenDate: '最后出现日期',
+      connectionStatus: '连接状态',
+      lastLoginProvider: '上次登录提供商',
+      lastLoginDate: '最后登录日期',
+      lastUpdateDate: '最后更新日期',
+      creationDate: '创建日期',
+      inactivated: '已停用',
+      disabled: '已禁用',
+      userRole: '用户角色',
+      role: '角色',
+      googlePhotoURL: 'Google 照片网址',
+      googleID: 'Google ID',
+      facebookURL: 'Facebook网址',
+      facebookID: 'Facebook ID',
+      providerAppleDate: '提供商 Apple Date',
+      providerTwitterDate: '提供商 Twitter 日期',
+      providerGoogleDate: '提供商：谷歌 日期',
+      providerFacebookDate: '提供商 Facebook 日期',
+      providerPhoneDate: '提供商电话日期',
+      providerEmailDate: '提供商电子邮件日期',
+      registrationProvider: '注册服务提供商',
+      registrationApp: '注册应用程序',
+      providerApple: '供应商：苹果',
+      providerTwitter: '提供商 Twitter',
+      providerGoogle: '提供商：谷歌',
+      providerFacebook: '提供商 Facebook',
+      providerPhone: '供应商电话',
+      providerEmail: '提供商电子邮件',
+      phoneVerification: '电话验证',
+      emailVerification: '电子邮件验证',
+      senderID: '发件人 ID',
+      country: '国家',
+      photoUrl: '照片网址',
+      birthDate: '出生日期',
+      religion: '宗教',
+      genderBoth: '两个都',
+      onlyFemale: '仅限女性',
+      onlyMale: '仅限男性',
+      gender: '性别',
+      displayName: '显示名称',
+      primaryPhone: '主要电话',
+      password: '密码',
+      email: '电子邮件',
+      uid: 'UID',
+      code: '代码',
+      profilePhoto: '个人资料照片',
+      myDevices: '我的设备',
+      preferencesInfo: '偏好设置信息',
+      connectionInfo: '连接信息',
+      accountInfo: '账户信息',
+      socialInfo: '社交信息',
+      authInfo: '身份验证信息',
+      personalInfo: '个人信息',
+      referralInfo: '转诊信息',
+      title: '轮廓',
+    ),
+    attach: AppLocalizationsDataAttach(
+      canNotLaunchApp: '无法启动应用',
+      photoSelectionCancelled: '照片选择已取消',
+      noPhotoSelected: '未选择照片',
+      attachPhoto: '附上照片',
+    ),
+    terms: AppLocalizationsDataTerms(
+      termsAndPolicies: '条款和政策',
+      termsPoliciesLink: '条款政策',
+    ),
+    languages: AppLocalizationsDataLanguages(
+      langJapanese: '中国人\n',
+      langRussian: '俄语\n\n',
+      langPortuguese: '葡萄牙语\n...',
+      langSpanish: '西班牙语\n',
+      langItalian: '意大利语\n\n',
+      langGerman: '德语\n\n',
+      langFrench: '法语\n',
+      langArabic: '阿拉伯',
+      langEnglish: '英语',
+      selectLanguage: '选择语言',
+    ),
+    validator: AppLocalizationsDataValidator(
+      emailNotRegistered: '此邮箱地址之前未注册过。您可以注册或关联您的账户。',
+      emailAlreadyRegisteredReadFAQ: '此邮箱地址之前已注册过。\n您可以在常见问题解答中了解更多关于关联账户的信息。',
+      emailAlreadyRegistered: '此邮箱地址已被注册过\n您可以登录',
+      canotLinkAccount: '无法关联此帐户，因为它已关联。',
+      continueUsingFacebookAccount:
+          '您可以继续使用 Facebook 帐户\n您可以在常见问题解答中了解更多关于关联帐户的信息。',
+      continueUsingGoogleAccount:
+          '您可以继续使用 Google 帐户\n您可以在常见问题解答中阅读更多关于关联帐户的信息。',
+      continueUsingPhone: '您可以继续使用手机\n您可以在常见问题解答中了解更多关于关联帐户的信息。',
+      continueUsingEmail: '您可以继续使用电子邮件\n您可以在常见问题解答中了解更多关于关联帐户的信息。',
+      unKnownErrorTryAgain: '发生未知错误，请重试。',
+      acceptTermsFirst: '您应该先接受条款',
+      enterOTPCorrectly: '请正确输入收到的验证码',
+      checkInternetThenTryAgain: '请检查您的网络连接并重试。',
+      completeFieldsCorrectly: '请正确填写所有字段',
+      notEmpty: '请填写所有字段',
+      enterInvitationCode: '请输入邀请码',
+      enterCorrectAddress: '请输入正确的地址',
+      enterAddressNotPhone: '请输入正确的地址，而非电话号码。',
+      enterAddressNotWebsite: '请输入正确地址，而非网址。',
+      enterAddressNotEmail: '请输入正确的地址，而非电子邮件地址。',
+      addressCannotBeEmpty: '地址不能为空',
+      enterCorrectCompany: '请输入正确的公司名称',
+      enterCompanyNotPhone: '请输入正确的公司名称，而非电话号码。',
+      enterCompanyNotWebsite: '请输入正确的公司名称，而非网站地址。',
+      enterCompanyNotEmail: '请输入正确的公司名称，而非电子邮件地址。',
+      companyCannotBeEmpty: '公司不能空无一人',
+      enterJobNotWebsite: '请输入正确的职位信息，而非网站地址。',
+      enterJobNotEmail: '请输入正确的职位信息，而非邮箱地址。请输入正确的职位名称，而非邮箱地址。',
+      enterJobNotPhone: '请输入正确的职位信息，而非电话号码。',
+      jobCannotBeEmpty: '职位不能空缺',
+      enterCorrectJob: '请输入正确的职位',
+      enterCorrectPhone: '请输入正确的电话号码',
+      phoneCannotBeEmpty: '手机不能为空',
+      enterWebsiteNotEmail: '请输入网站地址，而非邮箱地址。',
+      enterWebsiteNotPhone: '请输入网站地址，而非电话号码。',
+      websiteCannotBeEmpty: '网站不能为空',
+      website: '请输入网站地址',
+      emailCannotBeEmpty: '电子邮件地址不能为空',
+      cannotUseEmailProvider: '无法使用此电子邮件提供商',
+      email: '请输入有效的电子邮件地址',
+      amount: '请输入一个数字，例如 250 - 无需输入美元符号和美分。',
+      number: '请输入数字',
+      name: '请输入姓名',
+      confirmPassword: '密码并不常见',
+      password: '密码长度必须至少为 8 个字符',
+      passwordCannotBeEmpty: '密码不能为空',
+    ),
+    globals: AppLocalizationsDataGlobals(
+      search: '搜索',
+      edit: '编辑',
+      favorite: '最喜欢的',
+      share: '分享',
+      canNotLaunchApp: '无法启动应用',
+      selectCountry: '选择国家/地区',
+      userUID: '用户 UID',
+      useThisResult: '使用此结果',
+      showLess: '显示更少',
+      showMore: '显示更多',
+      confirmDelete: '确认删除',
+      delete: '删除',
+      update: '更新',
+      done: '完毕',
+      cancel: '取消',
+      ok: '好的',
+      okBTN: '好的',
+      yes: '是的',
+      confirm: '确认',
+      confirmation: '确认',
+      notCopied: '没有数据可复制',
+      copied: '已复制',
+      failedToGetData: '获取数据失败',
+      lessInfo: '信息较少',
+      moreInfo: '更多信息',
+      allNone: '全部/无',
+      dataToShow: '待展示的数据',
+      noDataToShow: '暂无数据可显示',
+      controlUserInfoToDisplay: '控制用户信息的显示',
+      selectRanges: '选择范围',
+      selectRange: '选择范围',
+      selectDay: '选择日期',
+      selectDate: '选择日期',
+      multiRanges: '多范围',
+      range: '范围',
+      day: '天',
+      time: '时间',
+      data2: '数据',
+      data1: '数据',
+      format: '格式',
+      type: '类型',
+      appVersion: '应用版本',
+      appName: '应用名称',
+      dashboard: '仪表板',
+      aboutApp: '关于',
+      info: '信息',
+      settings: '设置',
+      history: '历史',
+      home: '家',
+      wallet: '钱包',
+      profile: '轮廓',
+    ),
+    splash: AppLocalizationsDataSplash(loading: '加载中'),
+    app: AppLocalizationsDataApp(
+      titleCodes: '智能代码',
+      titleContacts: '智能联系人',
+      titleSMS: '智能短信',
     ),
   ),
 };
@@ -5456,18 +6153,20 @@ class AppLocalizationsData {
     required this.vcf,
     required this.contacts,
     required this.messages,
+    required this.dashboard,
     required this.tickets,
+    required this.pushNotifications,
     required this.notifications,
     required this.faq,
     required this.wallet,
-    required this.validator,
     required this.home,
-    required this.dashboard,
     required this.invitation,
     required this.auth,
     required this.profile,
     required this.attach,
     required this.terms,
+    required this.languages,
+    required this.validator,
     required this.globals,
     required this.splash,
     required this.app,
@@ -5477,18 +6176,20 @@ class AppLocalizationsData {
   final AppLocalizationsDataVcf vcf;
   final AppLocalizationsDataContacts contacts;
   final AppLocalizationsDataMessages messages;
+  final AppLocalizationsDataDashboard dashboard;
   final AppLocalizationsDataTickets tickets;
+  final AppLocalizationsDataPushNotifications pushNotifications;
   final AppLocalizationsDataNotifications notifications;
   final AppLocalizationsDataFaq faq;
   final AppLocalizationsDataWallet wallet;
-  final AppLocalizationsDataValidator validator;
   final AppLocalizationsDataHome home;
-  final AppLocalizationsDataDashboard dashboard;
   final AppLocalizationsDataInvitation invitation;
   final AppLocalizationsDataAuth auth;
   final AppLocalizationsDataProfile profile;
   final AppLocalizationsDataAttach attach;
   final AppLocalizationsDataTerms terms;
+  final AppLocalizationsDataLanguages languages;
+  final AppLocalizationsDataValidator validator;
   final AppLocalizationsDataGlobals globals;
   final AppLocalizationsDataSplash splash;
   final AppLocalizationsDataApp app;
@@ -5505,8 +6206,14 @@ class AppLocalizationsData {
     messages: AppLocalizationsDataMessages.fromJson(
       map['messages']! as Map<String, Object?>,
     ),
+    dashboard: AppLocalizationsDataDashboard.fromJson(
+      map['dashboard']! as Map<String, Object?>,
+    ),
     tickets: AppLocalizationsDataTickets.fromJson(
       map['tickets']! as Map<String, Object?>,
+    ),
+    pushNotifications: AppLocalizationsDataPushNotifications.fromJson(
+      map['pushNotifications']! as Map<String, Object?>,
     ),
     notifications: AppLocalizationsDataNotifications.fromJson(
       map['notifications']! as Map<String, Object?>,
@@ -5515,14 +6222,8 @@ class AppLocalizationsData {
     wallet: AppLocalizationsDataWallet.fromJson(
       map['wallet']! as Map<String, Object?>,
     ),
-    validator: AppLocalizationsDataValidator.fromJson(
-      map['validator']! as Map<String, Object?>,
-    ),
     home: AppLocalizationsDataHome.fromJson(
       map['home']! as Map<String, Object?>,
-    ),
-    dashboard: AppLocalizationsDataDashboard.fromJson(
-      map['dashboard']! as Map<String, Object?>,
     ),
     invitation: AppLocalizationsDataInvitation.fromJson(
       map['invitation']! as Map<String, Object?>,
@@ -5539,6 +6240,12 @@ class AppLocalizationsData {
     terms: AppLocalizationsDataTerms.fromJson(
       map['terms']! as Map<String, Object?>,
     ),
+    languages: AppLocalizationsDataLanguages.fromJson(
+      map['languages']! as Map<String, Object?>,
+    ),
+    validator: AppLocalizationsDataValidator.fromJson(
+      map['validator']! as Map<String, Object?>,
+    ),
     globals: AppLocalizationsDataGlobals.fromJson(
       map['globals']! as Map<String, Object?>,
     ),
@@ -5553,18 +6260,20 @@ class AppLocalizationsData {
     AppLocalizationsDataVcf? vcf,
     AppLocalizationsDataContacts? contacts,
     AppLocalizationsDataMessages? messages,
+    AppLocalizationsDataDashboard? dashboard,
     AppLocalizationsDataTickets? tickets,
+    AppLocalizationsDataPushNotifications? pushNotifications,
     AppLocalizationsDataNotifications? notifications,
     AppLocalizationsDataFaq? faq,
     AppLocalizationsDataWallet? wallet,
-    AppLocalizationsDataValidator? validator,
     AppLocalizationsDataHome? home,
-    AppLocalizationsDataDashboard? dashboard,
     AppLocalizationsDataInvitation? invitation,
     AppLocalizationsDataAuth? auth,
     AppLocalizationsDataProfile? profile,
     AppLocalizationsDataAttach? attach,
     AppLocalizationsDataTerms? terms,
+    AppLocalizationsDataLanguages? languages,
+    AppLocalizationsDataValidator? validator,
     AppLocalizationsDataGlobals? globals,
     AppLocalizationsDataSplash? splash,
     AppLocalizationsDataApp? app,
@@ -5573,18 +6282,20 @@ class AppLocalizationsData {
     vcf: vcf ?? this.vcf,
     contacts: contacts ?? this.contacts,
     messages: messages ?? this.messages,
+    dashboard: dashboard ?? this.dashboard,
     tickets: tickets ?? this.tickets,
+    pushNotifications: pushNotifications ?? this.pushNotifications,
     notifications: notifications ?? this.notifications,
     faq: faq ?? this.faq,
     wallet: wallet ?? this.wallet,
-    validator: validator ?? this.validator,
     home: home ?? this.home,
-    dashboard: dashboard ?? this.dashboard,
     invitation: invitation ?? this.invitation,
     auth: auth ?? this.auth,
     profile: profile ?? this.profile,
     attach: attach ?? this.attach,
     terms: terms ?? this.terms,
+    languages: languages ?? this.languages,
+    validator: validator ?? this.validator,
     globals: globals ?? this.globals,
     splash: splash ?? this.splash,
     app: app ?? this.app,
@@ -5598,18 +6309,20 @@ class AppLocalizationsData {
           vcf == other.vcf &&
           contacts == other.contacts &&
           messages == other.messages &&
+          dashboard == other.dashboard &&
           tickets == other.tickets &&
+          pushNotifications == other.pushNotifications &&
           notifications == other.notifications &&
           faq == other.faq &&
           wallet == other.wallet &&
-          validator == other.validator &&
           home == other.home &&
-          dashboard == other.dashboard &&
           invitation == other.invitation &&
           auth == other.auth &&
           profile == other.profile &&
           attach == other.attach &&
           terms == other.terms &&
+          languages == other.languages &&
+          validator == other.validator &&
           globals == other.globals &&
           splash == other.splash &&
           app == other.app);
@@ -5620,18 +6333,20 @@ class AppLocalizationsData {
       vcf.hashCode ^
       contacts.hashCode ^
       messages.hashCode ^
+      dashboard.hashCode ^
       tickets.hashCode ^
+      pushNotifications.hashCode ^
       notifications.hashCode ^
       faq.hashCode ^
       wallet.hashCode ^
-      validator.hashCode ^
       home.hashCode ^
-      dashboard.hashCode ^
       invitation.hashCode ^
       auth.hashCode ^
       profile.hashCode ^
       attach.hashCode ^
       terms.hashCode ^
+      languages.hashCode ^
+      validator.hashCode ^
       globals.hashCode ^
       splash.hashCode ^
       app.hashCode;
@@ -6638,6 +7353,140 @@ class AppLocalizationsDataMessages {
       messages.hashCode;
 }
 
+class AppLocalizationsDataDashboard {
+  const AppLocalizationsDataDashboard({
+    required this.filterUserInfoToDisplay,
+    required this.completelyDeleteUser,
+    required this.deleteUser,
+    required this.controlWallets,
+    required this.adminControlWallet,
+    required this.fAQCenter,
+    required this.adminControlFAQ,
+    required this.ticketsCenter,
+    required this.adminControlTickets,
+    required this.manageUsers,
+    required this.adminControlUsers,
+    required this.allUsers,
+    required this.listAllUsers,
+    required this.listUsers,
+    required this.adminListUsers,
+    required this.title,
+  });
+
+  final String filterUserInfoToDisplay;
+  final String completelyDeleteUser;
+  final String deleteUser;
+  final String controlWallets;
+  final String adminControlWallet;
+  final String fAQCenter;
+  final String adminControlFAQ;
+  final String ticketsCenter;
+  final String adminControlTickets;
+  final String manageUsers;
+  final String adminControlUsers;
+  final String allUsers;
+  final String listAllUsers;
+  final String listUsers;
+  final String adminListUsers;
+  final String title;
+  factory AppLocalizationsDataDashboard.fromJson(Map<String, Object?> map) =>
+      AppLocalizationsDataDashboard(
+        filterUserInfoToDisplay: map['filterUserInfoToDisplay']! as String,
+        completelyDeleteUser: map['completelyDeleteUser']! as String,
+        deleteUser: map['deleteUser']! as String,
+        controlWallets: map['controlWallets']! as String,
+        adminControlWallet: map['adminControlWallet']! as String,
+        fAQCenter: map['fAQCenter']! as String,
+        adminControlFAQ: map['adminControlFAQ']! as String,
+        ticketsCenter: map['ticketsCenter']! as String,
+        adminControlTickets: map['adminControlTickets']! as String,
+        manageUsers: map['manageUsers']! as String,
+        adminControlUsers: map['adminControlUsers']! as String,
+        allUsers: map['allUsers']! as String,
+        listAllUsers: map['listAllUsers']! as String,
+        listUsers: map['listUsers']! as String,
+        adminListUsers: map['adminListUsers']! as String,
+        title: map['title']! as String,
+      );
+
+  AppLocalizationsDataDashboard copyWith({
+    String? filterUserInfoToDisplay,
+    String? completelyDeleteUser,
+    String? deleteUser,
+    String? controlWallets,
+    String? adminControlWallet,
+    String? fAQCenter,
+    String? adminControlFAQ,
+    String? ticketsCenter,
+    String? adminControlTickets,
+    String? manageUsers,
+    String? adminControlUsers,
+    String? allUsers,
+    String? listAllUsers,
+    String? listUsers,
+    String? adminListUsers,
+    String? title,
+  }) => AppLocalizationsDataDashboard(
+    filterUserInfoToDisplay:
+        filterUserInfoToDisplay ?? this.filterUserInfoToDisplay,
+    completelyDeleteUser: completelyDeleteUser ?? this.completelyDeleteUser,
+    deleteUser: deleteUser ?? this.deleteUser,
+    controlWallets: controlWallets ?? this.controlWallets,
+    adminControlWallet: adminControlWallet ?? this.adminControlWallet,
+    fAQCenter: fAQCenter ?? this.fAQCenter,
+    adminControlFAQ: adminControlFAQ ?? this.adminControlFAQ,
+    ticketsCenter: ticketsCenter ?? this.ticketsCenter,
+    adminControlTickets: adminControlTickets ?? this.adminControlTickets,
+    manageUsers: manageUsers ?? this.manageUsers,
+    adminControlUsers: adminControlUsers ?? this.adminControlUsers,
+    allUsers: allUsers ?? this.allUsers,
+    listAllUsers: listAllUsers ?? this.listAllUsers,
+    listUsers: listUsers ?? this.listUsers,
+    adminListUsers: adminListUsers ?? this.adminListUsers,
+    title: title ?? this.title,
+  );
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is AppLocalizationsDataDashboard &&
+          filterUserInfoToDisplay == other.filterUserInfoToDisplay &&
+          completelyDeleteUser == other.completelyDeleteUser &&
+          deleteUser == other.deleteUser &&
+          controlWallets == other.controlWallets &&
+          adminControlWallet == other.adminControlWallet &&
+          fAQCenter == other.fAQCenter &&
+          adminControlFAQ == other.adminControlFAQ &&
+          ticketsCenter == other.ticketsCenter &&
+          adminControlTickets == other.adminControlTickets &&
+          manageUsers == other.manageUsers &&
+          adminControlUsers == other.adminControlUsers &&
+          allUsers == other.allUsers &&
+          listAllUsers == other.listAllUsers &&
+          listUsers == other.listUsers &&
+          adminListUsers == other.adminListUsers &&
+          title == other.title);
+  @override
+  int get hashCode =>
+      runtimeType.hashCode ^
+      filterUserInfoToDisplay.hashCode ^
+      completelyDeleteUser.hashCode ^
+      deleteUser.hashCode ^
+      controlWallets.hashCode ^
+      adminControlWallet.hashCode ^
+      fAQCenter.hashCode ^
+      adminControlFAQ.hashCode ^
+      ticketsCenter.hashCode ^
+      adminControlTickets.hashCode ^
+      manageUsers.hashCode ^
+      adminControlUsers.hashCode ^
+      allUsers.hashCode ^
+      listAllUsers.hashCode ^
+      listUsers.hashCode ^
+      adminListUsers.hashCode ^
+      title.hashCode;
+}
+
 class AppLocalizationsDataTickets {
   const AppLocalizationsDataTickets({
     required this.choosePriority,
@@ -6812,6 +7661,56 @@ class AppLocalizationsDataTickets {
       ticketID.hashCode ^
       adminTickets.hashCode ^
       ticketsTitle.hashCode;
+}
+
+class AppLocalizationsDataPushNotifications {
+  const AppLocalizationsDataPushNotifications({
+    required this.entityCreatedBody,
+    required this.entityCreatedTitle,
+    required this.userWelcomeBody,
+    required this.userWelcomeTitle,
+  });
+
+  final String entityCreatedBody;
+  final String entityCreatedTitle;
+  final String userWelcomeBody;
+  final String userWelcomeTitle;
+  factory AppLocalizationsDataPushNotifications.fromJson(
+    Map<String, Object?> map,
+  ) => AppLocalizationsDataPushNotifications(
+    entityCreatedBody: map['entityCreatedBody']! as String,
+    entityCreatedTitle: map['entityCreatedTitle']! as String,
+    userWelcomeBody: map['userWelcomeBody']! as String,
+    userWelcomeTitle: map['userWelcomeTitle']! as String,
+  );
+
+  AppLocalizationsDataPushNotifications copyWith({
+    String? entityCreatedBody,
+    String? entityCreatedTitle,
+    String? userWelcomeBody,
+    String? userWelcomeTitle,
+  }) => AppLocalizationsDataPushNotifications(
+    entityCreatedBody: entityCreatedBody ?? this.entityCreatedBody,
+    entityCreatedTitle: entityCreatedTitle ?? this.entityCreatedTitle,
+    userWelcomeBody: userWelcomeBody ?? this.userWelcomeBody,
+    userWelcomeTitle: userWelcomeTitle ?? this.userWelcomeTitle,
+  );
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is AppLocalizationsDataPushNotifications &&
+          entityCreatedBody == other.entityCreatedBody &&
+          entityCreatedTitle == other.entityCreatedTitle &&
+          userWelcomeBody == other.userWelcomeBody &&
+          userWelcomeTitle == other.userWelcomeTitle);
+  @override
+  int get hashCode =>
+      runtimeType.hashCode ^
+      entityCreatedBody.hashCode ^
+      entityCreatedTitle.hashCode ^
+      userWelcomeBody.hashCode ^
+      userWelcomeTitle.hashCode;
 }
 
 class AppLocalizationsDataNotifications {
@@ -7314,355 +8213,6 @@ class AppLocalizationsDataWallet {
       title.hashCode;
 }
 
-class AppLocalizationsDataValidator {
-  const AppLocalizationsDataValidator({
-    required this.emailNotRegistered,
-    required this.emailAlreadyRegisteredReadFAQ,
-    required this.emailAlreadyRegistered,
-    required this.canotLinkAccount,
-    required this.continueUsingFacebookAccount,
-    required this.continueUsingGoogleAccount,
-    required this.continueUsingPhone,
-    required this.continueUsingEmail,
-    required this.unKnownErrorTryAgain,
-    required this.acceptTermsFirst,
-    required this.enterOTPCorrectly,
-    required this.checkInternetThenTryAgain,
-    required this.completeFieldsCorrectly,
-    required this.notEmpty,
-    required this.enterInvitationCode,
-    required this.enterCorrectAddress,
-    required this.enterAddressNotPhone,
-    required this.enterAddressNotWebsite,
-    required this.enterAddressNotEmail,
-    required this.addressCannotBeEmpty,
-    required this.enterCorrectCompany,
-    required this.enterCompanyNotPhone,
-    required this.enterCompanyNotWebsite,
-    required this.enterCompanyNotEmail,
-    required this.companyCannotBeEmpty,
-    required this.enterJobNotWebsite,
-    required this.enterJobNotEmail,
-    required this.enterJobNotPhone,
-    required this.jobCannotBeEmpty,
-    required this.enterCorrectJob,
-    required this.enterCorrectPhone,
-    required this.phoneCannotBeEmpty,
-    required this.enterWebsiteNotEmail,
-    required this.enterWebsiteNotPhone,
-    required this.websiteCannotBeEmpty,
-    required this.website,
-    required this.emailCannotBeEmpty,
-    required this.cannotUseEmailProvider,
-    required this.email,
-    required this.amount,
-    required this.number,
-    required this.name,
-    required this.confirmPassword,
-    required this.password,
-    required this.passwordCannotBeEmpty,
-  });
-
-  final String emailNotRegistered;
-  final String emailAlreadyRegisteredReadFAQ;
-  final String emailAlreadyRegistered;
-  final String canotLinkAccount;
-  final String continueUsingFacebookAccount;
-  final String continueUsingGoogleAccount;
-  final String continueUsingPhone;
-  final String continueUsingEmail;
-  final String unKnownErrorTryAgain;
-  final String acceptTermsFirst;
-  final String enterOTPCorrectly;
-  final String checkInternetThenTryAgain;
-  final String completeFieldsCorrectly;
-  final String notEmpty;
-  final String enterInvitationCode;
-  final String enterCorrectAddress;
-  final String enterAddressNotPhone;
-  final String enterAddressNotWebsite;
-  final String enterAddressNotEmail;
-  final String addressCannotBeEmpty;
-  final String enterCorrectCompany;
-  final String enterCompanyNotPhone;
-  final String enterCompanyNotWebsite;
-  final String enterCompanyNotEmail;
-  final String companyCannotBeEmpty;
-  final String enterJobNotWebsite;
-  final String enterJobNotEmail;
-  final String enterJobNotPhone;
-  final String jobCannotBeEmpty;
-  final String enterCorrectJob;
-  final String enterCorrectPhone;
-  final String phoneCannotBeEmpty;
-  final String enterWebsiteNotEmail;
-  final String enterWebsiteNotPhone;
-  final String websiteCannotBeEmpty;
-  final String website;
-  final String emailCannotBeEmpty;
-  final String cannotUseEmailProvider;
-  final String email;
-  final String amount;
-  final String number;
-  final String name;
-  final String confirmPassword;
-  final String password;
-  final String passwordCannotBeEmpty;
-  factory AppLocalizationsDataValidator.fromJson(Map<String, Object?> map) =>
-      AppLocalizationsDataValidator(
-        emailNotRegistered: map['emailNotRegistered']! as String,
-        emailAlreadyRegisteredReadFAQ:
-            map['emailAlreadyRegisteredReadFAQ']! as String,
-        emailAlreadyRegistered: map['emailAlreadyRegistered']! as String,
-        canotLinkAccount: map['canotLinkAccount']! as String,
-        continueUsingFacebookAccount:
-            map['continueUsingFacebookAccount']! as String,
-        continueUsingGoogleAccount:
-            map['continueUsingGoogleAccount']! as String,
-        continueUsingPhone: map['continueUsingPhone']! as String,
-        continueUsingEmail: map['continueUsingEmail']! as String,
-        unKnownErrorTryAgain: map['unKnownErrorTryAgain']! as String,
-        acceptTermsFirst: map['acceptTermsFirst']! as String,
-        enterOTPCorrectly: map['enterOTPCorrectly']! as String,
-        checkInternetThenTryAgain: map['checkInternetThenTryAgain']! as String,
-        completeFieldsCorrectly: map['completeFieldsCorrectly']! as String,
-        notEmpty: map['notEmpty']! as String,
-        enterInvitationCode: map['enterInvitationCode']! as String,
-        enterCorrectAddress: map['enterCorrectAddress']! as String,
-        enterAddressNotPhone: map['enterAddressNotPhone']! as String,
-        enterAddressNotWebsite: map['enterAddressNotWebsite']! as String,
-        enterAddressNotEmail: map['enterAddressNotEmail']! as String,
-        addressCannotBeEmpty: map['addressCannotBeEmpty']! as String,
-        enterCorrectCompany: map['enterCorrectCompany']! as String,
-        enterCompanyNotPhone: map['enterCompanyNotPhone']! as String,
-        enterCompanyNotWebsite: map['enterCompanyNotWebsite']! as String,
-        enterCompanyNotEmail: map['enterCompanyNotEmail']! as String,
-        companyCannotBeEmpty: map['companyCannotBeEmpty']! as String,
-        enterJobNotWebsite: map['enterJobNotWebsite']! as String,
-        enterJobNotEmail: map['enterJobNotEmail']! as String,
-        enterJobNotPhone: map['enterJobNotPhone']! as String,
-        jobCannotBeEmpty: map['jobCannotBeEmpty']! as String,
-        enterCorrectJob: map['enterCorrectJob']! as String,
-        enterCorrectPhone: map['enterCorrectPhone']! as String,
-        phoneCannotBeEmpty: map['phoneCannotBeEmpty']! as String,
-        enterWebsiteNotEmail: map['enterWebsiteNotEmail']! as String,
-        enterWebsiteNotPhone: map['enterWebsiteNotPhone']! as String,
-        websiteCannotBeEmpty: map['websiteCannotBeEmpty']! as String,
-        website: map['website']! as String,
-        emailCannotBeEmpty: map['emailCannotBeEmpty']! as String,
-        cannotUseEmailProvider: map['cannotUseEmailProvider']! as String,
-        email: map['email']! as String,
-        amount: map['amount']! as String,
-        number: map['number']! as String,
-        name: map['name']! as String,
-        confirmPassword: map['confirmPassword']! as String,
-        password: map['password']! as String,
-        passwordCannotBeEmpty: map['passwordCannotBeEmpty']! as String,
-      );
-
-  AppLocalizationsDataValidator copyWith({
-    String? emailNotRegistered,
-    String? emailAlreadyRegisteredReadFAQ,
-    String? emailAlreadyRegistered,
-    String? canotLinkAccount,
-    String? continueUsingFacebookAccount,
-    String? continueUsingGoogleAccount,
-    String? continueUsingPhone,
-    String? continueUsingEmail,
-    String? unKnownErrorTryAgain,
-    String? acceptTermsFirst,
-    String? enterOTPCorrectly,
-    String? checkInternetThenTryAgain,
-    String? completeFieldsCorrectly,
-    String? notEmpty,
-    String? enterInvitationCode,
-    String? enterCorrectAddress,
-    String? enterAddressNotPhone,
-    String? enterAddressNotWebsite,
-    String? enterAddressNotEmail,
-    String? addressCannotBeEmpty,
-    String? enterCorrectCompany,
-    String? enterCompanyNotPhone,
-    String? enterCompanyNotWebsite,
-    String? enterCompanyNotEmail,
-    String? companyCannotBeEmpty,
-    String? enterJobNotWebsite,
-    String? enterJobNotEmail,
-    String? enterJobNotPhone,
-    String? jobCannotBeEmpty,
-    String? enterCorrectJob,
-    String? enterCorrectPhone,
-    String? phoneCannotBeEmpty,
-    String? enterWebsiteNotEmail,
-    String? enterWebsiteNotPhone,
-    String? websiteCannotBeEmpty,
-    String? website,
-    String? emailCannotBeEmpty,
-    String? cannotUseEmailProvider,
-    String? email,
-    String? amount,
-    String? number,
-    String? name,
-    String? confirmPassword,
-    String? password,
-    String? passwordCannotBeEmpty,
-  }) => AppLocalizationsDataValidator(
-    emailNotRegistered: emailNotRegistered ?? this.emailNotRegistered,
-    emailAlreadyRegisteredReadFAQ:
-        emailAlreadyRegisteredReadFAQ ?? this.emailAlreadyRegisteredReadFAQ,
-    emailAlreadyRegistered:
-        emailAlreadyRegistered ?? this.emailAlreadyRegistered,
-    canotLinkAccount: canotLinkAccount ?? this.canotLinkAccount,
-    continueUsingFacebookAccount:
-        continueUsingFacebookAccount ?? this.continueUsingFacebookAccount,
-    continueUsingGoogleAccount:
-        continueUsingGoogleAccount ?? this.continueUsingGoogleAccount,
-    continueUsingPhone: continueUsingPhone ?? this.continueUsingPhone,
-    continueUsingEmail: continueUsingEmail ?? this.continueUsingEmail,
-    unKnownErrorTryAgain: unKnownErrorTryAgain ?? this.unKnownErrorTryAgain,
-    acceptTermsFirst: acceptTermsFirst ?? this.acceptTermsFirst,
-    enterOTPCorrectly: enterOTPCorrectly ?? this.enterOTPCorrectly,
-    checkInternetThenTryAgain:
-        checkInternetThenTryAgain ?? this.checkInternetThenTryAgain,
-    completeFieldsCorrectly:
-        completeFieldsCorrectly ?? this.completeFieldsCorrectly,
-    notEmpty: notEmpty ?? this.notEmpty,
-    enterInvitationCode: enterInvitationCode ?? this.enterInvitationCode,
-    enterCorrectAddress: enterCorrectAddress ?? this.enterCorrectAddress,
-    enterAddressNotPhone: enterAddressNotPhone ?? this.enterAddressNotPhone,
-    enterAddressNotWebsite:
-        enterAddressNotWebsite ?? this.enterAddressNotWebsite,
-    enterAddressNotEmail: enterAddressNotEmail ?? this.enterAddressNotEmail,
-    addressCannotBeEmpty: addressCannotBeEmpty ?? this.addressCannotBeEmpty,
-    enterCorrectCompany: enterCorrectCompany ?? this.enterCorrectCompany,
-    enterCompanyNotPhone: enterCompanyNotPhone ?? this.enterCompanyNotPhone,
-    enterCompanyNotWebsite:
-        enterCompanyNotWebsite ?? this.enterCompanyNotWebsite,
-    enterCompanyNotEmail: enterCompanyNotEmail ?? this.enterCompanyNotEmail,
-    companyCannotBeEmpty: companyCannotBeEmpty ?? this.companyCannotBeEmpty,
-    enterJobNotWebsite: enterJobNotWebsite ?? this.enterJobNotWebsite,
-    enterJobNotEmail: enterJobNotEmail ?? this.enterJobNotEmail,
-    enterJobNotPhone: enterJobNotPhone ?? this.enterJobNotPhone,
-    jobCannotBeEmpty: jobCannotBeEmpty ?? this.jobCannotBeEmpty,
-    enterCorrectJob: enterCorrectJob ?? this.enterCorrectJob,
-    enterCorrectPhone: enterCorrectPhone ?? this.enterCorrectPhone,
-    phoneCannotBeEmpty: phoneCannotBeEmpty ?? this.phoneCannotBeEmpty,
-    enterWebsiteNotEmail: enterWebsiteNotEmail ?? this.enterWebsiteNotEmail,
-    enterWebsiteNotPhone: enterWebsiteNotPhone ?? this.enterWebsiteNotPhone,
-    websiteCannotBeEmpty: websiteCannotBeEmpty ?? this.websiteCannotBeEmpty,
-    website: website ?? this.website,
-    emailCannotBeEmpty: emailCannotBeEmpty ?? this.emailCannotBeEmpty,
-    cannotUseEmailProvider:
-        cannotUseEmailProvider ?? this.cannotUseEmailProvider,
-    email: email ?? this.email,
-    amount: amount ?? this.amount,
-    number: number ?? this.number,
-    name: name ?? this.name,
-    confirmPassword: confirmPassword ?? this.confirmPassword,
-    password: password ?? this.password,
-    passwordCannotBeEmpty: passwordCannotBeEmpty ?? this.passwordCannotBeEmpty,
-  );
-
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      (other is AppLocalizationsDataValidator &&
-          emailNotRegistered == other.emailNotRegistered &&
-          emailAlreadyRegisteredReadFAQ ==
-              other.emailAlreadyRegisteredReadFAQ &&
-          emailAlreadyRegistered == other.emailAlreadyRegistered &&
-          canotLinkAccount == other.canotLinkAccount &&
-          continueUsingFacebookAccount == other.continueUsingFacebookAccount &&
-          continueUsingGoogleAccount == other.continueUsingGoogleAccount &&
-          continueUsingPhone == other.continueUsingPhone &&
-          continueUsingEmail == other.continueUsingEmail &&
-          unKnownErrorTryAgain == other.unKnownErrorTryAgain &&
-          acceptTermsFirst == other.acceptTermsFirst &&
-          enterOTPCorrectly == other.enterOTPCorrectly &&
-          checkInternetThenTryAgain == other.checkInternetThenTryAgain &&
-          completeFieldsCorrectly == other.completeFieldsCorrectly &&
-          notEmpty == other.notEmpty &&
-          enterInvitationCode == other.enterInvitationCode &&
-          enterCorrectAddress == other.enterCorrectAddress &&
-          enterAddressNotPhone == other.enterAddressNotPhone &&
-          enterAddressNotWebsite == other.enterAddressNotWebsite &&
-          enterAddressNotEmail == other.enterAddressNotEmail &&
-          addressCannotBeEmpty == other.addressCannotBeEmpty &&
-          enterCorrectCompany == other.enterCorrectCompany &&
-          enterCompanyNotPhone == other.enterCompanyNotPhone &&
-          enterCompanyNotWebsite == other.enterCompanyNotWebsite &&
-          enterCompanyNotEmail == other.enterCompanyNotEmail &&
-          companyCannotBeEmpty == other.companyCannotBeEmpty &&
-          enterJobNotWebsite == other.enterJobNotWebsite &&
-          enterJobNotEmail == other.enterJobNotEmail &&
-          enterJobNotPhone == other.enterJobNotPhone &&
-          jobCannotBeEmpty == other.jobCannotBeEmpty &&
-          enterCorrectJob == other.enterCorrectJob &&
-          enterCorrectPhone == other.enterCorrectPhone &&
-          phoneCannotBeEmpty == other.phoneCannotBeEmpty &&
-          enterWebsiteNotEmail == other.enterWebsiteNotEmail &&
-          enterWebsiteNotPhone == other.enterWebsiteNotPhone &&
-          websiteCannotBeEmpty == other.websiteCannotBeEmpty &&
-          website == other.website &&
-          emailCannotBeEmpty == other.emailCannotBeEmpty &&
-          cannotUseEmailProvider == other.cannotUseEmailProvider &&
-          email == other.email &&
-          amount == other.amount &&
-          number == other.number &&
-          name == other.name &&
-          confirmPassword == other.confirmPassword &&
-          password == other.password &&
-          passwordCannotBeEmpty == other.passwordCannotBeEmpty);
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      emailNotRegistered.hashCode ^
-      emailAlreadyRegisteredReadFAQ.hashCode ^
-      emailAlreadyRegistered.hashCode ^
-      canotLinkAccount.hashCode ^
-      continueUsingFacebookAccount.hashCode ^
-      continueUsingGoogleAccount.hashCode ^
-      continueUsingPhone.hashCode ^
-      continueUsingEmail.hashCode ^
-      unKnownErrorTryAgain.hashCode ^
-      acceptTermsFirst.hashCode ^
-      enterOTPCorrectly.hashCode ^
-      checkInternetThenTryAgain.hashCode ^
-      completeFieldsCorrectly.hashCode ^
-      notEmpty.hashCode ^
-      enterInvitationCode.hashCode ^
-      enterCorrectAddress.hashCode ^
-      enterAddressNotPhone.hashCode ^
-      enterAddressNotWebsite.hashCode ^
-      enterAddressNotEmail.hashCode ^
-      addressCannotBeEmpty.hashCode ^
-      enterCorrectCompany.hashCode ^
-      enterCompanyNotPhone.hashCode ^
-      enterCompanyNotWebsite.hashCode ^
-      enterCompanyNotEmail.hashCode ^
-      companyCannotBeEmpty.hashCode ^
-      enterJobNotWebsite.hashCode ^
-      enterJobNotEmail.hashCode ^
-      enterJobNotPhone.hashCode ^
-      jobCannotBeEmpty.hashCode ^
-      enterCorrectJob.hashCode ^
-      enterCorrectPhone.hashCode ^
-      phoneCannotBeEmpty.hashCode ^
-      enterWebsiteNotEmail.hashCode ^
-      enterWebsiteNotPhone.hashCode ^
-      websiteCannotBeEmpty.hashCode ^
-      website.hashCode ^
-      emailCannotBeEmpty.hashCode ^
-      cannotUseEmailProvider.hashCode ^
-      email.hashCode ^
-      amount.hashCode ^
-      number.hashCode ^
-      name.hashCode ^
-      confirmPassword.hashCode ^
-      password.hashCode ^
-      passwordCannotBeEmpty.hashCode;
-}
-
 class AppLocalizationsDataHome {
   const AppLocalizationsDataHome({
     required this.adminUserLabel,
@@ -7723,140 +8273,6 @@ class AppLocalizationsDataHome {
       emailLabel.hashCode ^
       uidLabel.hashCode ^
       nameLabel.hashCode ^
-      title.hashCode;
-}
-
-class AppLocalizationsDataDashboard {
-  const AppLocalizationsDataDashboard({
-    required this.filterUserInfoToDisplay,
-    required this.completelyDeleteUser,
-    required this.deleteUser,
-    required this.controlWallets,
-    required this.adminControlWallet,
-    required this.fAQCenter,
-    required this.adminControlFAQ,
-    required this.ticketsCenter,
-    required this.adminControlTickets,
-    required this.manageUsers,
-    required this.adminControlUsers,
-    required this.allUsers,
-    required this.listAllUsers,
-    required this.listUsers,
-    required this.adminListUsers,
-    required this.title,
-  });
-
-  final String filterUserInfoToDisplay;
-  final String completelyDeleteUser;
-  final String deleteUser;
-  final String controlWallets;
-  final String adminControlWallet;
-  final String fAQCenter;
-  final String adminControlFAQ;
-  final String ticketsCenter;
-  final String adminControlTickets;
-  final String manageUsers;
-  final String adminControlUsers;
-  final String allUsers;
-  final String listAllUsers;
-  final String listUsers;
-  final String adminListUsers;
-  final String title;
-  factory AppLocalizationsDataDashboard.fromJson(Map<String, Object?> map) =>
-      AppLocalizationsDataDashboard(
-        filterUserInfoToDisplay: map['filterUserInfoToDisplay']! as String,
-        completelyDeleteUser: map['completelyDeleteUser']! as String,
-        deleteUser: map['deleteUser']! as String,
-        controlWallets: map['controlWallets']! as String,
-        adminControlWallet: map['adminControlWallet']! as String,
-        fAQCenter: map['fAQCenter']! as String,
-        adminControlFAQ: map['adminControlFAQ']! as String,
-        ticketsCenter: map['ticketsCenter']! as String,
-        adminControlTickets: map['adminControlTickets']! as String,
-        manageUsers: map['manageUsers']! as String,
-        adminControlUsers: map['adminControlUsers']! as String,
-        allUsers: map['allUsers']! as String,
-        listAllUsers: map['listAllUsers']! as String,
-        listUsers: map['listUsers']! as String,
-        adminListUsers: map['adminListUsers']! as String,
-        title: map['title']! as String,
-      );
-
-  AppLocalizationsDataDashboard copyWith({
-    String? filterUserInfoToDisplay,
-    String? completelyDeleteUser,
-    String? deleteUser,
-    String? controlWallets,
-    String? adminControlWallet,
-    String? fAQCenter,
-    String? adminControlFAQ,
-    String? ticketsCenter,
-    String? adminControlTickets,
-    String? manageUsers,
-    String? adminControlUsers,
-    String? allUsers,
-    String? listAllUsers,
-    String? listUsers,
-    String? adminListUsers,
-    String? title,
-  }) => AppLocalizationsDataDashboard(
-    filterUserInfoToDisplay:
-        filterUserInfoToDisplay ?? this.filterUserInfoToDisplay,
-    completelyDeleteUser: completelyDeleteUser ?? this.completelyDeleteUser,
-    deleteUser: deleteUser ?? this.deleteUser,
-    controlWallets: controlWallets ?? this.controlWallets,
-    adminControlWallet: adminControlWallet ?? this.adminControlWallet,
-    fAQCenter: fAQCenter ?? this.fAQCenter,
-    adminControlFAQ: adminControlFAQ ?? this.adminControlFAQ,
-    ticketsCenter: ticketsCenter ?? this.ticketsCenter,
-    adminControlTickets: adminControlTickets ?? this.adminControlTickets,
-    manageUsers: manageUsers ?? this.manageUsers,
-    adminControlUsers: adminControlUsers ?? this.adminControlUsers,
-    allUsers: allUsers ?? this.allUsers,
-    listAllUsers: listAllUsers ?? this.listAllUsers,
-    listUsers: listUsers ?? this.listUsers,
-    adminListUsers: adminListUsers ?? this.adminListUsers,
-    title: title ?? this.title,
-  );
-
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      (other is AppLocalizationsDataDashboard &&
-          filterUserInfoToDisplay == other.filterUserInfoToDisplay &&
-          completelyDeleteUser == other.completelyDeleteUser &&
-          deleteUser == other.deleteUser &&
-          controlWallets == other.controlWallets &&
-          adminControlWallet == other.adminControlWallet &&
-          fAQCenter == other.fAQCenter &&
-          adminControlFAQ == other.adminControlFAQ &&
-          ticketsCenter == other.ticketsCenter &&
-          adminControlTickets == other.adminControlTickets &&
-          manageUsers == other.manageUsers &&
-          adminControlUsers == other.adminControlUsers &&
-          allUsers == other.allUsers &&
-          listAllUsers == other.listAllUsers &&
-          listUsers == other.listUsers &&
-          adminListUsers == other.adminListUsers &&
-          title == other.title);
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      filterUserInfoToDisplay.hashCode ^
-      completelyDeleteUser.hashCode ^
-      deleteUser.hashCode ^
-      controlWallets.hashCode ^
-      adminControlWallet.hashCode ^
-      fAQCenter.hashCode ^
-      adminControlFAQ.hashCode ^
-      ticketsCenter.hashCode ^
-      adminControlTickets.hashCode ^
-      manageUsers.hashCode ^
-      adminControlUsers.hashCode ^
-      allUsers.hashCode ^
-      listAllUsers.hashCode ^
-      listUsers.hashCode ^
-      adminListUsers.hashCode ^
       title.hashCode;
 }
 
@@ -9287,6 +9703,446 @@ class AppLocalizationsDataTerms {
       termsPoliciesLink.hashCode;
 }
 
+class AppLocalizationsDataLanguages {
+  const AppLocalizationsDataLanguages({
+    required this.langJapanese,
+    required this.langRussian,
+    required this.langPortuguese,
+    required this.langSpanish,
+    required this.langItalian,
+    required this.langGerman,
+    required this.langFrench,
+    required this.langArabic,
+    required this.langEnglish,
+    required this.selectLanguage,
+  });
+
+  final String langJapanese;
+  final String langRussian;
+  final String langPortuguese;
+  final String langSpanish;
+  final String langItalian;
+  final String langGerman;
+  final String langFrench;
+  final String langArabic;
+  final String langEnglish;
+  final String selectLanguage;
+  factory AppLocalizationsDataLanguages.fromJson(Map<String, Object?> map) =>
+      AppLocalizationsDataLanguages(
+        langJapanese: map['langJapanese']! as String,
+        langRussian: map['langRussian']! as String,
+        langPortuguese: map['langPortuguese']! as String,
+        langSpanish: map['langSpanish']! as String,
+        langItalian: map['langItalian']! as String,
+        langGerman: map['langGerman']! as String,
+        langFrench: map['langFrench']! as String,
+        langArabic: map['langArabic']! as String,
+        langEnglish: map['langEnglish']! as String,
+        selectLanguage: map['selectLanguage']! as String,
+      );
+
+  AppLocalizationsDataLanguages copyWith({
+    String? langJapanese,
+    String? langRussian,
+    String? langPortuguese,
+    String? langSpanish,
+    String? langItalian,
+    String? langGerman,
+    String? langFrench,
+    String? langArabic,
+    String? langEnglish,
+    String? selectLanguage,
+  }) => AppLocalizationsDataLanguages(
+    langJapanese: langJapanese ?? this.langJapanese,
+    langRussian: langRussian ?? this.langRussian,
+    langPortuguese: langPortuguese ?? this.langPortuguese,
+    langSpanish: langSpanish ?? this.langSpanish,
+    langItalian: langItalian ?? this.langItalian,
+    langGerman: langGerman ?? this.langGerman,
+    langFrench: langFrench ?? this.langFrench,
+    langArabic: langArabic ?? this.langArabic,
+    langEnglish: langEnglish ?? this.langEnglish,
+    selectLanguage: selectLanguage ?? this.selectLanguage,
+  );
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is AppLocalizationsDataLanguages &&
+          langJapanese == other.langJapanese &&
+          langRussian == other.langRussian &&
+          langPortuguese == other.langPortuguese &&
+          langSpanish == other.langSpanish &&
+          langItalian == other.langItalian &&
+          langGerman == other.langGerman &&
+          langFrench == other.langFrench &&
+          langArabic == other.langArabic &&
+          langEnglish == other.langEnglish &&
+          selectLanguage == other.selectLanguage);
+  @override
+  int get hashCode =>
+      runtimeType.hashCode ^
+      langJapanese.hashCode ^
+      langRussian.hashCode ^
+      langPortuguese.hashCode ^
+      langSpanish.hashCode ^
+      langItalian.hashCode ^
+      langGerman.hashCode ^
+      langFrench.hashCode ^
+      langArabic.hashCode ^
+      langEnglish.hashCode ^
+      selectLanguage.hashCode;
+}
+
+class AppLocalizationsDataValidator {
+  const AppLocalizationsDataValidator({
+    required this.emailNotRegistered,
+    required this.emailAlreadyRegisteredReadFAQ,
+    required this.emailAlreadyRegistered,
+    required this.canotLinkAccount,
+    required this.continueUsingFacebookAccount,
+    required this.continueUsingGoogleAccount,
+    required this.continueUsingPhone,
+    required this.continueUsingEmail,
+    required this.unKnownErrorTryAgain,
+    required this.acceptTermsFirst,
+    required this.enterOTPCorrectly,
+    required this.checkInternetThenTryAgain,
+    required this.completeFieldsCorrectly,
+    required this.notEmpty,
+    required this.enterInvitationCode,
+    required this.enterCorrectAddress,
+    required this.enterAddressNotPhone,
+    required this.enterAddressNotWebsite,
+    required this.enterAddressNotEmail,
+    required this.addressCannotBeEmpty,
+    required this.enterCorrectCompany,
+    required this.enterCompanyNotPhone,
+    required this.enterCompanyNotWebsite,
+    required this.enterCompanyNotEmail,
+    required this.companyCannotBeEmpty,
+    required this.enterJobNotWebsite,
+    required this.enterJobNotEmail,
+    required this.enterJobNotPhone,
+    required this.jobCannotBeEmpty,
+    required this.enterCorrectJob,
+    required this.enterCorrectPhone,
+    required this.phoneCannotBeEmpty,
+    required this.enterWebsiteNotEmail,
+    required this.enterWebsiteNotPhone,
+    required this.websiteCannotBeEmpty,
+    required this.website,
+    required this.emailCannotBeEmpty,
+    required this.cannotUseEmailProvider,
+    required this.email,
+    required this.amount,
+    required this.number,
+    required this.name,
+    required this.confirmPassword,
+    required this.password,
+    required this.passwordCannotBeEmpty,
+  });
+
+  final String emailNotRegistered;
+  final String emailAlreadyRegisteredReadFAQ;
+  final String emailAlreadyRegistered;
+  final String canotLinkAccount;
+  final String continueUsingFacebookAccount;
+  final String continueUsingGoogleAccount;
+  final String continueUsingPhone;
+  final String continueUsingEmail;
+  final String unKnownErrorTryAgain;
+  final String acceptTermsFirst;
+  final String enterOTPCorrectly;
+  final String checkInternetThenTryAgain;
+  final String completeFieldsCorrectly;
+  final String notEmpty;
+  final String enterInvitationCode;
+  final String enterCorrectAddress;
+  final String enterAddressNotPhone;
+  final String enterAddressNotWebsite;
+  final String enterAddressNotEmail;
+  final String addressCannotBeEmpty;
+  final String enterCorrectCompany;
+  final String enterCompanyNotPhone;
+  final String enterCompanyNotWebsite;
+  final String enterCompanyNotEmail;
+  final String companyCannotBeEmpty;
+  final String enterJobNotWebsite;
+  final String enterJobNotEmail;
+  final String enterJobNotPhone;
+  final String jobCannotBeEmpty;
+  final String enterCorrectJob;
+  final String enterCorrectPhone;
+  final String phoneCannotBeEmpty;
+  final String enterWebsiteNotEmail;
+  final String enterWebsiteNotPhone;
+  final String websiteCannotBeEmpty;
+  final String website;
+  final String emailCannotBeEmpty;
+  final String cannotUseEmailProvider;
+  final String email;
+  final String amount;
+  final String number;
+  final String name;
+  final String confirmPassword;
+  final String password;
+  final String passwordCannotBeEmpty;
+  factory AppLocalizationsDataValidator.fromJson(Map<String, Object?> map) =>
+      AppLocalizationsDataValidator(
+        emailNotRegistered: map['emailNotRegistered']! as String,
+        emailAlreadyRegisteredReadFAQ:
+            map['emailAlreadyRegisteredReadFAQ']! as String,
+        emailAlreadyRegistered: map['emailAlreadyRegistered']! as String,
+        canotLinkAccount: map['canotLinkAccount']! as String,
+        continueUsingFacebookAccount:
+            map['continueUsingFacebookAccount']! as String,
+        continueUsingGoogleAccount:
+            map['continueUsingGoogleAccount']! as String,
+        continueUsingPhone: map['continueUsingPhone']! as String,
+        continueUsingEmail: map['continueUsingEmail']! as String,
+        unKnownErrorTryAgain: map['unKnownErrorTryAgain']! as String,
+        acceptTermsFirst: map['acceptTermsFirst']! as String,
+        enterOTPCorrectly: map['enterOTPCorrectly']! as String,
+        checkInternetThenTryAgain: map['checkInternetThenTryAgain']! as String,
+        completeFieldsCorrectly: map['completeFieldsCorrectly']! as String,
+        notEmpty: map['notEmpty']! as String,
+        enterInvitationCode: map['enterInvitationCode']! as String,
+        enterCorrectAddress: map['enterCorrectAddress']! as String,
+        enterAddressNotPhone: map['enterAddressNotPhone']! as String,
+        enterAddressNotWebsite: map['enterAddressNotWebsite']! as String,
+        enterAddressNotEmail: map['enterAddressNotEmail']! as String,
+        addressCannotBeEmpty: map['addressCannotBeEmpty']! as String,
+        enterCorrectCompany: map['enterCorrectCompany']! as String,
+        enterCompanyNotPhone: map['enterCompanyNotPhone']! as String,
+        enterCompanyNotWebsite: map['enterCompanyNotWebsite']! as String,
+        enterCompanyNotEmail: map['enterCompanyNotEmail']! as String,
+        companyCannotBeEmpty: map['companyCannotBeEmpty']! as String,
+        enterJobNotWebsite: map['enterJobNotWebsite']! as String,
+        enterJobNotEmail: map['enterJobNotEmail']! as String,
+        enterJobNotPhone: map['enterJobNotPhone']! as String,
+        jobCannotBeEmpty: map['jobCannotBeEmpty']! as String,
+        enterCorrectJob: map['enterCorrectJob']! as String,
+        enterCorrectPhone: map['enterCorrectPhone']! as String,
+        phoneCannotBeEmpty: map['phoneCannotBeEmpty']! as String,
+        enterWebsiteNotEmail: map['enterWebsiteNotEmail']! as String,
+        enterWebsiteNotPhone: map['enterWebsiteNotPhone']! as String,
+        websiteCannotBeEmpty: map['websiteCannotBeEmpty']! as String,
+        website: map['website']! as String,
+        emailCannotBeEmpty: map['emailCannotBeEmpty']! as String,
+        cannotUseEmailProvider: map['cannotUseEmailProvider']! as String,
+        email: map['email']! as String,
+        amount: map['amount']! as String,
+        number: map['number']! as String,
+        name: map['name']! as String,
+        confirmPassword: map['confirmPassword']! as String,
+        password: map['password']! as String,
+        passwordCannotBeEmpty: map['passwordCannotBeEmpty']! as String,
+      );
+
+  AppLocalizationsDataValidator copyWith({
+    String? emailNotRegistered,
+    String? emailAlreadyRegisteredReadFAQ,
+    String? emailAlreadyRegistered,
+    String? canotLinkAccount,
+    String? continueUsingFacebookAccount,
+    String? continueUsingGoogleAccount,
+    String? continueUsingPhone,
+    String? continueUsingEmail,
+    String? unKnownErrorTryAgain,
+    String? acceptTermsFirst,
+    String? enterOTPCorrectly,
+    String? checkInternetThenTryAgain,
+    String? completeFieldsCorrectly,
+    String? notEmpty,
+    String? enterInvitationCode,
+    String? enterCorrectAddress,
+    String? enterAddressNotPhone,
+    String? enterAddressNotWebsite,
+    String? enterAddressNotEmail,
+    String? addressCannotBeEmpty,
+    String? enterCorrectCompany,
+    String? enterCompanyNotPhone,
+    String? enterCompanyNotWebsite,
+    String? enterCompanyNotEmail,
+    String? companyCannotBeEmpty,
+    String? enterJobNotWebsite,
+    String? enterJobNotEmail,
+    String? enterJobNotPhone,
+    String? jobCannotBeEmpty,
+    String? enterCorrectJob,
+    String? enterCorrectPhone,
+    String? phoneCannotBeEmpty,
+    String? enterWebsiteNotEmail,
+    String? enterWebsiteNotPhone,
+    String? websiteCannotBeEmpty,
+    String? website,
+    String? emailCannotBeEmpty,
+    String? cannotUseEmailProvider,
+    String? email,
+    String? amount,
+    String? number,
+    String? name,
+    String? confirmPassword,
+    String? password,
+    String? passwordCannotBeEmpty,
+  }) => AppLocalizationsDataValidator(
+    emailNotRegistered: emailNotRegistered ?? this.emailNotRegistered,
+    emailAlreadyRegisteredReadFAQ:
+        emailAlreadyRegisteredReadFAQ ?? this.emailAlreadyRegisteredReadFAQ,
+    emailAlreadyRegistered:
+        emailAlreadyRegistered ?? this.emailAlreadyRegistered,
+    canotLinkAccount: canotLinkAccount ?? this.canotLinkAccount,
+    continueUsingFacebookAccount:
+        continueUsingFacebookAccount ?? this.continueUsingFacebookAccount,
+    continueUsingGoogleAccount:
+        continueUsingGoogleAccount ?? this.continueUsingGoogleAccount,
+    continueUsingPhone: continueUsingPhone ?? this.continueUsingPhone,
+    continueUsingEmail: continueUsingEmail ?? this.continueUsingEmail,
+    unKnownErrorTryAgain: unKnownErrorTryAgain ?? this.unKnownErrorTryAgain,
+    acceptTermsFirst: acceptTermsFirst ?? this.acceptTermsFirst,
+    enterOTPCorrectly: enterOTPCorrectly ?? this.enterOTPCorrectly,
+    checkInternetThenTryAgain:
+        checkInternetThenTryAgain ?? this.checkInternetThenTryAgain,
+    completeFieldsCorrectly:
+        completeFieldsCorrectly ?? this.completeFieldsCorrectly,
+    notEmpty: notEmpty ?? this.notEmpty,
+    enterInvitationCode: enterInvitationCode ?? this.enterInvitationCode,
+    enterCorrectAddress: enterCorrectAddress ?? this.enterCorrectAddress,
+    enterAddressNotPhone: enterAddressNotPhone ?? this.enterAddressNotPhone,
+    enterAddressNotWebsite:
+        enterAddressNotWebsite ?? this.enterAddressNotWebsite,
+    enterAddressNotEmail: enterAddressNotEmail ?? this.enterAddressNotEmail,
+    addressCannotBeEmpty: addressCannotBeEmpty ?? this.addressCannotBeEmpty,
+    enterCorrectCompany: enterCorrectCompany ?? this.enterCorrectCompany,
+    enterCompanyNotPhone: enterCompanyNotPhone ?? this.enterCompanyNotPhone,
+    enterCompanyNotWebsite:
+        enterCompanyNotWebsite ?? this.enterCompanyNotWebsite,
+    enterCompanyNotEmail: enterCompanyNotEmail ?? this.enterCompanyNotEmail,
+    companyCannotBeEmpty: companyCannotBeEmpty ?? this.companyCannotBeEmpty,
+    enterJobNotWebsite: enterJobNotWebsite ?? this.enterJobNotWebsite,
+    enterJobNotEmail: enterJobNotEmail ?? this.enterJobNotEmail,
+    enterJobNotPhone: enterJobNotPhone ?? this.enterJobNotPhone,
+    jobCannotBeEmpty: jobCannotBeEmpty ?? this.jobCannotBeEmpty,
+    enterCorrectJob: enterCorrectJob ?? this.enterCorrectJob,
+    enterCorrectPhone: enterCorrectPhone ?? this.enterCorrectPhone,
+    phoneCannotBeEmpty: phoneCannotBeEmpty ?? this.phoneCannotBeEmpty,
+    enterWebsiteNotEmail: enterWebsiteNotEmail ?? this.enterWebsiteNotEmail,
+    enterWebsiteNotPhone: enterWebsiteNotPhone ?? this.enterWebsiteNotPhone,
+    websiteCannotBeEmpty: websiteCannotBeEmpty ?? this.websiteCannotBeEmpty,
+    website: website ?? this.website,
+    emailCannotBeEmpty: emailCannotBeEmpty ?? this.emailCannotBeEmpty,
+    cannotUseEmailProvider:
+        cannotUseEmailProvider ?? this.cannotUseEmailProvider,
+    email: email ?? this.email,
+    amount: amount ?? this.amount,
+    number: number ?? this.number,
+    name: name ?? this.name,
+    confirmPassword: confirmPassword ?? this.confirmPassword,
+    password: password ?? this.password,
+    passwordCannotBeEmpty: passwordCannotBeEmpty ?? this.passwordCannotBeEmpty,
+  );
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is AppLocalizationsDataValidator &&
+          emailNotRegistered == other.emailNotRegistered &&
+          emailAlreadyRegisteredReadFAQ ==
+              other.emailAlreadyRegisteredReadFAQ &&
+          emailAlreadyRegistered == other.emailAlreadyRegistered &&
+          canotLinkAccount == other.canotLinkAccount &&
+          continueUsingFacebookAccount == other.continueUsingFacebookAccount &&
+          continueUsingGoogleAccount == other.continueUsingGoogleAccount &&
+          continueUsingPhone == other.continueUsingPhone &&
+          continueUsingEmail == other.continueUsingEmail &&
+          unKnownErrorTryAgain == other.unKnownErrorTryAgain &&
+          acceptTermsFirst == other.acceptTermsFirst &&
+          enterOTPCorrectly == other.enterOTPCorrectly &&
+          checkInternetThenTryAgain == other.checkInternetThenTryAgain &&
+          completeFieldsCorrectly == other.completeFieldsCorrectly &&
+          notEmpty == other.notEmpty &&
+          enterInvitationCode == other.enterInvitationCode &&
+          enterCorrectAddress == other.enterCorrectAddress &&
+          enterAddressNotPhone == other.enterAddressNotPhone &&
+          enterAddressNotWebsite == other.enterAddressNotWebsite &&
+          enterAddressNotEmail == other.enterAddressNotEmail &&
+          addressCannotBeEmpty == other.addressCannotBeEmpty &&
+          enterCorrectCompany == other.enterCorrectCompany &&
+          enterCompanyNotPhone == other.enterCompanyNotPhone &&
+          enterCompanyNotWebsite == other.enterCompanyNotWebsite &&
+          enterCompanyNotEmail == other.enterCompanyNotEmail &&
+          companyCannotBeEmpty == other.companyCannotBeEmpty &&
+          enterJobNotWebsite == other.enterJobNotWebsite &&
+          enterJobNotEmail == other.enterJobNotEmail &&
+          enterJobNotPhone == other.enterJobNotPhone &&
+          jobCannotBeEmpty == other.jobCannotBeEmpty &&
+          enterCorrectJob == other.enterCorrectJob &&
+          enterCorrectPhone == other.enterCorrectPhone &&
+          phoneCannotBeEmpty == other.phoneCannotBeEmpty &&
+          enterWebsiteNotEmail == other.enterWebsiteNotEmail &&
+          enterWebsiteNotPhone == other.enterWebsiteNotPhone &&
+          websiteCannotBeEmpty == other.websiteCannotBeEmpty &&
+          website == other.website &&
+          emailCannotBeEmpty == other.emailCannotBeEmpty &&
+          cannotUseEmailProvider == other.cannotUseEmailProvider &&
+          email == other.email &&
+          amount == other.amount &&
+          number == other.number &&
+          name == other.name &&
+          confirmPassword == other.confirmPassword &&
+          password == other.password &&
+          passwordCannotBeEmpty == other.passwordCannotBeEmpty);
+  @override
+  int get hashCode =>
+      runtimeType.hashCode ^
+      emailNotRegistered.hashCode ^
+      emailAlreadyRegisteredReadFAQ.hashCode ^
+      emailAlreadyRegistered.hashCode ^
+      canotLinkAccount.hashCode ^
+      continueUsingFacebookAccount.hashCode ^
+      continueUsingGoogleAccount.hashCode ^
+      continueUsingPhone.hashCode ^
+      continueUsingEmail.hashCode ^
+      unKnownErrorTryAgain.hashCode ^
+      acceptTermsFirst.hashCode ^
+      enterOTPCorrectly.hashCode ^
+      checkInternetThenTryAgain.hashCode ^
+      completeFieldsCorrectly.hashCode ^
+      notEmpty.hashCode ^
+      enterInvitationCode.hashCode ^
+      enterCorrectAddress.hashCode ^
+      enterAddressNotPhone.hashCode ^
+      enterAddressNotWebsite.hashCode ^
+      enterAddressNotEmail.hashCode ^
+      addressCannotBeEmpty.hashCode ^
+      enterCorrectCompany.hashCode ^
+      enterCompanyNotPhone.hashCode ^
+      enterCompanyNotWebsite.hashCode ^
+      enterCompanyNotEmail.hashCode ^
+      companyCannotBeEmpty.hashCode ^
+      enterJobNotWebsite.hashCode ^
+      enterJobNotEmail.hashCode ^
+      enterJobNotPhone.hashCode ^
+      jobCannotBeEmpty.hashCode ^
+      enterCorrectJob.hashCode ^
+      enterCorrectPhone.hashCode ^
+      phoneCannotBeEmpty.hashCode ^
+      enterWebsiteNotEmail.hashCode ^
+      enterWebsiteNotPhone.hashCode ^
+      websiteCannotBeEmpty.hashCode ^
+      website.hashCode ^
+      emailCannotBeEmpty.hashCode ^
+      cannotUseEmailProvider.hashCode ^
+      email.hashCode ^
+      amount.hashCode ^
+      number.hashCode ^
+      name.hashCode ^
+      confirmPassword.hashCode ^
+      password.hashCode ^
+      passwordCannotBeEmpty.hashCode;
+}
+
 class AppLocalizationsDataGlobals {
   const AppLocalizationsDataGlobals({
     required this.search,
@@ -9340,16 +10196,6 @@ class AppLocalizationsDataGlobals {
     required this.home,
     required this.wallet,
     required this.profile,
-    required this.langJapanese,
-    required this.langRussian,
-    required this.langPortuguese,
-    required this.langSpanish,
-    required this.langItalian,
-    required this.langGerman,
-    required this.langFrench,
-    required this.langArabic,
-    required this.langEnglish,
-    required this.selectLanguage,
   });
 
   final String search;
@@ -9403,16 +10249,6 @@ class AppLocalizationsDataGlobals {
   final String home;
   final String wallet;
   final String profile;
-  final String langJapanese;
-  final String langRussian;
-  final String langPortuguese;
-  final String langSpanish;
-  final String langItalian;
-  final String langGerman;
-  final String langFrench;
-  final String langArabic;
-  final String langEnglish;
-  final String selectLanguage;
   factory AppLocalizationsDataGlobals.fromJson(Map<String, Object?> map) =>
       AppLocalizationsDataGlobals(
         search: map['search']! as String,
@@ -9466,16 +10302,6 @@ class AppLocalizationsDataGlobals {
         home: map['home']! as String,
         wallet: map['wallet']! as String,
         profile: map['profile']! as String,
-        langJapanese: map['langJapanese']! as String,
-        langRussian: map['langRussian']! as String,
-        langPortuguese: map['langPortuguese']! as String,
-        langSpanish: map['langSpanish']! as String,
-        langItalian: map['langItalian']! as String,
-        langGerman: map['langGerman']! as String,
-        langFrench: map['langFrench']! as String,
-        langArabic: map['langArabic']! as String,
-        langEnglish: map['langEnglish']! as String,
-        selectLanguage: map['selectLanguage']! as String,
       );
 
   AppLocalizationsDataGlobals copyWith({
@@ -9530,16 +10356,6 @@ class AppLocalizationsDataGlobals {
     String? home,
     String? wallet,
     String? profile,
-    String? langJapanese,
-    String? langRussian,
-    String? langPortuguese,
-    String? langSpanish,
-    String? langItalian,
-    String? langGerman,
-    String? langFrench,
-    String? langArabic,
-    String? langEnglish,
-    String? selectLanguage,
   }) => AppLocalizationsDataGlobals(
     search: search ?? this.search,
     edit: edit ?? this.edit,
@@ -9593,16 +10409,6 @@ class AppLocalizationsDataGlobals {
     home: home ?? this.home,
     wallet: wallet ?? this.wallet,
     profile: profile ?? this.profile,
-    langJapanese: langJapanese ?? this.langJapanese,
-    langRussian: langRussian ?? this.langRussian,
-    langPortuguese: langPortuguese ?? this.langPortuguese,
-    langSpanish: langSpanish ?? this.langSpanish,
-    langItalian: langItalian ?? this.langItalian,
-    langGerman: langGerman ?? this.langGerman,
-    langFrench: langFrench ?? this.langFrench,
-    langArabic: langArabic ?? this.langArabic,
-    langEnglish: langEnglish ?? this.langEnglish,
-    selectLanguage: selectLanguage ?? this.selectLanguage,
   );
 
   @override
@@ -9659,17 +10465,7 @@ class AppLocalizationsDataGlobals {
           history == other.history &&
           home == other.home &&
           wallet == other.wallet &&
-          profile == other.profile &&
-          langJapanese == other.langJapanese &&
-          langRussian == other.langRussian &&
-          langPortuguese == other.langPortuguese &&
-          langSpanish == other.langSpanish &&
-          langItalian == other.langItalian &&
-          langGerman == other.langGerman &&
-          langFrench == other.langFrench &&
-          langArabic == other.langArabic &&
-          langEnglish == other.langEnglish &&
-          selectLanguage == other.selectLanguage);
+          profile == other.profile);
   @override
   int get hashCode =>
       runtimeType.hashCode ^
@@ -9723,17 +10519,7 @@ class AppLocalizationsDataGlobals {
       history.hashCode ^
       home.hashCode ^
       wallet.hashCode ^
-      profile.hashCode ^
-      langJapanese.hashCode ^
-      langRussian.hashCode ^
-      langPortuguese.hashCode ^
-      langSpanish.hashCode ^
-      langItalian.hashCode ^
-      langGerman.hashCode ^
-      langFrench.hashCode ^
-      langArabic.hashCode ^
-      langEnglish.hashCode ^
-      selectLanguage.hashCode;
+      profile.hashCode;
 }
 
 class AppLocalizationsDataSplash {

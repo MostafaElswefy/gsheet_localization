@@ -18,7 +18,7 @@ part 'localizations.g.dart';
 @GSheetLocalization.googleSheet(
   "1hmC0Hm4QROPmy0uOAhSAPZNAam-SAiJm",
   "655639681",
-  2,
+  3,
 )
 
 class AppLocalizationsDelegate
