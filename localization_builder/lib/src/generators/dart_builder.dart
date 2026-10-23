@@ -66,88 +66,60 @@ import 'package:template_string/template_string.dart';
     _buffer.writeln('// ============================================================');
     _buffer.writeln();
 
+    // ✅ [PERF FIX] Cache variables — top-level, بيتولدوا مرة واحدة
+    _buffer.writeln('// ✅ [PERF] Cache for _resolveGeneratedLocale results');
+    _buffer.writeln('final Map<Locale, Locale?> _resolvedGeneratedLocaleCache = {};');
+    _buffer.writeln();
+
+    _buffer.writeln('// ✅ [PERF] Cache for data.toJson() results per locale');
+    _buffer.writeln('final Map<Locale, dynamic> _localizedJsonCache = {};');
+    _buffer.writeln();
+
+    // ── _resolveGeneratedLocale with cache
     _buffer.writeln('Locale? _resolveGeneratedLocale(Locale locale) {');
-
-    _buffer.writeln(
-      '  if (localizedLabels.containsKey(locale)) {',
-    );
-
-    _buffer.writeln(
-      '    return locale;',
-    );
-
-    _buffer.writeln(
-      '  }',
-    );
-
     _buffer.writeln();
 
-    _buffer.writeln(
-      '  final matches = localizedLabels.keys.where(',
-    );
-
-    _buffer.writeln(
-      '    (x) => x.languageCode == locale.languageCode,',
-    );
-
-    _buffer.writeln(
-      '  ).toList();',
-    );
-
+    _buffer.writeln('  // ✅ [PERF] Cache hit — return immediately');
+    _buffer.writeln('  if (_resolvedGeneratedLocaleCache.containsKey(locale)) {');
+    _buffer.writeln('    return _resolvedGeneratedLocaleCache[locale];');
+    _buffer.writeln('  }');
     _buffer.writeln();
 
-    _buffer.writeln(
-      '  if (matches.isEmpty) {',
-    );
-
-    _buffer.writeln(
-      '    return null;',
-    );
-
-    _buffer.writeln(
-      '  }',
-    );
-
+    _buffer.writeln('  Locale? result;');
     _buffer.writeln();
 
-    _buffer.writeln(
-      '  final countryMatches = matches.where(',
-    );
-
-    _buffer.writeln(
-      '    (x) => x.countryCode == locale.countryCode,',
-    );
-
-    _buffer.writeln(
-      '  ).toList();',
-    );
-
+    _buffer.writeln('  if (localizedLabels.containsKey(locale)) {');
+    _buffer.writeln('    result = locale;');
+    _buffer.writeln('  } else {');
+    _buffer.writeln('    final matches = localizedLabels.keys.where(');
+    _buffer.writeln('      (x) => x.languageCode == locale.languageCode,');
+    _buffer.writeln('    ).toList();');
     _buffer.writeln();
 
-    _buffer.writeln(
-      '  if (countryMatches.length == 1) {',
-    );
-
-    _buffer.writeln(
-      '    return countryMatches.first;',
-    );
-
-    _buffer.writeln(
-      '  }',
-    );
-
+    _buffer.writeln('    if (matches.isEmpty) {');
+    _buffer.writeln('      result = null;');
+    _buffer.writeln('    } else {');
+    _buffer.writeln('      final countryMatches = matches.where(');
+    _buffer.writeln('        (x) => x.countryCode == locale.countryCode,');
+    _buffer.writeln('      ).toList();');
     _buffer.writeln();
 
-    _buffer.writeln(
-      '  return matches.first;',
-    );
-
-    _buffer.writeln(
-      '}',
-    );
-
+    _buffer.writeln('      if (countryMatches.length == 1) {');
+    _buffer.writeln('        result = countryMatches.first;');
+    _buffer.writeln('      } else {');
+    _buffer.writeln('        result = matches.first;');
+    _buffer.writeln('      }');
+    _buffer.writeln('    }');
+    _buffer.writeln('  }');
     _buffer.writeln();
 
+    _buffer.writeln('  // ✅ [PERF] Cache store');
+    _buffer.writeln('  _resolvedGeneratedLocaleCache[locale] = result;');
+    _buffer.writeln('  return result;');
+    _buffer.writeln('}');
+    _buffer.writeln();
+
+    // ── getLocalizedValue with cache
     _buffer.writeln(
       'String? getLocalizedValue(',
     );
@@ -204,8 +176,16 @@ import 'package:template_string/template_string.dart';
 
     _buffer.writeln();
 
+    // ✅ [PERF FIX] cache بدل toJson() في كل call
+    _buffer.writeln('  // ✅ [PERF] Cache toJson() — runs once per locale');
+    _buffer.writeln('  final json = _localizedJsonCache.putIfAbsent(');
+    _buffer.writeln('    resolvedLocale,');
+    _buffer.writeln('    () => data.toJson(),');
+    _buffer.writeln('  );');
+    _buffer.writeln();
+
     _buffer.writeln(
-      '  dynamic current = data.toJson();',
+      '  dynamic current = json;',
     );
 
     _buffer.writeln();
@@ -265,7 +245,7 @@ import 'package:template_string/template_string.dart';
 
     for (var languageCode in localizations.supportedLanguageCodes) {
       final instance =
-          _createSectionInstance(path, languageCode, localizations, isRoot: true);
+      _createSectionInstance(path, languageCode, localizations, isRoot: true);
 
       final splits = languageCode.split(RegExp(r'[-_]'));
 
@@ -286,11 +266,11 @@ import 'package:template_string/template_string.dart';
   }
 
   String _createSectionInstance(
-    List<String> path,
-    String languageCode,
-    Section section, {
-    bool isRoot = false,
-  }) {
+      List<String> path,
+      String languageCode,
+      Section section, {
+        bool isRoot = false,
+      }) {
     path = [
       ...path,
       section.normalizedKey,
@@ -311,7 +291,7 @@ import 'package:template_string/template_string.dart';
           result.write(label.normalizedKey);
         }
         final translation = caze.translations.firstWhere(
-          (x) => x.languageCode == languageCode,
+              (x) => x.languageCode == languageCode,
           orElse: () => Translation(languageCode, '?'),
         );
         result.write(':');
@@ -361,7 +341,7 @@ import 'package:template_string/template_string.dart';
 
         /// Adding an argument for each category
         final categoryCases =
-            label.cases.where((x) => x.condition is CategoryCondition);
+        label.cases.where((x) => x.condition is CategoryCondition);
         for (var categoryCase in categoryCases) {
           final condition = categoryCase.condition as CategoryCondition;
           final fieldName =
@@ -387,7 +367,7 @@ import 'package:template_string/template_string.dart';
 
         /// Default value
         final defaultCase =
-            label.cases.map((x) => x.condition).whereType<DefaultCondition>();
+        label.cases.map((x) => x.condition).whereType<DefaultCondition>();
 
         if (defaultCase.isNotEmpty) {
           result.addProperty('String', '_${label.normalizedKey}');
@@ -416,7 +396,7 @@ import 'package:template_string/template_string.dart';
         final body = StringBuffer('{\n');
 
         for (var c
-            in label.cases.where((x) => x.condition is CategoryCondition)) {
+        in label.cases.where((x) => x.condition is CategoryCondition)) {
           final condition = c.condition as CategoryCondition;
           final categoryField = createFieldName(condition.name);
           final categoryClassName = createClassdName(condition.name);
@@ -498,9 +478,4 @@ String _escapeString(String value) => value
     .replaceAll('\n', '\\n')
     .replaceAll('\'', '\\\'')
     .replaceAll('\$', '\\\$');
-
-
-
-
-
 

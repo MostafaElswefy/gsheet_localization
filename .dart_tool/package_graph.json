@@ -118,11 +118,6 @@
       "dependencies": []
     },
     {
-      "name": "meta",
-      "version": "1.18.0",
-      "dependencies": []
-    },
-    {
       "name": "intl",
       "version": "0.20.3",
       "dependencies": [
@@ -705,11 +700,6 @@
       "dependencies": []
     },
     {
-      "name": "vector_math",
-      "version": "2.2.0",
-      "dependencies": []
-    },
-    {
       "name": "material_color_utilities",
       "version": "0.13.0",
       "dependencies": [
@@ -929,6 +919,16 @@
     {
       "name": "fixnum",
       "version": "1.1.1",
+      "dependencies": []
+    },
+    {
+      "name": "meta",
+      "version": "1.19.0",
+      "dependencies": []
+    },
+    {
+      "name": "vector_math",
+      "version": "2.4.3",
       "dependencies": []
     }
   ],
